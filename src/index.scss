@@ -18,9 +18,9 @@
 
 // The following mixins were created to implement a highly-responsive design
 @mixin card-properties1 {
-  height: calc(120px + 15vw);
-  width: calc(120px + 15vw);
-  border-radius: 10px;
+  height: calc(110px + 15vw);
+  width: calc(110px + 15vw);
+  border-radius: 25px;
 }
 
 main, section{
@@ -144,6 +144,9 @@ header {
       font-weight: 600;
       width: 20%;
       justify-content: center;
+      @media all and (max-width: 375px){
+        font-size: 0.7rem;
+      }
       &--active{
         text-decoration: none;
         font-weight:700;
@@ -158,6 +161,10 @@ header {
 
 .cards {
   @include card-properties1();
+  border: 5px solid black;
+  padding: 16px;
+  border-radius: 25px;
+  background-color: #3b0543f8 ;
 
   @media all and (max-width: 920px) {
     margin: 0;
@@ -172,6 +179,7 @@ header {
   }
   &__cover {
     @include card-properties1();
+    text-align: center;
     object-fit: cover;
     
     @media all and (max-width: 920px) {
