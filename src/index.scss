@@ -1,4 +1,24 @@
 // MIXINS TO BE REUSED IN THE PROJECT
+@mixin mainAndHeaderwidths{
+  @media all and (min-width: 1500px){
+    width: 1390px;
+  }
+  @media all and (max-width: 1500px){
+    width: 1240px;
+  }
+  @media all and (max-width: 1300px){
+    width: 1020px;
+  }
+  @media all and (max-width: 1100px) {
+    width: 950px;
+  }
+  @media all and (max-width: 1005px) {
+    width: 880px;
+  }
+  @media all and (max-width: 920px) {
+    width: 100%;
+  }
+} 
 
 @mixin flex-column {
   display: flex;
@@ -18,13 +38,17 @@
 
 // The following mixins were created to implement a highly-responsive design
 @mixin card-properties1 {
-  height: calc(110px + 15vw);
-  width: calc(110px + 15vw);
-  border-radius: 25px;
+  height: calc(110px + 12vw);
+  width: calc(110px + 10vw);
+  border-radius: 15px;
 }
 
-main, section{
-  margin-top: 160px;
+main, section, .section__header{
+  margin: 300px auto 0 auto;
+  @include mainAndHeaderwidths();
+  @media all and (max-width: 600px){
+    margin: 350px auto 0 auto;
+  }
 }
 .section{
   display: flex;
@@ -34,7 +58,7 @@ main, section{
 .section__header{
   text-decoration: none;
   height: 60px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto 32px auto;
   display: flex;
   justify-content: space-between;
@@ -44,16 +68,29 @@ main, section{
   border-radius: 20px;
   background-color: #fcf8e6;
   border: 5px solid #384f4f ;
+  @media all and (max-width: 600px){
+    height: 32px;
+    padding: 0.5vh 0;
+  }
   a{
     padding: 0;
   }
   i{
-    font-size: 30px;
+    font-size: 2rem;
     padding: 8px;
     color: black;
     background-color: #ebeded ;
     border: 6px solid #2e5266;
     border-radius: 50%;
+    @media all and (max-width: 600px){
+      height: 38px;
+      padding: 4px 11px 4px 10px;
+      border: none;
+      background-color: #2e5266;
+      border-left: 4px dashed #2e5266;
+      border-radius: 0 15px 15px 0;
+      justify-self: flex-end;
+    }
   }
   
    i:hover{
@@ -61,7 +98,17 @@ main, section{
     color:#14f186;
     background-color: #403720;
   }
-  
+  h2{
+    padding-left: 3vw;
+    @media all and (max-width: 600px) {
+      font-size: 1.3rem;
+      padding-left:25%;
+    }
+    @media all and (max-width: 600px) {
+      font-size: 1rem;
+      padding-left: 13%;
+    }
+  }
 }
 
 
@@ -79,11 +126,19 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
+  @media all and (max-width: 600px){
+    height: 220px;
+    padding: 30px 0 30px 0;
+  }
+  @media all and (max-width: 375px){
+    height: 220px;
+    padding: 16px 0 16px 0;
+  }
 
   .header{
     display: flex;
@@ -92,34 +147,80 @@ header {
     align-items:center;
     justify-content: space-between;
     height: 180px;
+    @media all and (max-width: 600px) {
+      margin: 0 auto;
+      flex-direction: column;
+      gap: 24px;
+      height: 100%;
+    }
+    @media all and (max-width: 375px) {
+      gap: 16px;
+    }
 
     .header__logo {
-      margin: 0 auto;
-      padding: 0 3vw 0 3vw;
-      height: 150px;
+      margin: 0 13vw;
+      height: 180px;
+      @media all and (max-width: 920px) {
+        margin: 0 6vw
+      }
+      @media all and (max-width: 600px) {
+        height: 100px;
+        padding: 0;
+        margin: 0 auto;
+        align-items: center;
+      }
+
     }
     h1 {
       width:70%;
       height: 180px;
       margin: 0;
-      padding: 3vh 0 0 1vh;
-      color: #403720;
-      font-family: "Alkatra";
-      font-size: 3.5rem;
+      padding: 6vh 0 0 0;
+      color: #2e5266;
+      text-shadow: 5px 5px 5px #e2d7fd;
+      font-family: "Tangerine";
+      font-size: 6.5rem;
       display: flex;
       flex-direction: column;
       justify-self: right;
-      text-shadow: 5px 5px 20px #f9d44ed1;
       letter-spacing: 3px;
+      @media all and (max-width: 920px) {
+        padding-top: 90px;
+        font-size: 4rem;
+      }
+      @media all and (max-width: 600px) {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 4rem;
+        text-align: center;
+      }
+      @media all and (max-width: 375px){
+        font-size: 3rem;
+      }
 
       span{
         margin: 0;
         font-size: 2rem;
         text-align: right;
-        padding-right:3vw;;
+        padding-right:3vw;
         color: #2e526697;
         font-family: "Quicksand";
-        text-shadow: none
+        text-shadow: none;
+        @media all and (max-width: 920px){
+          padding-top: 20px;
+          padding-right: 0.6vw;
+          font-size: 1.3rem;
+        }
+        @media all and (max-width: 600px){
+          padding: 0;
+          margin: 0;
+          font-size: 1rem;
+          text-align: center;
+        }
+        @media all and (max-width: 375px){
+          padding-top: 12px;
+        }
       }
     }
   }
@@ -140,12 +241,28 @@ header {
       justify-content: space-between;
       padding: 16px 0;
       font-family: "Quicksand";
-      font-size: 1rem;
+      font-size: 1.5rem;
       font-weight: 600;
       width: 20%;
       justify-content: center;
-      @media all and (max-width: 375px){
+      @media all and (max-width: 1024px){
+        font-size: 1.3rem;
+      }
+      @media all and (max-width: 920px){
+        font-size: 1.1rem;
+      }
+      @media all and (max-width: 800px){
+        font-size: 0.9rem;
+      }
+      @media all and (max-width: 600px){
         font-size: 0.7rem;
+      }
+      @media all and (max-width: 470px){
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        padding: 0;
+        text-align: center;
+        align-items: center;
       }
       &--active{
         text-decoration: none;
@@ -161,75 +278,61 @@ header {
 
 .cards {
   @include card-properties1();
-  border: 5px solid black;
-  padding: 16px;
-  border-radius: 25px;
-  background-color: #3b0543f8 ;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 15px 20px 15px;
+  border-radius: 15px;
+  background-color: #2e5266 ;
+  border: 6px solid black;
 
   @media all and (max-width: 920px) {
-    margin: 0;
+    margin: 0 auto;
     width: 90vw;
-    height: 290px;
+    height: 350px;
+    padding: 15px 15px 45px 15px;
   }
   @media all and (max-width: 376px) {
     margin: 0;
-    width: 90vw;
+    width: 70vw;
     height: 250px;
     min-width: 295px;
+    padding: 8px 8px 35px 8px ;
   }
   &__cover {
     @include card-properties1();
     text-align: center;
     object-fit: cover;
+    border: 3px solid black;
     
     @media all and (max-width: 920px) {
       width: 100%;
-      height: 290px;
+      height: 350px;
+      object-position: 0 0;
     }
     @media all and (max-width: 376px) {
-      width: 90vw;
+      width: 70vw;
       height: 250px;
       margin: 0;
       min-width: 295px;
     }
   }
 
-  &__gradient {
-    position: relative;
-
-    &::after {
-      content: "";
-      @include card-properties1();
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.4)
-      );
-      
-      @media all and (max-width: 920px) {
-        width: 100%;
-        height: 290px;
-      }
-      @media all and (max-width: 376px) {
-        height: 250px;
-        min-width: 295px;
-      }
-    }
-  }
 
   &__title {
+    font-family: "Quicksand";
+    font-weight: 400;
     text-decoration: none;
+    text-shadow: 2px 5px 3px black;
     position: relative;
-    bottom: 60px;
-    left: 32px;
-    width: 92%;
-    font-size: 1.6rem;
-    font-weight: 600;
+    top:3px;
+    text-align: center;
+    font-size: 1.5rem;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    @media all and (max-width: 376px){
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -242,11 +345,11 @@ header {
   @include flex-row-center();
   position: relative;
   flex-wrap: wrap;
-  gap: 3vw;
+  gap: 6vw;
   justify-content: center;
   border-radius: 25px;
-  margin: 0 auto;
-  width: 80%;
+  margin: 5vh auto 20vh auto;
+  width: 90%;
   min-width: 295px;
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -258,12 +361,13 @@ header {
     gap: 5vw;
   }
   @media all and (max-width: 1300px) {
-    gap: 2vw;
+    gap: 1vw;
   }
   @media all and (max-width: 920px) {
     @include flex-column();
-    justify-content: flex-start;
-    padding-top: 2vh;
+    width: 100%;
+    padding: 0;
+    margin:0 auto;
     background-color: white;
   }
   @media all and (max-width: 600px) {

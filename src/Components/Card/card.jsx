@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 function Card({cover, title}) {
     return (
             <div className="cards">
-                <div className="cards__gradient">
-                    <img src={cover} alt={title} className="cards__cover" />
-                </div>
+                <img src={cover} alt={title} className="cards__cover" />
                 <div className='cards__title'>{title}
                 </div>
             </div>
