@@ -1,0 +1,264 @@
+// MIXINS TO BE REUSED IN THE PROJECT
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  align-items: center;
+}
+
+// The following mixins were created to implement a highly-responsive design
+@mixin card-properties1 {
+  height: calc(120px + 15vw);
+  width: calc(120px + 15vw);
+  border-radius: 10px;
+}
+
+main, section{
+  margin-top: 160px;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+}
+
+.section__header{
+  text-decoration: none;
+  height: 60px;
+  width: 80%;
+  margin: 0 auto 32px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  padding: 0.5vh 1vw;
+  border-radius: 20px;
+  background-color: #fcf8e6;
+  border: 5px solid #384f4f ;
+  a{
+    padding: 0;
+  }
+  i{
+    font-size: 30px;
+    padding: 8px;
+    color: black;
+    background-color: #ebeded ;
+    border: 6px solid #2e5266;
+    border-radius: 50%;
+  }
+  
+   i:hover{
+    cursor: pointer;
+    color:#14f186;
+    background-color: #403720;
+  }
+  
+}
+
+
+body {
+    background-image: url(./Assets/Images/Backgrounds/43.jpg);
+    font-family: "Quicksand";
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+  background-color: #f8f7eff8;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+
+  .header{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items:center;
+    justify-content: space-between;
+    height: 180px;
+
+    .header__logo {
+      margin: 0 auto;
+      padding: 0 3vw 0 3vw;
+      height: 150px;
+    }
+    h1 {
+      width:70%;
+      height: 180px;
+      margin: 0;
+      padding: 3vh 0 0 1vh;
+      color: #403720;
+      font-family: "Alkatra";
+      font-size: 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-self: right;
+      text-shadow: 5px 5px 20px #f9d44ed1;
+      letter-spacing: 3px;
+
+      span{
+        margin: 0;
+        font-size: 2rem;
+        text-align: right;
+        padding-right:3vw;;
+        color: #2e526697;
+        font-family: "Quicksand";
+        text-shadow: none
+      }
+    }
+  }
+  .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ede0d4;
+    /* background: linear-gradient(135deg, hsla(202, 71%, 27%, 1) 0%, hsla(191, 36%, 46%, 1) 48%, hsla(188, 32%, 50%, 1) 60%, hsla(182, 35%, 57%, 1) 78%, hsla(176, 45%, 66%, 1) 100%); */
+    width: 100%;
+    border-top: 6px dotted black;
+    border-bottom: 6px dotted black;
+    height: 60px;
+    .navbar__links {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      font-family: "Quicksand";
+      font-size: 1rem;
+      font-weight: 600;
+      width: 20%;
+      justify-content: center;
+      &--active{
+        text-decoration: none;
+        font-weight:700;
+        color: white;
+        background-color: #352745c6;
+      }
+    }
+  }    
+}
+
+// Cards
+
+.cards {
+  @include card-properties1();
+
+  @media all and (max-width: 920px) {
+    margin: 0;
+    width: 90vw;
+    height: 290px;
+  }
+  @media all and (max-width: 376px) {
+    margin: 0;
+    width: 90vw;
+    height: 250px;
+    min-width: 295px;
+  }
+  &__cover {
+    @include card-properties1();
+    object-fit: cover;
+    
+    @media all and (max-width: 920px) {
+      width: 100%;
+      height: 290px;
+    }
+    @media all and (max-width: 376px) {
+      width: 90vw;
+      height: 250px;
+      margin: 0;
+      min-width: 295px;
+    }
+  }
+
+  &__gradient {
+    position: relative;
+
+    &::after {
+      content: "";
+      @include card-properties1();
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.4)
+      );
+      
+      @media all and (max-width: 920px) {
+        width: 100%;
+        height: 290px;
+      }
+      @media all and (max-width: 376px) {
+        height: 250px;
+        min-width: 295px;
+      }
+    }
+  }
+
+  &__title {
+    text-decoration: none;
+    position: relative;
+    bottom: 60px;
+    left: 32px;
+    width: 92%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+
+
+
+
+//Gallery
+.gallery {
+  @include flex-row-center();
+  position: relative;
+  flex-wrap: wrap;
+  gap: 3vw;
+  justify-content: center;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 295px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #f5f3ea;
+  a{
+    text-decoration: none;
+  }
+  @media all and (max-width: 1300px) {
+    gap: 5vw;
+  }
+  @media all and (max-width: 1300px) {
+    gap: 2vw;
+  }
+  @media all and (max-width: 920px) {
+    @include flex-column();
+    justify-content: flex-start;
+    padding-top: 2vh;
+    background-color: white;
+  }
+  @media all and (max-width: 600px) {
+    gap: 4vh;
+  }
+}
