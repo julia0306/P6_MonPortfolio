@@ -8,6 +8,7 @@ import Error from './Pages/Error/error';
 import Skills from './Pages/Skills/skills';
 import Projects from './Pages/Projects/projects';
 import Project from './Pages/Project/project';
+import Contact from './Pages/Contact/contact';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
       <Route path="/projects" element={<Projects/>} />
       <Route path="/project/:id" element={<Project/>} />
       <Route path="/skills" element={<Skills/>} />
+      <Route path="/contact" element={<Contact/>}/>
       {/* Je crée une route pour capturer toutes les routes qui ne sont pas mentionnées ci-dessus. Elles conduiront à ma page d'erreur */}
       <Route path="*" element={<Error/>} />
     </Routes>
