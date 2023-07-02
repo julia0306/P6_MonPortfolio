@@ -4,85 +4,122 @@
 		"title": "Booki",
 		"cover": "https://i.ibb.co/BsxCbBL/Project2c.png" ,
 		"pictures": [
-			"https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/4p1S6rf/Project5a-2.jpg",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/W6GQ3xb/Project4.png"
+            "https://i.ibb.co/3hjhFWb/Booki-accueil.webp",
+            "https://i.ibb.co/MpPWLzs/booki.webp",
+            "https://i.ibb.co/9ZbV6fF/booki-mobile.webp",
+            "https://i.ibb.co/gyvYZGG/booki-desktop.webp",
+            "https://i.ibb.co/68Bmsbp/booki-bottom.webp",
+            "https://i.ibb.co/wWw9g7j/booki-tablette.webp"
 		],
-		"description": "Voici la description du projet.",
+        "introduction":"Mon parcours de formation chez OpenClassrooms a démarré par ce projet, intitulé Booki. J'avais veillé, en amont du démarrage de mon parcours certifiant,à suivre quelques cours sur le langage de balisage HTML et également à éplucher quelques livres sur le langage de style CSS. Ce projet a donc été l'occasion de rentrer dans le vif du sujet et de mettre en pratique mes apprentissages.",
+		"description": "La finalité de ce projet était d'intégrer le site de Booki, de manière responsive, à partir des maquettes fournies sur Figma. Cette intégration devait se faire en Desktop-first et a été l'occasion de mettre en application les notions de marge et de padding, d'effets au survol, mais également de mettre en place mes premiers formulaires... Après avoir réalisé une anlayse approfondie des maquettes, j'ai pu tester ma bonne compréhension de Flexbox. Il a également fallu veiller à l'import des polices requises ainsi qu'à l'implémentation des icônes nécessaires pour mener à bien le projet. Enfin, il a fallu instaurer les breakpoints demandés, et optimiser le design en instaurant par exemple des valeurs relatives pour les polices ou les images.",
 		"technologies": [
-			"html",
-            "css"
+			"https://i.ibb.co/M8NnZJ9/html5.webp",
+            "https://i.ibb.co/M2M9thT/css3.webp",
+            "https://i.ibb.co/w6swSsD/VScode.webp",
+            "https://i.ibb.co/2c3FyCP/figma.webp",
+            "https://i.ibb.co/tsJ8DmY/git.webp",
+            "https://i.ibb.co/6ZGDyMg/github.webp"
         ],
-		"lien": "5"
+		"skills":[
+            "Implémenter une interface responsive avec HTML et CSS",
+            "Intégrer du contentu conformément à une maquette avec HTML et CSS",
+            "Versionner son projet avec Git et Github",
+            "Installer un environnement de développement front-end"
+        ],
+        "link":""
 	},
     {
 		"id": "2",
 		"title": "Sophie Bluel",
 		"cover": "https://i.ibb.co/2FdLhZ9/Portfolio.jpg" ,
 		"pictures": [
-			"https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png"
+            "https://i.ibb.co/R38Szhk/Bluel-accueil.webp",
+            "https://i.ibb.co/VLW0G9Y/bluel1.webp",
+            "https://i.ibb.co/K7R5CFq/bluel2.webp",
+            "https://i.ibb.co/nLQQW57/bluel3.webp",
+            "https://i.ibb.co/sspb2ZB/bluel4.webp"
 		],
 		"description": "Voici la description du projet.",
 		"technologies": [
 			"html",
             "css"
         ],
-		"lien": "5"
+		
+		"skills":[
+        ],
+        "link":""
 	},
     {
 		"id": "3",
 		"title": "Menu Maker",
 		"cover": "https://i.ibb.co/W6GQ3xb/Project4.png" ,
 		"pictures": [
-			"https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png"
+            "https://i.ibb.co/1TRr66V/MEnumaker-accueil.webp",
+            "https://i.ibb.co/X5vWvRV/menumaker.webp",
+            "https://i.ibb.co/phjBQdB/menumaker3.webp",
+            "https://i.ibb.co/FHYP64z/menumaker4.webp",
+            "https://i.ibb.co/RY28NLB/menumaker6.webp",
+            "https://i.ibb.co/DC9bzjv/menumaker5.webp"
 		],
 		"description": "Voici la description du projet.",
 		"technologies": [
 			"html",
             "css"
         ],
-		"lien": "5"
+		
+		"skills":[
+        ],
+        "link":""
 	},
     {
 		"id": "4",
 		"title": "Nina Carduci",
 		"cover": "https://i.ibb.co/KVBMbjB/Project3.jpg" ,
 		"pictures": [
-			"https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png"
+            "https://i.ibb.co/mvKX7Dq/Carducci-accueil.webp",
+            "https://i.ibb.co/LSpBNwP/carducci-tablette.webp",
+            "https://i.ibb.co/t8BqG4v/carducci-galerie.webp",
+            "https://i.ibb.co/mSg69Dg/carducci-wave-1.webp",
+            "https://i.ibb.co/Z1JT3sd/carducci-mobile.webp",
+            "https://i.ibb.co/hmZbkY2/carducci-lighthoused.webp",
+            "https://i.ibb.co/y64GQKH/carducci-rapport.webp"
 		],
 		"description": "Voici la description du projet.",
 		"technologies": [
 			"html",
             "css"
         ],
-		"lien": "5"
+		
+		"skills":[
+        ],
+        "link":""
 	},
     {
 		"id": "5",
 		"title": "Kasa",
 		"cover": "https://i.ibb.co/jh3LQkd/Project5.jpg" ,
 		"pictures": [
-			"https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png"
+            "https://i.ibb.co/Ny9xprS/kasa-pr-sentation.webp",
+            "https://i.ibb.co/vvbtr27/kasa-desktop.webp",
+            "https://i.ibb.co/3vC13sZ/kasa-detail2.webp",
+            "https://i.ibb.co/n6bJ6kn/kasa-apropos.webp",
+            "https://i.ibb.co/KsJXTZL/kasa-tablette.webp",
+            "https://i.ibb.co/yfD4Wcs/kasa-details-tablette.webp",
+            "https://i.ibb.co/TtpzspF/kasa-t.webp",
+            "https://i.ibb.co/MfjkFsj/kasa-mobile.webp",
+            "https://i.ibb.co/3F45zT7/kasa-d.webp",
+            "https://i.ibb.co/Bqc0yNQ/kasa-m.webp",
+            "https://i.ibb.co/pRzXZp0/kasa-tests2.webp"
 		],
 		"description": "Voici la description du projet.",
 		"technologies": [
 			"html",
             "css"
         ],
-		"lien": "5"
+		"skills":[
+        ],
+        "link":""
 	},
     {
 		"id": "6",
@@ -99,7 +136,9 @@
 			"html",
             "css"
         ],
-		"lien": "5"
+		"skills":[
+        ],
+        "link":""
 	}
 
 ]

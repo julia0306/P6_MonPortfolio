@@ -2,11 +2,17 @@ import { Navigate } from 'react-router-dom';
 import allProjects from '../../Data/Projects.json';
 import { useParams } from 'react-router-dom';
 import Carousel from '../../Components/Carousel/carousel';
+import TextZone from '../../Components/Text-zone/text-zone';
+import Tag from '../../Components/Tag/tag';
+
 function Project() {
     const { id } = useParams();
     const selectedProject = allProjects.find(project => project.id === id);
-    const {title} = selectedProject || {};
-    const {pictures} = selectedProject || {}
+    const {pictures} = selectedProject || {};
+    const {description} = selectedProject || {} ;
+    const {introduction} = selectedProject || {};
+    const {technologies} = selectedProject || {};
+    const {skills} = selectedProject || {};
 
     if (!selectedProject) {
         return <Navigate to="/error" />;
@@ -17,11 +23,32 @@ function Project() {
                 <Carousel 
                     pictures={pictures}
                 />
-                <div className="project">
-                    <div className="project__info">
-                        <h1 className="project__title">{title}</h1>
-                    </div>
+                <div className="tags">
+                {technologies.map((technologies, index) => (
+                    <Tag 
+                    // Il n'y a pas d'id associée au tag. Pour la key, je fais donc une combinaison entre l'index et le nom du tag qui est une string
+                        key={`${technologies}-${index}`} 
+                        tagName={technologies} />
+                        ))}
                 </div>
+                <TextZone
+                    title ="Introduction"
+                    text={introduction}/>
+                <TextZone
+                    title = "Description"
+                    text={description}/>
+                <div className='Skills'>
+                <TextZone 
+                    title = "Compétences"
+                    text={skills.map((skill, index) => (
+                        // Il n'y a pas d'id associée . Pour la key, je fais donc une combinaison entre l'index et le nom du tag qui est une string
+                        <div className='skills' key={`${skill}-${index}`}>
+                            {skill}
+                        </div>
+                    ))}
+                />
+                </div>
+
             </div>
         </main>
     )

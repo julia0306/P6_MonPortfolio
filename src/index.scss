@@ -43,6 +43,10 @@
   border-radius: 15px;
 }
 
+main{
+  padding-bottom: 260px;
+  min-height: 100vh;
+}
 main, section, .section__header{
   margin: 300px auto 0 auto;
   @include mainAndHeaderwidths();
@@ -114,7 +118,8 @@ main, section, .section__header{
 
 
 body {
-    background-image: url(./Assets/Images/Backgrounds/43.jpg);
+    background-image: url(./Assets/Images/Backgrounds/Image12.jpg);
+    //43.jpg
     font-family: "Quicksand";
     font-size: 16px;
     width: 100%;
@@ -355,6 +360,8 @@ header {
   height: 500px;
   border: 6px solid black;
   border-radius: 10px;
+  padding-bottom: 32px;
+  padding-top: 16px;
   @media all and (max-width: 920px) {
     width: 100%;
   }
@@ -392,9 +399,8 @@ header {
 
   &__navigation {
     position: relative;
-    top: -500px;
     height: 0;
-    color: #2e5266;
+    color: white;
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
@@ -438,6 +444,7 @@ header {
   padding-top: 5vh;
   padding-bottom: 5vh;
   background-color: #f5f3ea;
+  border: 5px solid black;
   a{
     text-decoration: none;
   }
@@ -459,7 +466,18 @@ header {
   }
 }
 
+//Text-zones
 
+.textZone{
+background-color: white;
+margin: 5vh auto 2vh auto;
+width: 90%;
+height: fit-content;
+border: 6px solid black;
+border-radius: 10px;
+padding-bottom: 32px;
+padding-top: 16px;
+}
 
 /* CONTACT */
 
@@ -471,11 +489,11 @@ header {
   gap: 20px;
   font-size: 1.4em;
   padding: 52px 24px;
-  background-color: #fdfcfa;
+  background-color: #152630;
   border: 5px solid #384f4f ;
   border-radius: 25px;
   font-weight: 600;
-  color:#2e5266
+  color: white;
 }
 
 .form__input{
@@ -507,7 +525,120 @@ input[type=submit]{
   border-radius: 10px;
   font-family: "Quicksand";
   font-size: 1.2rem;
+  font-weight: 600;
   padding: 5px;
+  background-color: #129494;
+  border: 5px solid #384f4f;
+  color: white;
+  &:hover{
+    background-color: #352745c6;
+    cursor: pointer;
+  }
+}
+
+
+
+
+// Footer
+
+.footer {
+  @include flex-column-center();
+  position: relative;
+  bottom: 0;
+  left: 0;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  min-width: 295px;
+  height: fit-content;
+  background-color: #061925;
+  color: white;
+  @media all and (max-width: 920px) {
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+  &__logo {
+    margin-bottom: 2vh;
+    width: 122px;
+    height: auto;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+
+    @media all and (max-width: 920px) {
+      width: 40%;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    @media all and (max-width: 376px) {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+//Text-zone
+
+.textZone{
+  padding: 0 32px;
+  box-sizing: border-box;
+  p{
+  font-size: 1.9rem;
+  font-family: "Dancing Script";
+
+  }
+  
+  h2{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+}
+
+
+// Tag
+
+.tag {
+  background-color: #129494;
+  border: 3px solid white;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 50%;
+  margin: 3vh 0 0 0;
+  height: 48px;
+  width: 48px;
+  padding: 10px;
+
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.tags{
+  display: flex;
+  justify-content: center;
+  gap: 6vw;
+}
+
+.skills{
+  font-family: "Quicksand";
+  font-size: 1.4rem;
+  width: 80%;
+  margin: 0 auto;
   background-color: #152630;
   color: white;
+  text-shadow: 4px 4px 4px #042828;
+  padding: 8px;
+  border-radius: 25px;
+  margin-bottom: 16px;
+  text-align: center;
 }

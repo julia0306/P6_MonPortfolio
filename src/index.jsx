@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Header from './Components/Header/header';
+import Footer from './Components/Footer/footer';
 import Home from './Pages/Home/home';
 import Error from './Pages/Error/error';
 import Skills from './Pages/Skills/skills';
@@ -26,6 +27,7 @@ root.render(
       {/* Je crée une route pour capturer toutes les routes qui ne sont pas mentionnées ci-dessus. Elles conduiront à ma page d'erreur */}
       <Route path="*" element={<Error/>} />
     </Routes>
+    <Footer/>
   </Router>
 </React.StrictMode>
 );
