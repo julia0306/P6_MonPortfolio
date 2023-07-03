@@ -2,7 +2,7 @@
 	{
 		"id": "1",
 		"title": "Booki",
-		"cover": "https://i.ibb.co/BsxCbBL/Project2c.png" ,
+		"cover": "https://i.ibb.co/wWw9g7j/booki-tablette.webp" ,
 		"pictures": [
             "https://i.ibb.co/3hjhFWb/Booki-accueil.webp",
             "https://i.ibb.co/MpPWLzs/booki.webp",
@@ -124,12 +124,16 @@
     {
 		"id": "6",
 		"title": "Mon vieux Grimoire",
-		"cover": "https://i.ibb.co/BsxCbBL/Project2c.png" ,
+		"cover": "https://i.ibb.co/dpKLm2V/grimmoire1.webp",
 		"pictures": [
-			"https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png",
-            "https://i.ibb.co/BsxCbBL/Project2c.png"
+            "https://i.ibb.co/W6tk4W7/grimmoire-accueil.webp",
+            "https://i.ibb.co/dpKLm2V/grimmoire1.webp",
+            "https://i.ibb.co/D8cKVXH/grimmoire-2.webp",
+            "https://i.ibb.co/sqqBPnV/grimmoire4.webp",
+            "https://i.ibb.co/vkN2LnB/grimmoire5.webp",
+            "https://i.ibb.co/F0vDqSz/grimmoire6.webp",
+            "https://i.ibb.co/BB5jqcF/grimmoire7.webp",
+            "https://i.ibb.co/Df6FHRB/grimmoire8.webp"
 		],
 		"description": "Voici la description du projet.",
 		"technologies": [
