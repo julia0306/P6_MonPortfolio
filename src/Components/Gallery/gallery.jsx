@@ -1,20 +1,20 @@
-import Card from "../Card/card";
-import { Link } from "react-router-dom";
-import allProjects from "../../Data/Projects.json";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Card from '../Card/card';
 
-function Gallery() {
-    return (
-        <div className="gallery">
-            {allProjects.map((project) => (
-                <Link  key={project.id} to={`/project/${project.id}`}>
-                    <Card 
-                    cover={project.cover}
-                    title={project.title}
-                    />
-                </Link>
-            ))}
-        </div>
-    )
+function Gallery({ works }) {
+  return (
+    <div className="gallery">
+      {works.map((work) => (
+        <Link key={work.id} to={`/project/${work.id}`}>
+          <Card
+            cover={work.cover}
+            title={work.title}
+          />
+        </Link>
+      ))}
+    </div>
+  );
 }
 
-export default Gallery
+export default Gallery;

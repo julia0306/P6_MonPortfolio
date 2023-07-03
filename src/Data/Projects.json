@@ -12,7 +12,7 @@
             "https://i.ibb.co/wWw9g7j/booki-tablette.webp"
 		],
         "introduction":"Mon parcours de formation chez OpenClassrooms a démarré par ce projet, intitulé Booki. J'avais veillé, en amont du démarrage de mon parcours certifiant,à suivre quelques cours sur le langage de balisage HTML et également à éplucher quelques livres sur le langage de style CSS. Ce projet a donc été l'occasion de rentrer dans le vif du sujet et de mettre en pratique mes apprentissages.",
-		"description": "La finalité de ce projet était d'intégrer le site de Booki, de manière responsive, à partir des maquettes fournies sur Figma. Cette intégration devait se faire en Desktop-first et a été l'occasion de mettre en application les notions de marge et de padding, d'effets au survol, mais également de mettre en place mes premiers formulaires... Après avoir réalisé une anlayse approfondie des maquettes, j'ai pu tester ma bonne compréhension de Flexbox. Il a également fallu veiller à l'import des polices requises ainsi qu'à l'implémentation des icônes nécessaires pour mener à bien le projet. Enfin, il a fallu instaurer les breakpoints demandés, et optimiser le design en instaurant par exemple des valeurs relatives pour les polices ou les images.",
+		"description": "La finalité de ce projet était d'intégrer le site de Booki, de manière responsive, à partir des maquettes fournies sur Figma. Cette intégration devait se faire en Desktop-first et a été l'occasion de mettre en application les notions de marge et de padding, d'effets au survol, mais également de mieux comprendre les balises sémantiques et de mettre en place mes premiers formulaires... Après avoir réalisé une anlayse approfondie des maquettes, j'ai pu tester ma bonne compréhension de Flexbox. Il a également fallu veiller à l'import des polices requises ainsi qu'à l'implémentation des icônes nécessaires pour mener à bien le projet. Enfin, il a fallu instaurer les breakpoints demandés, et optimiser le design en instaurant par exemple des valeurs relatives pour les polices ou les images.",
 		"technologies": [
 			"https://i.ibb.co/M8NnZJ9/html5.webp",
             "https://i.ibb.co/M2M9thT/css3.webp",
@@ -23,7 +23,7 @@
         ],
 		"skills":[
             "Implémenter une interface responsive avec HTML et CSS",
-            "Intégrer du contentu conformément à une maquette avec HTML et CSS",
+            "Intégrer du contenu conformément à une maquette avec HTML et CSS",
             "Versionner son projet avec Git et Github",
             "Installer un environnement de développement front-end"
         ],

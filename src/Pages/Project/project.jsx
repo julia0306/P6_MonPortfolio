@@ -40,7 +40,7 @@ function Project() {
                 <div className='Skills'>
                 <TextZone 
                     title = "Compétences"
-                    text={skills.map((skill, index) => (
+                    textItems={skills.map((skill, index) => (
                         // Il n'y a pas d'id associée . Pour la key, je fais donc une combinaison entre l'index et le nom du tag qui est une string
                         <div className='skills' key={`${skill}-${index}`}>
                             {skill}

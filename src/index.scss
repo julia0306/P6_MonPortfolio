@@ -47,7 +47,7 @@ main{
   padding-bottom: 260px;
   min-height: 100vh;
 }
-main, section, .section__header{
+main{
   margin: 300px auto 0 auto;
   @include mainAndHeaderwidths();
   @media all and (max-width: 600px){
@@ -463,13 +463,15 @@ header {
     width: 100%;
     padding: 0;
     margin:0;
-    gap: 3vh;
+    gap: 7vh;
     margin: 0 auto;
-    background-color: none;
+    background: none;
     border: none;
   }
   @media all and (max-width: 600px) {
     gap: 4vh;
+    background-color: none;
+    border: none;
   }
 }
 
@@ -610,7 +612,6 @@ input[type=submit]{
   @media all and (max-width: 376px){
     font-size: 1.1rem;
   }
-
   }
   
   h2{
@@ -624,7 +625,9 @@ input[type=submit]{
   }
 
 }
-
+.textItems .skills{
+  font-family: "Quicksand";
+}
 
 // Tag
 
