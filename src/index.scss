@@ -128,7 +128,7 @@ body {
 
 header {
   background-color: #f8f7eff8;
-  height: 180px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -137,13 +137,25 @@ header {
   left: 0;
   z-index: 100;
   width: 100%;
+  @media all and (min-width: 1300px){
+    height: 300px;
+    padding-top: 40px;
+  }
+  @media all and (max-width: 1024px){
+    height: 280px;
+    padding:16px 0;
+  }
+  @media all and (max-width: 920px){
+    height: 200px;
+    padding: 0;
+  }
   @media all and (max-width: 600px){
-    height: 220px;
-    padding: 30px 0 30px 0;
+    height: 180px;
+    padding: 0 0 30px 0;
   }
   @media all and (max-width: 375px){
-    height: 220px;
-    padding: 16px 0 16px 0;
+    height: 170px;
+    padding: O;
   }
 
   .header{
@@ -156,11 +168,10 @@ header {
     @media all and (max-width: 600px) {
       margin: 0 auto;
       flex-direction: column;
-      gap: 24px;
-      height: 100%;
+      gap: 0;
     }
     @media all and (max-width: 375px) {
-      gap: 16px;
+      gap: 0;
     }
 
     .header__logo {
@@ -175,13 +186,18 @@ header {
         margin: 0 auto;
         align-items: center;
       }
+      @media all and (max-width: 376px) {
+        height: 90px;
+        padding: 0;
+        margin: 0 auto;
+        align-items: center;
+      }
 
     }
     h1 {
       width:70%;
-      height: 180px;
       margin: 0;
-      padding: 6vh 0 0 0;
+      padding: 32px 0 0 0;
       color: #2e5266;
       text-shadow: 5px 5px 5px #e2d7fd;
       font-family: "Tangerine";
@@ -190,19 +206,22 @@ header {
       flex-direction: column;
       justify-self: right;
       letter-spacing: 3px;
-      @media all and (max-width: 920px) {
+      @media all and (max-width: 1024px) {
         padding-top: 90px;
-        font-size: 4rem;
+        font-size: 5rem;
+      }
+      @media all and (max-width: 920px) {
+        padding-top: 50px;
       }
       @media all and (max-width: 600px) {
         width: 100%;
         padding: 0;
         margin: 0 auto;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
       }
       @media all and (max-width: 375px){
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
 
       span{
@@ -213,6 +232,15 @@ header {
         color: #2e526697;
         font-family: "Quicksand";
         text-shadow: none;
+        @media all and (min-width: 1300px){
+          padding-top: 28px;
+          font-size: 2rem;
+        }
+        @media all and (max-width: 1024px){
+          padding-top: 8px;
+          padding-right: 0.6vw;
+          font-size: 2rem;
+        }
         @media all and (max-width: 920px){
           padding-top: 20px;
           padding-right: 0.6vw;
@@ -225,7 +253,7 @@ header {
           text-align: center;
         }
         @media all and (max-width: 375px){
-          padding-top: 12px;
+          padding-top: 0.5vh;
         }
       }
     }
