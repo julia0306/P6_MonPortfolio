@@ -12,7 +12,7 @@
             "https://i.ibb.co/wWw9g7j/booki-tablette.webp"
 		],
         "introduction":"Mon parcours de formation chez OpenClassrooms a démarré par ce projet, intitulé Booki. J'avais veillé, en amont du démarrage de mon parcours certifiant,à suivre quelques cours sur le langage de balisage HTML et également à éplucher quelques livres sur le langage de style CSS. Ce projet a donc été l'occasion de rentrer dans le vif du sujet et de mettre en pratique mes apprentissages.",
-		"description": "La finalité de ce projet était d'intégrer le site de Booki, de manière responsive, à partir des maquettes fournies sur Figma. Cette intégration devait se faire en Desktop-first et a été l'occasion de mettre en application les notions de marge et de padding, d'effets au survol, mais également de mieux comprendre les balises sémantiques et de mettre en place mes premiers formulaires... Après avoir réalisé une anlayse approfondie des maquettes, j'ai pu tester ma bonne compréhension de Flexbox. Il a également fallu veiller à l'import des polices requises ainsi qu'à l'implémentation des icônes nécessaires pour mener à bien le projet. Enfin, il a fallu instaurer les breakpoints demandés, et optimiser le design en instaurant par exemple des valeurs relatives pour les polices ou les images.",
+        "description": "La finalité de ce projet était d'intégrer le site de Booki, une plateforme de réservation de vacances. Cette intégration devait se faire de manière responsive, à partir des maquettes Desktop, tablette et mobile fournies sur Figma. Cette intégration devait se faire en Desktop-first et a été l'occasion de mettre en application les notions de marge et de padding, d'effets au survol, mais également de mieux comprendre les balises sémantiques et de mettre en place mes premiers formulaires... Après avoir réalisé une anlayse approfondie des maquettes, j'ai pu tester ma bonne compréhension de Flexbox. Il a également fallu veiller à l'import des polices requises ainsi qu'à l'implémentation des icônes nécessaires pour mener à bien le projet. Enfin, il a fallu instaurer les breakpoints demandés, et optimiser le design en instaurant par exemple des valeurs relatives pour les polices ou les images.",
 		"technologies": [
 			"https://i.ibb.co/M8NnZJ9/html5.webp",
             "https://i.ibb.co/M2M9thT/css3.webp",
@@ -27,7 +27,7 @@
             "Versionner son projet avec Git et Github",
             "Installer un environnement de développement front-end"
         ],
-        "link":""
+        "link":"https://github.com/julia0306/Projet-1---Booki"
 	},
     {
 		"id": "2",
@@ -40,15 +40,27 @@
             "https://i.ibb.co/nLQQW57/bluel3.webp",
             "https://i.ibb.co/sspb2ZB/bluel4.webp"
 		],
-		"description": "Voici la description du projet.",
+        "introduction":"Second projet du parcours Open Classrooms, ce projet a présenté de multiples nouveautés pour moi et m'a beaucoup appris. Ayant déjà travaillé le Javascript de manière théorique au moment d'entamer ce projet, il était temps de mettre ces apprentissages en pratique afin de mener à bien ma mission qui était la suivante : aider mon équipe à finaliser le nouveau site web d'une architecte. Ainsi, à partir d'un site web statique, il a fallu instaurer des éléments dynamiques grâce à Javascript et communiquer avec l'API afin de créer, récupérer, modifier ou supprimer des données ",
+		"description": "Après avoir retravaillé les langages HTML et CSS pour intégrer le site de Booki, il était temps de passer au Javascript. L'objectif de ce projet était de récupérer de manière dynamique les travaux de Sophie Bluel et de les afficher sur son site. Il fallait, par ailleurs, instaurer la possibilité pour elle, une fois authentifiée par token JWT, de mofidier, ajouter ou supprimer des photos. Pour cela, la création d'une fenêtre modale était nécessaire. Du fait de l'ensemble des nouveautés qu'arborait ce projet, il m'a semblé être le plus complexe de l'ensemble du parcours. ",
 		"technologies": [
-			"html",
-            "css"
+            "https://i.ibb.co/M8NnZJ9/html5.webp",
+            "https://i.ibb.co/M2M9thT/css3.webp",
+            "https://i.ibb.co/6Hx6sWJ/js.webp",
+            "https://i.ibb.co/7zhQbBG/node.webp",
+            "https://i.ibb.co/71CpQKv/npm.webp",
+            "https://i.ibb.co/2c3FyCP/figma.webp",
+            "https://i.ibb.co/6ZGDyMg/github.webp",
+            "https://i.ibb.co/0GP71MT/swagger-icon-131958.png"
+
         ],
 		
 		"skills":[
+            "Gérer les événements utilisateurs avec Javascript",
+            "Manipuler les éléments du DOM avec Javascript",
+            "Récupérer les données utilisateurs dans le Javascript via des formulaires"
+
         ],
-        "link":""
+        "link":"https://github.com/julia0306/Projet-2-Portfolio-Sophie-Bluel"
 	},
     {
 		"id": "3",
@@ -62,15 +74,24 @@
             "https://i.ibb.co/RY28NLB/menumaker6.webp",
             "https://i.ibb.co/DC9bzjv/menumaker5.webp"
 		],
-		"description": "Voici la description du projet.",
+        "introduction":"Ce troisième projet du parcours concernait une application de création de menus à destination des restaurateurs. Le but de la mission était de planifier les différentes étapes du projet de développement de cette application. ",
+		"description": "Bien différent des deux premiers projets, celui-ci ne reposait pas à proprement parler sur du code. Il s'agissait plutôt d'analyser les besoins fonctionnels d'un projet, d'étudier l'étendue des possibilités afin de déterminer et de rédiger les spécifications techniques du projet. Pour cela, une veille technologique devait être mise en place. Une fois les recherches fructueuses, une fois le projet réeellement bien compris, il s'agissait alors de prendre en main un outil de gestion de projet afin de planifier, puis de suivre le déroulement du projet.",
 		"technologies": [
-			"html",
-            "css"
+            "https://i.ibb.co/2c3FyCP/figma.webp",
+            "https://i.ibb.co/zbQLhyj/Notion-logo-svg.png",
+            "https://i.ibb.co/pRH7Knj/wakeletlogo2.jpg",
+            "https://i.ibb.co/YQYmPVT/trello.webp"
         ],
 		
 		"skills":[
+            "Découper une fonctionnalité en tâches afin de préparer le développement",
+            "Mettre en place une méthode de veille technologique",
+            "Suivre le déroulement du projet grâce à un outil de gestion de projet",
+            "Présenter une solution retenue",
+            "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels"
+
         ],
-        "link":""
+        "link":"https://trello.com/b/nIsNU5Ec/menu-maker-qwenta"
 	},
     {
 		"id": "4",
@@ -85,15 +106,23 @@
             "https://i.ibb.co/hmZbkY2/carducci-lighthoused.webp",
             "https://i.ibb.co/y64GQKH/carducci-rapport.webp"
 		],
-		"description": "Voici la description du projet.",
+        "introduction":"Pour ce projet, l'objectif était d'aider un client à apparaître en tête des résultats de recherche Google. Pour y parvenir, l'idée était d'instaurer les bonnes pratiques de SEO et d'accessibilité. Certaines fonctionnalités nécessitaient également d'être débuggées.",
+		"description": "A partir d'audits initiaux réalisés avec Lightouse et Wave, j'ai procédé à différentes opérations en vue d'améliorer les performances du site de Nina Carducci, photographe professionnelle. A cette fin, j'ai par exemple diminué le temps de chargement de la page en réduisant la taille des images, en instaurant des formats next-gen, en réduisant le contenu de certains fichiers très lourds avant de les minifier. Afin d'optimiser le site, 'ai également ajouté des balises 'lang', des balises 'meta-description' ainsi que des balises 'Open-Graph' et 'Twitter-cards' à destination des réseaux sociaux. J'ai instauré les résultats enrichis prévus par Google et optimisé le design responsive du site, en plus de quoi j'ai réalisé un travail au niveau des mots clés et du référencement local afin d'optimiser le SEO du site. PAr ailleurs, et en vue de rendre le site plus accessible, j'ai également ajouté des attributs au niveau des éléments non-textuels, ajotué des aria-labels au niveaux du formulaire et modifié le contraste de certains éléments en prenant en compte les recommandations du RGAA / WCAG. Pour finir, j'ai rédigé le cahier de recette afin de rendre compte des opérations menées dans le but de débugger le site. En effet, deux fonctionnalités (la navigation au sein du carrousel et la couleur de fond du lien de navigation actif) nécessitaient d'être revues. ",
 		"technologies": [
-			"html",
-            "css"
+            "https://i.ibb.co/dc8Y2nK/lighthouse.png",
+            "https://i.ibb.co/GTmmYFB/WAVE-logomark.webp",
+            "https://i.ibb.co/M8NnZJ9/html5.webp",
+            "https://i.ibb.co/M2M9thT/css3.webp",
+            "https://i.ibb.co/6Hx6sWJ/js.webp",
+            "https://i.ibb.co/6ZGDyMg/github.webp"
         ],
 		
 		"skills":[
+            "Rédiger un cahier de recette pour tester un site",
+            "Débugger un site web grâce aux Chrome DevTools",
+            "Optimiser les performances d'un site web"
         ],
-        "link":""
+        "link":"https://github.com/julia0306/P3-Nina-Carducci"
 	},
     {
 		"id": "5",
@@ -112,14 +141,22 @@
             "https://i.ibb.co/Bqc0yNQ/kasa-m.webp",
             "https://i.ibb.co/pRzXZp0/kasa-tests2.webp"
 		],
-		"description": "Voici la description du projet.",
+        "introduction":"Dans ce sixième projet, il fallait implémenter le front-end d'une application de location de logements appelée Kasa. Pour y parvenir, l'objectif était de mettre en place des coposants avec React et d'implémenter les routes de l'application avec React Router",
+		"description": "Après m'être intéressée à React dans le cadre du projet qui concernait la planification du développement du site d'un client, ce projet a été l'occasion de découvrir réellement cette bibliothèque. Si certaines notions spécifiques (les props, les states...) ont demandé un temps d'appropriation, la réalisation de l'ensemble du projet a été fluide. Composant par composant, puis page par page, les fonctionnalités demandées ont été implémentées et le design amélioré afin de veiller à instaurer un design responsive de qualité. Au niveau du style, ce projet a été l'occasion de travailler avec le préprocesseur Sass.",
 		"technologies": [
-			"html",
-            "css"
+            "https://i.ibb.co/2c3FyCP/figma.webp",
+            "https://i.ibb.co/0C6c5jQ/react.webp",
+            "https://i.ibb.co/Xt0Rchs/sass-logo-icon-214630.png",
+            "https://i.ibb.co/71CpQKv/npm.webp"
+
+
         ],
 		"skills":[
+            "Installer une application avec Create React App",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React",
+            "Configurer la navigation entre les pages de l'application avec React Router"
         ],
-        "link":""
+        "link":"https://github.com/julia0306/P4-Kasa"
 	},
     {
 		"id": "6",
@@ -135,14 +172,19 @@
             "https://i.ibb.co/BB5jqcF/grimmoire7.webp",
             "https://i.ibb.co/Df6FHRB/grimmoire8.webp"
 		],
-		"description": "Voici la description du projet.",
+        "introduction": "Septième et dernier projet du parcours de développeur web, celui-ci a été l'occasion de découvrir le développement back-end. Cette fois, à partir d'un front-end pré-existant, l'idée était de créer un back-end qui s'intègre bien à celui-ci, en utilisant Node.js, Express et MongoDB.",
+		"description": "Comme pour le projet précédent, je m'étais déjà intéressée à la stack technique concernée par ce projet avant de me lancer réellement dans sa réalisation. En effet, afin de l'anticiper, j'avais orienté ma réponse au projet de planification de développement vers cette même stack technique. Ce projet était toutefois l'occasion de pratiquer et de comprendre davantage en profondeur le fonctionnement du back-end. Entre réalisation de modèles de données, création et gestion de routes et instauration d'une authentification avec bcrypt, ce projet a été vraiment riche en apprentissages.",
 		"technologies": [
-			"html",
-            "css"
+            "https://i.ibb.co/71CpQKv/npm.webp",
+            "https://i.ibb.co/7zhQbBG/node.webp",
+            "https://i.ibb.co/Hx11FdV/Mongo.png"
         ],
 		"skills":[
+            "Stocker des données de manière sécurisée",
+            "Mettre en oeuvre des opérations CRUD de manière sécurisée",
+            "Implémenter un modèle logique de données conformément à la réglementation"
         ],
-        "link":""
+        "link":"https://github.com/julia0306/P5-Grimoire"
 	}
 
 ]

@@ -9,6 +9,7 @@ import Error from './Pages/Error/error';
 import Skills from './Pages/Skills/skills';
 import Projects from './Pages/Projects/projects';
 import Project from './Pages/Project/project';
+import Curriculum from './Pages/Curriculum/curriculum';
 import Contact from './Pages/Contact/contact';
 
 
@@ -19,12 +20,11 @@ root.render(
   <Header/>
     <Routes>
       <Route path="/" element={<Home/>} />
-      {/* Je crée une route dynamique pour afficher chacun des logements. Nous utiliseronts le hook useparams pour récupérer ces paramètres  */}
       <Route path="/projects" element={<Projects/>} />
       <Route path="/project/:id" element={<Project/>} />
       <Route path="/skills" element={<Skills/>} />
+      <Route path="/curriculum" element={<Curriculum/>}/>
       <Route path="/contact" element={<Contact/>}/>
-      {/* Je crée une route pour capturer toutes les routes qui ne sont pas mentionnées ci-dessus. Elles conduiront à ma page d'erreur */}
       <Route path="*" element={<Error/>} />
     </Routes>
     <Footer/>

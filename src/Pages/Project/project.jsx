@@ -13,6 +13,8 @@ function Project() {
     const {introduction} = selectedProject || {};
     const {technologies} = selectedProject || {};
     const {skills} = selectedProject || {};
+    const {title} = selectedProject || {}
+    const {link} = selectedProject || {}
 
     if (!selectedProject) {
         return <Navigate to="/error" />;
@@ -20,6 +22,10 @@ function Project() {
     return (
         <main>
             <div className="section">
+                <div className='section__header projects'>
+                    <h1>{title}</h1>
+                    <a href={link}><i className="fa-solid fa-link"></i></a>
+                </div>
                 <Carousel 
                     pictures={pictures}
                 />

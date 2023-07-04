@@ -37,7 +37,7 @@ function Header() {
                        Mes projets
                 </NavLink>
                 <NavLink
-                    to="/studies" 
+                    to="/curriculum" 
                     className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
                        Mon parcours
                 </NavLink>

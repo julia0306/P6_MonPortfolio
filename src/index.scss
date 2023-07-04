@@ -46,15 +46,22 @@
 main{
   padding-bottom: 260px;
   min-height: 100vh;
+  @media all and (max-width: 600px){
+    padding-bottom: 0;
+  }
 }
 main{
   margin: 250px auto 0 auto;
   @include mainAndHeaderwidths();
+  @media all and (min-width: 1300px){
+    margin: 350px auto 0 auto;}
+  @media all and (max-width: 1024px){
+    margin: 350px auto 0 auto;}
+    @media all and (min-width: 920px){
+      margin: 350px auto 0 auto;}
   @media all and (max-width: 600px){
     margin: 350px auto 0 auto;}
-    @media all and (min-width: 1300px){
-      margin: 350px auto 0 auto;}
-}
+  }
 .section{
   display: flex;
   flex-direction: column;
@@ -115,7 +122,9 @@ main{
     }
   }
   h2{
-    padding-left: 3vw;
+    width: 90%;
+    text-align: center;
+    font-size: 1.9rem;
     @media all and (max-width: 600px) {
       font-size: 1.3rem;
       padding-left:25%;
@@ -124,6 +133,22 @@ main{
       font-size: 1rem;
       padding-left: 16px;
     }
+  }
+}
+
+.projects{
+  h1{
+    width: 90%;
+    text-align: center;
+  }
+  i{
+    background-color: #129494;
+    border: 3px solid #2e5266;
+    text-align: center;
+    color: white;
+  }
+  i:hover{
+    background-color: #2e5266;
   }
 }
 
@@ -146,7 +171,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 70;
   width: 100%;
   @media all and (max-width: 1024px){
     height: 280px;
@@ -315,17 +340,24 @@ header {
 // Cards
 
 .cards {
-  @include card-properties1();
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 15px 15px 20px 15px;
+  margin: 8px 0 16px 0;
   border-radius: 15px;
   background-color: #2e5266 ;
   border: 6px solid black;
-
+  @media all and (min-width: 1300px) {
+  width: 95%;
+  padding: 8px 8px 15px 8px;
+  }
+  @media all and (max-width: 1300px) {
+    width: 85%;
+    padding: 8px 8px 15px 8px;
+    }
   @media all and (max-width: 920px) {
     justify-self: center;
     margin: 0 auto;
@@ -334,7 +366,7 @@ header {
     padding: 15px 15px 45px 15px;
   }
   @media all and (max-width: 600px){
-    width: 90%;
+    width: 90vw;
     height: 250px;    
     padding: 8px 8px 35px 8px;
   }
@@ -357,7 +389,7 @@ header {
       object-position: 0 0;
     }
     @media all and (max-width: 600px) {
-      width: 90%;
+      width: 95%;
       height: 250px;
       margin: 0;
       min-width: 295px;
@@ -373,7 +405,7 @@ header {
     position: relative;
     top:3px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
     @media all and (max-width: 600px){
       top: -2px;
@@ -476,7 +508,6 @@ header {
   border-radius: 25px;
   margin: 5vh auto 20vh auto;
   width: 90%;
-  min-width: 295px;
   padding-top: 5vh;
   padding-bottom: 5vh;
   background-color: #f5f3ea;
@@ -485,7 +516,8 @@ header {
     text-decoration: none;
   }
   @media all and (min-width: 1300px) {
-    gap: 2vw;
+    gap: 3vw;
+    justify-content: space-around;
   }
   @media all and (max-width: 1300px) {
     gap: 1vw;
@@ -502,6 +534,7 @@ header {
   }
   @media all and (max-width: 600px) {
     gap: 4vh;
+    width: 100%;
     background-color: none;
     border: none;
   }
@@ -528,6 +561,7 @@ header {
     box-sizing: border-box;
     width: 95%;
     margin: 0 auto;
+    height: fit-content;
   }
 }
 
@@ -536,7 +570,7 @@ header {
   justify-content: space-between;
   width: 100%;
   @media all and (max-width: 600px){
-    gap: 10vw;
+    flex-direction: column;
   }
 }
 
@@ -544,15 +578,22 @@ input[type=text], input[type=email]{
   width: 80%;
   height: 30px;
   margin: 0;
+  @media all and (max-width: 600px){
+    width: 100%;
+  }
 }
 
 textarea{
   width: 80%;
   height:80px;
+  @media all and (max-width: 600px){
+    width: 100%;
+    height: 150px;
+  }
 }
 
 
-input[type=text], input[type=email] textarea{
+input[type=text], input[type=email], textarea{
   font-size: 1.1rem;
   font-family: "Quicksand";
 }
@@ -573,8 +614,6 @@ input[type=submit]{
     cursor: pointer;
   }
 }
-
-
 
 
 // Footer
@@ -769,7 +808,7 @@ input[type=submit]{
 }
 
 // Skills
-.skills{
+.fc__skills{
   justify-content: space-around;
   background: none;
   @media all and (max-width: 600px){
@@ -790,6 +829,7 @@ input[type=submit]{
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: center;
     @media all and (max-width: 920px){
       width: 24%;
       padding: 10px;
@@ -818,6 +858,138 @@ input[type=submit]{
 }
 }
 
-.skills__main{
-  margin-top: 250px;
+
+.projects__main{
+  padding-bottom: 150px;
+}
+
+// TIMELINE
+.vertical-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  @media all and (max-width: 600px){
+    width: 90%;
+  }
+}
+
+.vertical-timeline-element {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.vertical-timeline-element:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 8px;
+  background: black;
+  z-index: 10; /* Adjust the stacking order */
+}
+
+.vertical-timeline-element:nth-child(even) {
+  flex-direction: row-reverse;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-timeline-element-content {
+  align-items: center;
+  padding-right: 0;
+  padding-bottom: 150px;
+  margin-right: -5%; 
+  width: 50%; 
+  @media all and (max-width: 1150px){
+    margin-right:-6%;
+  }
+  @media all and (max-width: 950px){
+    margin-right: -7%;
+  }
+  @media all and (max-width: 820px){
+    margin-right: -8%;
+  }
+  @media all and (max-width: 700px){
+    margin-right: -9%;
+  }
+  @media all and (max-width: 600px){
+    margin-right: -10%;
+    padding-bottom: 0px;
+  }
+  @media all and (max-width: 500px){
+    margin-right: -11%;
+  }
+  h3, h4, p{
+    margin: 4px 0;
+    padding: 0 40px;
+    @media all and (max-width: 950px){
+      padding: 0 45px;
+    }
+    @media all and (max-width: 950px){
+      padding: 0 25px;
+    }
+  }
+  h3{
+    font-size: 1.6rem;
+    color: #129494;
+    @media all and (max-width: 600px){
+      font-size: 1rem;
+    }
+  }
+  h4{
+    font-size: 1.3rem;
+    color:#061925;
+    @media all and (max-width: 600px){
+      font-size: 0.8rem;
+    }
+  }
+  p{
+    @media all and (max-width: 600px){
+      font-size: 0.7rem;
+    }
+  }
+}
+
+
+.vertical-timeline-element-icon {
+  background: white;
+  border: 5px solid black;
+  color: #023352d1;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50; 
+  @media all and (max-width: 600px){
+    width: 70px;
+    height: 70px;
+  }
+  img{
+    width: 35px;
+    height:35px;
+  }
+}
+
+.curriculum{
+  background-color: white;
+  border: 8px solid black;
+  margin: 0;
+}
+
+//HOME
+
+.welcome__message h2{
+  font-size: 1.8rem;
 }

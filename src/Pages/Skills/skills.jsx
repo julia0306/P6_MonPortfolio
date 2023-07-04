@@ -1,3 +1,4 @@
+import TextZone from "../../Components/Text-zone/text-zone"
 
 function Skills() {
     return (
@@ -11,20 +12,20 @@ function Skills() {
                                 alt= "languages"
                             />
                     </div>
-                    <div className="fullwidth__container skills">
-                        <div className="skills__details">
+                    <div className="fullwidth__container fc__skills">
+                        <div className="fc__skills__details">
                             <img 
                                 src="https://i.ibb.co/4f6n3M0/English.png" 
                                 alt="English" />
                             <span>Langue maternelle</span>
                         </div>
-                        <div className="skills__details">
+                        <div className="fc__skills__details">
                             <img 
                                 src="https://i.ibb.co/gdcXwxb/German.png" 
                                 alt="German" />
                             <span>Niveau C1</span>
                         </div>
-                        <div className="skills__details">
+                        <div className="fc__skills__details">
                             <img 
                                 src="https://i.ibb.co/xLfz9LX/Japanese.png" 
                                 alt="Japanese" />
@@ -40,7 +41,14 @@ function Skills() {
                             alt="technical skills"
                         />
                     </div>
-                    <div className="fullwidth__container skills">
+                    <TextZone className="test"
+                        title = "Compétences front-end"
+
+                    /> 
+                    <TextZone className="test"
+                        title = "Compétences back-end"
+                    />   
+                    <div className="fullwidth__container fc__skills">
 
                     </div>
                 </section>
