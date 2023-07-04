@@ -51,8 +51,9 @@ main{
   margin: 300px auto 0 auto;
   @include mainAndHeaderwidths();
   @media all and (max-width: 600px){
-    margin: 350px auto 0 auto;
-  }
+    margin: 350px auto 0 auto;}
+    @media all and (min-width: 1300px){
+      margin: 400px auto 0 auto;}
 }
 .section{
   display: flex;
@@ -177,6 +178,9 @@ header {
     .header__logo {
       margin: 0 13vw;
       height: 180px;
+      @media all and (min-width: 1300px) {
+        height: 260px
+      }
       @media all and (max-width: 920px) {
         margin: 0 6vw
       }
@@ -206,6 +210,10 @@ header {
       flex-direction: column;
       justify-self: right;
       letter-spacing: 3px;
+      @media all and (min-width: 1300px) {
+        padding-top: 40px;
+        font-size: 8rem;
+      }
       @media all and (max-width: 1024px) {
         padding-top: 90px;
         font-size: 5rem;

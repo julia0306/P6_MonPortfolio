@@ -15,7 +15,7 @@ import Contact from './Pages/Contact/contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Router>
+  <Router basename='Portfolio'>
   <Header/>
     <Routes>
       <Route path="/" element={<Home/>} />
