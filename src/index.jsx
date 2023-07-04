@@ -18,14 +18,14 @@ root.render(
   <Router basename='Portfolio'>
   <Header/>
     <Routes>
-      <Route path="/Portfolio/" element={<Home/>} />
+      <Route path="/gh-pages-url" element={<Home/>} />
       {/* Je crée une route dynamique pour afficher chacun des logements. Nous utiliseronts le hook useparams pour récupérer ces paramètres  */}
-      <Route path="/Portfolio/projects" element={<Projects/>} />
-      <Route path="/Portfolio/project/:id" element={<Project/>} />
-      <Route path="/Portfolio/skills" element={<Skills/>} />
-      <Route path="/Portfolio/contact" element={<Contact/>}/>
+      <Route path="/gh-pages-url/projects" element={<Projects/>} />
+      <Route path="/gh-pages-url/project/:id" element={<Project/>} />
+      <Route path="/gh-pages-url/skills" element={<Skills/>} />
+      <Route path="/gh-pages-url/contact" element={<Contact/>}/>
       {/* Je crée une route pour capturer toutes les routes qui ne sont pas mentionnées ci-dessus. Elles conduiront à ma page d'erreur */}
-      <Route path="*" element={<Error/>} />
+      <Route path="gh-pages-url/*" element={<Error/>} />
     </Routes>
     <Footer/>
   </Router>
