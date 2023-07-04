@@ -18,12 +18,12 @@ root.render(
   <Router basename='Portfolio'>
   <Header/>
     <Routes>
-      <Route path="/" element={<Home/>} />
+      <Route path="/Portfolio/" element={<Home/>} />
       {/* Je crée une route dynamique pour afficher chacun des logements. Nous utiliseronts le hook useparams pour récupérer ces paramètres  */}
-      <Route path="/projects" element={<Projects/>} />
-      <Route path="/project/:id" element={<Project/>} />
-      <Route path="/skills" element={<Skills/>} />
-      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/Portfolio/projects" element={<Projects/>} />
+      <Route path="/Portfolio/project/:id" element={<Project/>} />
+      <Route path="/Portfolio/skills" element={<Skills/>} />
+      <Route path="/Portfolio/contact" element={<Contact/>}/>
       {/* Je crée une route pour capturer toutes les routes qui ne sont pas mentionnées ci-dessus. Elles conduiront à ma page d'erreur */}
       <Route path="*" element={<Error/>} />
     </Routes>
