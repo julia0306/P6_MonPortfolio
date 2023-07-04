@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Header from './Components/Header/header';
@@ -18,14 +18,14 @@ root.render(
   <Router basename='Portfolio'>
   <Header/>
     <Routes>
-      <Route path="/gh-pages-url" element={<Home/>} />
+      <Route path="/" element={<Home/>} />
       {/* Je crée une route dynamique pour afficher chacun des logements. Nous utiliseronts le hook useparams pour récupérer ces paramètres  */}
-      <Route path="/gh-pages-url/projects" element={<Projects/>} />
-      <Route path="/gh-pages-url/project/:id" element={<Project/>} />
-      <Route path="/gh-pages-url/skills" element={<Skills/>} />
-      <Route path="/gh-pages-url/contact" element={<Contact/>}/>
+      <Route path="/projects" element={<Projects/>} />
+      <Route path="/project/:id" element={<Project/>} />
+      <Route path="/skills" element={<Skills/>} />
+      <Route path="/contact" element={<Contact/>}/>
       {/* Je crée une route pour capturer toutes les routes qui ne sont pas mentionnées ci-dessus. Elles conduiront à ma page d'erreur */}
-      <Route path="gh-pages-url/*" element={<Error/>} />
+      <Route path="*" element={<Error/>} />
     </Routes>
     <Footer/>
   </Router>
