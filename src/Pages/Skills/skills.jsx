@@ -42,12 +42,9 @@ function Skills() {
                         />
                     </div>
                     <TextZone className="test"
-                        title = "Compétences front-end"
+                        title = "Compétences validées au cours de la formation"
 
                     /> 
-                    <TextZone className="test"
-                        title = "Compétences back-end"
-                    />   
                     <div className="fullwidth__container fc__skills">
 
                     </div>
