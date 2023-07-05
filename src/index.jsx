@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Header from './Components/Header/header';
@@ -18,7 +18,7 @@ root.render(
   <React.StrictMode>
   <Router basename='Portfolio'>
   <Header/>
-    <Switch>
+    <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/projects" element={<Projects/>} />
       <Route path="/project/:id" element={<Project/>} />
@@ -26,7 +26,7 @@ root.render(
       <Route path="/curriculum" element={<Curriculum/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="*" element={<Error/>} />
-    </Switch>
+    </Routes>
     <Footer/>
   </Router>
 </React.StrictMode>
