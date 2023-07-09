@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Card from '../Card/card';
+import TurningCard from "../../Components/TurningCard/turningCard";
+
 
 function Gallery({ works }) {
   return (
     <div className="gallery">
       {works.map((work) => (
         <Link key={work.id} to={`/project/${work.id}`}>
-          <Card
-            cover={work.cover}
+          <TurningCard
+            image={work.cover}
+            alt={work.title}
             title={work.title}
+            info={work.info}
           />
         </Link>
       ))}

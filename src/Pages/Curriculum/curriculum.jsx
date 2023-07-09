@@ -3,7 +3,7 @@ import workIcon from "../../Assets/Images/workIcon.png"
 
 function Curriculum(){
     return(
-<main>
+<main className="form__container">
     <div className="fullwidth__container curriculum">
     <ul className="vertical-timeline">
         <li className="vertical-timeline-element">

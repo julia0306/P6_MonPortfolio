@@ -1,4 +1,8 @@
-import TextZone from "../../Components/Text-zone/text-zone"
+import { Link } from "react-router-dom";
+import TurningCard from "../../Components/TurningCard/turningCard";
+import Image from "../../Assets/Images/Roadmap.png";
+import Collapsible from "../../Components/Collapsible/collapsible";
+import works from "../../Data/Projects.json";
 
 function Skills() {
     return (
@@ -12,39 +16,71 @@ function Skills() {
                                 alt= "languages"
                             />
                     </div>
-                    <div className="fullwidth__container fc__skills">
-                        <div className="fc__skills__details">
-                            <img 
-                                src="https://i.ibb.co/4f6n3M0/English.png" 
-                                alt="English" />
-                            <span>Langue maternelle</span>
-                        </div>
-                        <div className="fc__skills__details">
-                            <img 
-                                src="https://i.ibb.co/gdcXwxb/German.png" 
-                                alt="German" />
-                            <span>Niveau C1</span>
-                        </div>
-                        <div className="fc__skills__details">
-                            <img 
-                                src="https://i.ibb.co/xLfz9LX/Japanese.png" 
-                                alt="Japanese" />
-                            <span>Notions</span>
-                        </div>
+                    <div className="fc__skills">
+                        <TurningCard
+                            image="https://i.ibb.co/4f6n3M0/English.png" 
+                            alt="English"
+                            info= "Langue maternelle"
+                        
+                        />
+                        <TurningCard
+                            image="https://i.ibb.co/gdcXwxb/German.png" 
+                            alt="German"
+                            info= "Niveau C1"
+                        
+                        />
+                        <TurningCard
+                            image="https://i.ibb.co/xLfz9LX/Japanese.png" 
+                            alt="Japanese"
+                            info= "Notions"
+                        />
                     </div>
+
                 </section>
-                <section className="section">
+                <section className="section technical__skills">
                     <div className= "section__header">
-                        <h2>Compétences techniques</h2>
+                        <h2 id="test">Compétences techniques</h2>
                         <img 
                             src="https://i.ibb.co/JcH0Yrx/Computer-desk-school-education-workplace-icon.png" 
                             alt="technical skills"
                         />
                     </div>
-                    <TextZone className="test"
-                        title = "Compétences validées au cours de la formation"
-
-                    /> 
+                    <div className="textZone">
+                        <h2>Compétences validées au cours de la formation</h2>
+                        <img src={Image} alt="roadmap de formation"/>
+                    </div> 
+                    <div className= "skills__buttons">
+                    <Link to="/" ><button className="skills__button skills__button__1"></button></Link>
+                    <Link to="/project/1" ><button className="skills__button skills__button__2"></button></Link>
+                    <Link to="/project/2" ><button className="skills__button skills__button__3"></button></Link>
+                    <Link to="/project/3" ><button className="skills__button skills__button__4"></button></Link>
+                    <Link to="/project/4" ><button className="skills__button skills__button__5"></button></Link>
+                    <Link to="/project/5"><button className="skills__button skills__button__6"></button></Link>
+                    <Link to="/project/6"><button className="skills__button skills__button__7"></button></Link>
+                    </div>
+                    <div className="collapsibles">
+                        <div className="collapsibles__individual">
+                            {works.map((work) => (
+                                <Collapsible
+                                key={work.id}
+                                to={`/project/${work.id}`}
+                                title={work.title}
+                                content={work.skills.map((skill) => (
+                                    <p key={skill}>{skill}</p>
+                                ))}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+                <section className="section">
+                    <div className= "section__header">
+                        <h2>Soft skills</h2>
+                        <img 
+                            src="https://i.ibb.co/JcH0Yrx/Computer-desk-school-education-workplace-icon.png" 
+                            alt="technical skills"
+                        />
+                    </div>
                     <div className="fullwidth__container fc__skills">
 
                     </div>
