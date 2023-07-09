@@ -24,8 +24,7 @@ function Header() {
                     to="/"
                     // J'utilise une condition pour déterminer le className du lien. Je différencie le style s'il est actif
                     className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
-                        <span>A propos</span>
-                        <i className="fa-solid fa-house-user"></i>
+                        A propos
                 </NavLink>
                 <NavLink
                     to="/skills" 

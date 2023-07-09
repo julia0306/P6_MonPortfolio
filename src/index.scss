@@ -129,8 +129,8 @@ main{
     border: 6px solid #2e5266;
     border-radius: 50%;
     @media all and (max-width: 600px){
-      height: 38px;
-      padding: 4px 11px 4px 10px;
+      font-size: 1.5rem;
+      padding: 8px 11px 8px 10px;
       border: none;
       background-color: #2e5266;
       border-left: 4px dashed #2e5266;
@@ -167,6 +167,7 @@ main{
       padding-left: 16px;
     }
   }
+
 }
 
 
@@ -352,18 +353,7 @@ header {
       }
     }
 
-  }
-  .navbar i{
-    display: none;
   }  
-  @media all and (max-width: 600px){
-  .navbar span{
-    display: none;
-  }
-  .navbar i{
-    display: flex;
-  }  
-}  
 }
 
 // Projects 
@@ -372,6 +362,9 @@ header {
   h1{
     width: 90%;
     text-align: center;
+    @media all and (max-width: 600px){
+      font-size: 1rem
+    }
   }
   i{
     background-color: #129494;
