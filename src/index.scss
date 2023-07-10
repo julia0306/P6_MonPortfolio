@@ -175,7 +175,7 @@ main{
   margin-top: 72px;
 }
 body {
-    background-image: url(./Assets/Images/Backgrounds/Image12.jpg);
+    background-image: url(./Assets/Images/Backgrounds/Image12.webp);
     //43.jpg
     font-family: "Quicksand";
     font-size: 16px;
@@ -417,6 +417,7 @@ header {
   }
   @media all and (max-width: 376px) {
     margin: 0;
+    margin-bottom: 32px;
     width: 70vw;
     height: 250px;
     min-width: 295px;
@@ -751,8 +752,11 @@ input[type=submit]{
     margin: 0;
     text-align: center;
     font-size: 2rem;
-    @media all and (max-width: 376px){
+    @media all and (max-width: 920px){
       font-size: 1.5rem;
+    }
+    @media all and (max-width: 376px){
+      font-size: 1.3rem;
     }
   }
 
@@ -1384,6 +1388,10 @@ input[type=submit]{
       height: 60px;
       padding: 0 3%;
       margin-top: 45px;
+      @media all and (max-width: 376px){
+        height: 45px;
+        margin-top: 16px;
+      }
     }
 
     &__title {
@@ -1394,6 +1402,9 @@ input[type=submit]{
       }
       @media all and (max-width: 600px) {
         font-size: 1.1rem;
+      }
+      @media all and (max-width: 376px) {
+        font-size: 0.9rem;
       }
     }
 
@@ -1511,13 +1522,20 @@ input[type=submit]{
   width: 100%;
   height: fit-content;
   border-radius: 10px;
+  @media all and (max-width: 600px){
+    background-color: #e5f1f7;
+    border-radius: 0;
+  }
   h3{
     padding: 0;
     margin: 0;
     text-align: center;
     font-size: 2rem;
-    @media all and (max-width: 376px){
+    @media all and (max-width: 920px){
       font-size: 1.5rem;
+    }
+    @media all and (max-width: 376px){
+      font-size: 1.3rem;
     }
   }
 }

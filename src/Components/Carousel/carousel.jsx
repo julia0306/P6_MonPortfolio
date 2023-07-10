@@ -19,10 +19,10 @@ function Carousel({pictures}){
         <div className="carousel">
             <img className="carousel__image" src = {slides[currentIndex]} alt="carousel"/>
             <div className="carousel__arrows">
-                <button onClick={goToPrevious} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
+                <button alt="précédent" onClick={goToPrevious} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
                     <i className="fa-solid fa-chevron-left" />
                 </button>
-                <button onClick={goToNext} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
+                <button alt="suivant" onClick={goToNext} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
                     <i className="fa-solid fa-chevron-right" />
                 </button>
             </div>

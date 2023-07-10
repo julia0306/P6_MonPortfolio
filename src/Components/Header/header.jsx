@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../Assets/Images/logo.png'
+import Logo from '../../Assets/Images/logo.webp'
  
 function Header() {
     return (
@@ -11,6 +11,8 @@ function Header() {
                         <   img src={Logo}
                             className='header__logo'
                             alt="logo"
+                            height="180px"
+                            width="180px" 
                         />
                 </Link>
                 <h1>Julia Taylor
