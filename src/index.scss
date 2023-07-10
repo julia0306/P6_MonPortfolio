@@ -4,7 +4,7 @@
 
 @keyframes fold-up {
   0% {
-    max-height: 250px;
+    max-height: 300px;
   }
   100% {
     max-height: 0;
@@ -16,7 +16,7 @@
     max-height: 0;
   }
   100% {
-    max-height: 250px;
+    max-height: 300px;
   }
 }
 
@@ -100,6 +100,7 @@ main{
   flex-direction: column;
 }
 
+
 .section__header{
   text-decoration: none;
   height: 60px;
@@ -130,7 +131,7 @@ main{
     border-radius: 50%;
     @media all and (max-width: 600px){
       font-size: 1.5rem;
-      padding: 8px 11px 8px 10px;
+      padding: 10px 11px 10px 10px;
       border: none;
       background-color: #2e5266;
       border-left: 4px dashed #2e5266;
@@ -170,7 +171,9 @@ main{
 
 }
 
-
+.header__spacer{
+  margin-top: 72px;
+}
 body {
     background-image: url(./Assets/Images/Backgrounds/Image12.jpg);
     //43.jpg
@@ -387,13 +390,17 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media all and (min-width: 1300px){
+    height: 350px;
+    width: 320px;
+  }
   @media all and (max-width: 1300px){
     height: 350px;
     width: 260px;
   }
   @media all and (max-width: 1024px){
-    height: 340px;
-    width: 240px;
+    height: 310px;
+    width: 220px;
   }
 
   @media all and (max-width: 920px) {
@@ -458,6 +465,10 @@ header {
     }
     @media all and (max-width: 376px){
       font-size: 1.3rem;
+      color:#061925;
+      font-weight: 700;
+      text-shadow: 1px 2px 1px white;
+      padding-top: 8px;
     }
   }
   &__text{
@@ -556,9 +567,8 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 25px;
-  margin: 5vh auto 20vh auto;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 32px;;
+  margin: 10vh auto;
   background-color: #f5f3ea;
   border: 5px solid black;
   a{
@@ -736,7 +746,7 @@ input[type=submit]{
   }
   }
   
-  h2{
+  h3{
     padding: 0;
     margin: 0;
     text-align: center;
@@ -836,7 +846,7 @@ input[type=submit]{
   height:75px;
   position: relative;
   background: none;
-  border:  none;
+  border: none;
   @media all and (max-width: 920px){
     width: 75px;
   }
@@ -850,6 +860,12 @@ input[type=submit]{
   &__1{
       top:-350px;
       left: 300px;
+      @media all and (min-width: 1500px){
+        left: 335px;
+      }
+      @media all and (max-width: 1500px){
+        left: 260px;
+      }
       @media all and (max-width: 1400px){
         left: 280px;
       }
@@ -876,6 +892,12 @@ input[type=submit]{
     &__2{
       top:-240px;
       left: 300px;
+      @media all and (min-width: 1500px){
+        left: 300px;
+      }
+      @media all and (max-width: 1500px){
+        left: 220px;
+      }
       @media all and (max-width: 1400px){
         left: 250px;
       }
@@ -902,6 +924,12 @@ input[type=submit]{
     &__3{
       top:-310px;
       left: 450px;
+      @media all and (min-width: 1500px){
+        left: 330px;
+      }
+      @media all and (max-width: 1500px){
+        left: 250px;
+      }
       @media all and (max-width: 1400px){
         left: 250px;
       }
@@ -928,6 +956,12 @@ input[type=submit]{
     &__4{
       top:-330px;
       left: 400px;
+      @media all and (min-width: 1500px){
+        left: 360px;
+      }
+      @media all and (max-width: 1500px){
+        left: 280px;
+      }
       @media all and (max-width: 1400px){
         left: 310px;
       }
@@ -954,6 +988,12 @@ input[type=submit]{
     &__5{
       top:-250px;
       left: 650px;
+      @media all and (min-width: 1500px){
+        left: 300px;
+      }
+      @media all and (max-width: 1500px){
+        left: 220px;
+      }
       @media all and (max-width: 1400px){
         left: 250px;
       }
@@ -980,6 +1020,12 @@ input[type=submit]{
     &__6{
       top:-160px;
       left: 700px;
+      @media all and (min-width: 1500px){
+        left: 280px;
+      }
+      @media all and (max-width: 1500px){
+        left: 200px;
+      }
       @media all and (max-width: 1400px){
         left: 230px;
       }
@@ -1007,6 +1053,12 @@ input[type=submit]{
     &__7{
       top:-160px;
       left: 850px;
+      @media all and (min-width: 1500px){
+        left: 330px;
+      }
+      @media all and (max-width: 1500px){
+        left: 250px;
+      }
       @media all and (max-width: 1400px){
         left: 280px;
       }
@@ -1100,7 +1152,7 @@ input[type=submit]{
   .turningCard{
     width: 200px;
     height: 200px;
-    background-color: #2e5266;
+    background-color: #061925;
     border: 5px solid #061925;
     padding: 16px;
     border-radius: 10px;
@@ -1249,15 +1301,15 @@ input[type=submit]{
     @media all and (max-width: 950px){
       padding: 0 45px;
     }
-    @media all and (max-width: 950px){
-      padding: 0 25px;
-    }
   }
   h3{
     font-size: 1.6rem;
     color: #129494;
     @media all and (max-width: 600px){
       font-size: 1rem;
+    }
+    @media all and (max-width: 376px){
+      font-size: 0.9rem;
     }
   }
   h4{
@@ -1315,8 +1367,8 @@ input[type=submit]{
   justify-content: space-between;
 
   .collapsibles__individual {
-    margin: 16px 0;
-    width: 100%;
+    margin: 16px auto;
+    width: 90%;
 
     &__container {
       display: flex; 
@@ -1326,18 +1378,17 @@ input[type=submit]{
     &__titleZone {
       @include flex-row-center();
       background-color: #061925;
-      color: white;
       z-index: 20;
       justify-content: space-between;
       border-radius: 10px;
-      height: 52px;
+      height: 60px;
       padding: 0 3%;
       margin-top: 45px;
     }
 
     &__title {
       font-size: 1.3rem;
-      font-weight: 500;
+      font-weight: 600;
       @media all and (max-width: 920px) {
         font-weight: 400;
       }
@@ -1364,32 +1415,35 @@ input[type=submit]{
           display: none;
         }
         &--collapsed {
-          background-color: #061925;
-          color: white;
+          position: relative;
+          top: -10px;
           max-height: 0;
           overflow: hidden;
           animation: fold-up 0.5s ease-out;
         }
         &--expanded{
+          max-height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin: 0;
+            font-family: "Quicksand";
             font-size: 1rem;
             position: relative;
             overflow: hidden;
             top: -10px;
-            background-color: #129494;
           transition: max-height 0.8s ease-out;
-          animation: expand 0.5s ease-out;
+          animation: expand 0.4s ease-out;
         }
     }
 
-    &__sizer {
+    &__sizer {      
+      background-color: #129494;
+      color: black;
       display: flex;
       flex-direction: column;
       height: fit-content;
-      padding: 24px 16px 16px 24px;
+      padding: 20px;
       overflow: hidden;
       justify-content: center;
     }
@@ -1399,4 +1453,71 @@ input[type=submit]{
 
 .textZone h2{
   font-size: 1.5rem;
+}
+.n1 .collapsibles__individual{
+  &__titleZone{
+    color: #b1f7f7;
+  }
+  &__sizer{
+    background-color: #cffafa;
+  }
+}
+.n2 .collapsibles__individual{
+  &__titleZone{
+    color:#f7e4ac
+  }
+  &__sizer{
+    background-color: #faf1d5;
+  }
+}
+.n3 .collapsibles__individual{
+  &__titleZone{
+    color: #f8bcc0;
+  }
+  &__sizer{
+    background-color: #fad2d5;
+  }
+}
+.n4 .collapsibles__individual{
+  &__titleZone{
+    color: #fae1bb;
+  }
+  &__sizer{
+    background-color: #f9e4c7;
+  }
+}
+.n5 .collapsibles__individual{
+  &__titleZone{
+    color: #f9ccde;
+  }
+  &__sizer{
+    background-color: #fbccdf;
+  }
+}
+.n6 .collapsibles__individual{
+  &__titleZone{
+    color: #b0f6d4;
+  }
+  &__sizer{
+    background-color: #d7f8e8;
+  }
+}
+
+.collapsibles__zone{
+  padding: 16px 32px 48px 32px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  margin: 5vh auto 2vh auto;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  h3{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+    @media all and (max-width: 376px){
+      font-size: 1.5rem;
+    }
+  }
 }

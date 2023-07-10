@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 function Tag({tagName}) {
     return (
         <div className="tag">
-            <img src={tagName} alt="technologies"/>
+            <img src={tagName} alt={tagName} title={tagName}/>
         </div>
     )
 }

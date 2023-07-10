@@ -23,7 +23,7 @@ const Collapsible = ({className, title, content}) => {
           {/* On récupère le titre défini au niveau des pages qui affichent un collapsible */}
           <h2 className="collapsibles__individual__title">{title}</h2>
           {/* Au clic, on appelle la fonction "handleCollapsibleToggle()" */}
-          <button className="collapsibles__individual__icon" onClick={handleCollapsibleToggle}>
+          <button className="collapsibles__individual__icon" alt ="Voir plus" onClick={handleCollapsibleToggle}>
             {/* Si l'icône a séjà subi une rotation ('isRotated'), alors on lui redonne sa position initiale. Sinon, on lui fait subir une rotation de -180°  */}
             <i className={`fa-sharp fa-solid fa-chevron-up ${!isRotated ? 'rotate-down' : 'rotate-up'}`} />
           </button>

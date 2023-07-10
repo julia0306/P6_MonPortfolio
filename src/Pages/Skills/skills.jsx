@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import TurningCard from "../../Components/TurningCard/turningCard";
-import Image from "../../Assets/Images/Roadmap.png";
+import Image from "../../Assets/Images/Skillsmap.png";
 import Collapsible from "../../Components/Collapsible/collapsible";
 import works from "../../Data/Projects.json";
 
@@ -38,7 +38,7 @@ function Skills() {
 
                 </section>
                 <section className="section technical__skills">
-                    <div className= "section__header">
+                    <div className= "section__header header__spacer">
                         <h2 id="test">Compétences techniques</h2>
                         <img 
                             src="https://i.ibb.co/JcH0Yrx/Computer-desk-school-education-workplace-icon.png" 
@@ -46,35 +46,38 @@ function Skills() {
                         />
                     </div>
                     <div className="textZone">
-                        <h2>Compétences validées au cours de la formation</h2>
+                        <h3>Accès aux projets ayant validé les compétences</h3>
                         <img src={Image} alt="roadmap de formation"/>
                     </div> 
                     <div className= "skills__buttons">
                     <Link to="/" ><button className="skills__button skills__button__1"></button></Link>
-                    <Link to="/project/1" ><button className="skills__button skills__button__2"></button></Link>
-                    <Link to="/project/2" ><button className="skills__button skills__button__3"></button></Link>
-                    <Link to="/project/3" ><button className="skills__button skills__button__4"></button></Link>
-                    <Link to="/project/4" ><button className="skills__button skills__button__5"></button></Link>
-                    <Link to="/project/5"><button className="skills__button skills__button__6"></button></Link>
-                    <Link to="/project/6"><button className="skills__button skills__button__7"></button></Link>
+                    <Link to="/project/1" title="Voir le projet"><button className="skills__button skills__button__2"></button></Link>
+                    <Link to="/project/2" title="Voir le projet"><button className="skills__button skills__button__3"></button></Link>
+                    <Link to="/project/3" title="Voir le projet"><button className="skills__button skills__button__4"></button></Link>
+                    <Link to="/project/4" title="Voir le projet"><button className="skills__button skills__button__5"></button></Link>
+                    <Link to="/project/5" title="Voir le projet"><button className="skills__button skills__button__6"></button></Link>
+                    <Link to="/project/6" title="Voir le projet"><button className="skills__button skills__button__7"></button></Link>
                     </div>
-                    <div className="collapsibles">
-                        <div className="collapsibles__individual">
+                    <div className="collapsibles__zone">
+                        <h3>Les compétences en détail</h3>
                             {works.map((work) => (
-                                <Collapsible
-                                key={work.id}
-                                to={`/project/${work.id}`}
-                                title={work.title}
-                                content={work.skills.map((skill) => (
-                                    <p key={skill}>{skill}</p>
-                                ))}
-                                />
+                                <div className={work.className} 
+                                key={work.id}>
+                                    <div className="collapsibles__individual">
+                                            <Collapsible
+                                            title={work.skillsTitle}
+                                            content={work.skills.map((skill) => (
+                                                <p key={skill}>{skill}</p>
+                                            ))}
+                                            />
+                                    
+                                    </div>
+                                </div>
                             ))}
-                        </div>
                     </div>
                 </section>
                 <section className="section">
-                    <div className= "section__header">
+                    <div className= "section__header header__spacer">
                         <h2>Soft skills</h2>
                         <img 
                             src="https://i.ibb.co/JcH0Yrx/Computer-desk-school-education-workplace-icon.png" 
