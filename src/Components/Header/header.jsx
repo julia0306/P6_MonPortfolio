@@ -1,56 +1,83 @@
-import { Link, NavLink } from 'react-router-dom'
-import Logo from '../../Assets/Images/logo.webp'
- 
+import React, { useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import Logo from '../../Assets/Images/logo.webp';
+
 function Header() {
-    return (
-        <header>
-            {/* J'utilise "Link" (de React-router) pour naviguer entre les pages */}
-            {/* Je redirige vers la page d'accueil au clic sur le logo */}
-            <div className='header'>
-                <Link to="/">
-                        <   img src={Logo}
-                            className='header__logo'
-                            alt="logo"
-                            height="180px"
-                            width="180px" 
-                        />
-                </Link>
-                <h1>Julia Taylor
-                    <span>Développeuse web frontend</span>
-                </h1>
-            </div>
-            
-            <nav className="navbar">
-                {/* NavLink est un composant proche de Link, mais il permet d'appliquer du style au Link. Je l'utilise car je souhaite modifier lorsque le lien sera actif */}
-                <NavLink
-                    to="/"
-                    // J'utilise une condition pour déterminer le className du lien. Je différencie le style s'il est actif
-                    className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
-                        A propos
-                </NavLink>
-                <NavLink
-                    to="/skills" 
-                    className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
-                       Mes compétences
-                </NavLink>
-                <NavLink
-                    to="/projects" 
-                    className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
-                       Mes projets
-                </NavLink>
-                <NavLink
-                    to="/curriculum" 
-                    className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
-                       Mon parcours
-                </NavLink>
-                <NavLink
-                    to="/contact" 
-                    className={({isActive}) => isActive ? 'navbar__links navbar__links--active' : 'navbar__links'}>
-                       Contact
-                </NavLink>
-            </nav>
-        </header>
-    )
+  useEffect(() => {
+    const handleScroll = () => {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const navbar = document.querySelector('.navbar');
+      const header = document.querySelector('.header');
+
+      if (window.scrollY >= headerHeight) {
+        navbar.classList.add('sticky');
+        header.classList.add('not-displayed');
+      } else {
+        navbar.classList.remove('sticky');
+        header.classList.remove('not-displayed');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <header>
+      <div className='header'>
+        <Link to="/">
+          <img
+            src={Logo}
+            className='header__logo'
+            alt="logo"
+            height="180px"
+            width="180px"
+          />
+        </Link>
+        <h1>
+          Julia Taylor
+          <span>Développeuse web frontend</span>
+        </h1>
+      </div>
+
+      <nav className="navbar">
+        <NavLink
+          to="/"
+          activeclassname='navbar__links--active'
+          className='navbar__links'>
+          A propos
+        </NavLink>
+        <NavLink
+          to="/skills"
+          activeclassname='navbar__links--active'
+          className='navbar__links'>
+          Mes compétences
+        </NavLink>
+        <NavLink
+          to="/projects"
+          activeclassname='navbar__links--active'
+          className='navbar__links'>
+          Mes projets
+        </NavLink>
+        <NavLink
+          to="/curriculum"
+          activeclassname='navbar__links--active'
+          className='navbar__links'>
+          Mon parcours
+        </NavLink>
+        <NavLink
+          to="/contact"
+          activeclassname='navbar__links--active'
+          className='navbar__links'>
+          Contact
+        </NavLink>
+      </nav>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

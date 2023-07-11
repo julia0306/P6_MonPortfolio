@@ -4,7 +4,7 @@
 
 @keyframes fold-up {
   0% {
-    max-height: 300px;
+    max-height: 350px;
   }
   100% {
     max-height: 0;
@@ -16,7 +16,7 @@
     max-height: 0;
   }
   100% {
-    max-height: 300px;
+    max-height: 350px;
   }
 }
 
@@ -93,6 +93,8 @@ main{
       margin: 350px auto 0 auto;}
   @media all and (max-width: 600px){
     margin: 350px auto 0 auto;}
+  @media all and (max-width: 376px){
+    margin: 280px auto 0 auto;}
   }
 
 .section{
@@ -184,8 +186,6 @@ body {
 }
 
 header {
-  background-color: #f8f7eff8;
-  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -212,6 +212,8 @@ header {
   }
 
   .header{
+    background-color: #f8f7eff8;
+    height: 160px;
     display: flex;
     width: 100%;
     margin: 0;
@@ -235,12 +237,14 @@ header {
       }
       @media all and (max-width: 600px) {
         height: 100px;
+        width: 100px;
         padding: 0;
         margin: 0 auto;
         align-items: center;
       }
       @media all and (max-width: 376px) {
         height: 90px;
+        width: 90px;
         padding: 0;
         margin: 0 auto;
         align-items: center;
@@ -343,10 +347,13 @@ header {
       }
       @media all and (max-width: 470px){
         font-size: 0.7rem;
+        padding: 8px 0;
         flex-wrap: wrap;
-        padding: 0;
         text-align: center;
         align-items: center;
+      }
+      @media all and (max-width: 376px){
+        font-size: 0.6rem;
       }
       &--active{
         text-decoration: none;
@@ -416,12 +423,12 @@ header {
     padding: 8px 8px 35px 8px;
   }
   @media all and (max-width: 376px) {
-    margin: 0;
-    margin-bottom: 32px;
-    width: 70vw;
-    height: 250px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 320px;
     min-width: 295px;
     padding: 8px 8px 35px 8px;
+    margin-bottom: 32px;
   }
   img {
     height:300px;
@@ -466,10 +473,8 @@ header {
     }
     @media all and (max-width: 376px){
       font-size: 1.3rem;
-      color:#061925;
       font-weight: 700;
-      text-shadow: 1px 2px 1px white;
-      padding-top: 8px;
+      padding-top: 10px;
     }
   }
   &__text{
@@ -570,7 +575,7 @@ header {
   border-radius: 25px;
   padding-top: 32px;;
   margin: 10vh auto;
-  background-color: #f5f3ea;
+  background-color: #f5f3eae8;
   border: 5px solid black;
   a{
     text-decoration: none;
@@ -597,7 +602,7 @@ header {
 
 /* CONTACT */
 .form__container{
-  padding-bottom: 150px;
+  padding-bottom: 70px;
 }
 .form{
   height:450px;
@@ -618,6 +623,16 @@ header {
     margin: 0 auto;
     height: fit-content;
   }
+  @media all and (max-width: 376px){
+    font-size: 1rem;
+    padding: 16px;
+    border-radius: 0;
+    width: 100%;
+  }
+}
+
+.form label{
+  padding-bottom:5px;
 }
 
 .form__input{
@@ -725,7 +740,7 @@ input[type=submit]{
 .textZone{
   padding: 16px 32px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: #fbfaf6;
   margin: 5vh auto 2vh auto;
   width: 90%;
   height: fit-content;
@@ -744,6 +759,7 @@ input[type=submit]{
   }
   @media all and (max-width: 376px){
     font-size: 1.1rem;
+    text-align: justify;
   }
   }
   
@@ -859,7 +875,11 @@ input[type=submit]{
     height: 60px
   }
   @media all and (max-width: 500px){
-    display: none
+    width: 60px;
+    height: 40px
+  }
+  @media all and (max-width: 420px){
+    width: 40px
   }
   &__1{
       top:-350px;
@@ -890,6 +910,19 @@ input[type=submit]{
         left: 80px;
       }
       @media all and (max-width: 530px){
+        left: 50px;
+      }
+      @media all and (max-width: 500px){
+        top:-180px;
+        left: 90px;
+      }
+      @media all and (max-width: 450px){
+        left:65px;
+      }
+      @media all and (max-width: 420px){
+        left: 70px;
+      }
+      @media all and (max-width: 380px){
         left: 50px;
       }
     }
@@ -924,6 +957,19 @@ input[type=submit]{
       @media all and (max-width: 530px){
         left: 30px;
       }
+      @media all and (max-width: 500px){
+        top:-125px;
+        left: 55px;
+      }
+      @media all and (max-width: 450px){
+        left:30px;
+      }
+      @media all and (max-width: 420px){
+        left: 55px;
+      }
+      @media all and (max-width: 380px){
+        left: 35px;
+      }
     }
     &__3{
       top:-310px;
@@ -954,6 +1000,19 @@ input[type=submit]{
         left: 80px;
       }
       @media all and (max-width: 530px){
+        left: 45px;
+      }
+      @media all and (max-width: 500px){
+        top:-155px;
+        left: 55px;
+      }
+      @media all and (max-width: 450px){
+        left:25px;
+      }
+      @media all and (max-width: 420px){
+        left: 70px;
+      }
+      @media all and (max-width: 380px){
         left: 45px;
       }
     }
@@ -988,6 +1047,19 @@ input[type=submit]{
       @media all and (max-width: 530px){
         left: 60px;
       }
+      @media all and (max-width: 500px){
+        top:-165px;
+        left: 50px;
+      }
+      @media all and (max-width: 450px){
+        left:20px;
+      }
+      @media all and (max-width: 420px){
+        left: 75px;
+      }
+      @media all and (max-width: 380px){
+        left: 55px;
+      }
     }
     &__5{
       top:-250px;
@@ -1019,6 +1091,19 @@ input[type=submit]{
       }
       @media all and (max-width: 530px){
         left: 25px;
+      }
+      @media all and (max-width: 500px){
+        top:-125px;
+        left: -10px;
+      }
+      @media all and (max-width: 450px){
+        left:-35px;
+      }
+      @media all and (max-width: 420px){
+        left: 50px;
+      }
+      @media all and (max-width: 380px){
+        left: 30px;
       }
     }
     &__6{
@@ -1053,6 +1138,19 @@ input[type=submit]{
         top: -100px;
         left: 15px;
       }
+      @media all and (max-width: 500px){
+        top:-80px;
+        left: -35px;
+      }
+      @media all and (max-width: 450px){
+        left:-65px;
+      }
+      @media all and (max-width: 420px){
+        left: 40px;
+      }
+      @media all and (max-width: 380px){
+        left: 20px;
+      }
     }
     &__7{
       top:-160px;
@@ -1083,6 +1181,19 @@ input[type=submit]{
         top: -100px;
         left: 40px;
       }
+      @media all and (max-width: 500px){
+        top:-80px;
+        left: -35px;
+      }
+      @media all and (max-width: 450px){
+        left:-65px;
+      }
+      @media all and (max-width: 420px){
+        left: 60px;
+      }
+      @media all and (max-width: 380px){
+        left: 40px;
+      }
     }
 }
 .skills__button:hover{
@@ -1105,6 +1216,7 @@ input[type=submit]{
     margin: 5px 0 10px 0;
   }
   &__text{
+    text-align: justify;
     font-family: "Dancing script";
     font-size: 1.3rem;
     padding: 16px 8px 8px 8px;
@@ -1138,6 +1250,9 @@ input[type=submit]{
   flex-wrap: wrap;
   padding: 4%;
   border-radius: 10px;
+  @media all and (max-width:376px){
+    border-radius: 0;
+  }
 }
 
 // Skills
@@ -1180,11 +1295,7 @@ input[type=submit]{
       height: 100px;
       width: 100px;
     }
-    @media all and (max-width: 376px){
-      background: none;
-      border: none;
-      padding: 0;
-    }
+    
 
     img{
       width: 200px;
@@ -1218,11 +1329,20 @@ input[type=submit]{
     }
 }
 
-
-
-.not-displayed{
-  display: none;
+.skills__main .fc__skills{
+  margin: 0 auto;
 }
+
+.skills__main .turningCard{
+  @media all and (max-width: 376px){
+    width: 100%;
+    background: none;
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
 
 .projects__main{
   padding-bottom: 150px;
@@ -1310,22 +1430,32 @@ input[type=submit]{
     font-size: 1.6rem;
     color: #129494;
     @media all and (max-width: 600px){
-      font-size: 1rem;
+      font-size: 0.8rem;
+      padding: 0 35px;
     }
-    @media all and (max-width: 376px){
-      font-size: 0.9rem;
+    @media all and (max-width: 420px){
+      font-size: 0.7rem;
+      padding: 0 25px
     }
   }
   h4{
     font-size: 1.3rem;
     color:#061925;
     @media all and (max-width: 600px){
-      font-size: 0.8rem;
+      font-size: 0.7rem;
+      padding: 0 35px;
+    }
+    @media all and (max-width: 420px){
+      padding: 0 25px
     }
   }
   p{
     @media all and (max-width: 600px){
       font-size: 0.7rem;
+      padding: 0 35px
+    }
+    @media all and (max-width: 420px){
+      padding: 0 25px
     }
   }
 }
@@ -1345,6 +1475,10 @@ input[type=submit]{
   @media all and (max-width: 600px){
     width: 70px;
     height: 70px;
+  }
+  @media all and (max-width: 376px){
+    width: 50px;
+    height: 50px;
   }
   img{
     width: 35px;
@@ -1382,6 +1516,7 @@ input[type=submit]{
     &__titleZone {
       @include flex-row-center();
       background-color: #061925;
+      border: 5px solid black;
       z-index: 20;
       justify-content: space-between;
       border-radius: 10px;
@@ -1404,7 +1539,7 @@ input[type=submit]{
         font-size: 1.1rem;
       }
       @media all and (max-width: 376px) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
 
@@ -1433,7 +1568,7 @@ input[type=submit]{
           animation: fold-up 0.5s ease-out;
         }
         &--expanded{
-          max-height: 300px;
+          max-height: 350px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1450,6 +1585,7 @@ input[type=submit]{
 
     &__sizer {      
       background-color: #129494;
+      border: 5px solid black;
       color: black;
       display: flex;
       flex-direction: column;
@@ -1464,6 +1600,10 @@ input[type=submit]{
 
 .textZone h2{
   font-size: 1.5rem;
+  @media all and (max-width: 376px){
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }
 .n1 .collapsibles__individual{
   &__titleZone{
@@ -1517,14 +1657,18 @@ input[type=submit]{
 .collapsibles__zone{
   padding: 16px 32px 48px 32px;
   box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f3ea;
+  border: 5px solid black;
   margin: 5vh auto 2vh auto;
-  width: 100%;
+  width: 90%;
   height: fit-content;
   border-radius: 10px;
   @media all and (max-width: 600px){
-    background-color: #e5f1f7;
+    background-color: #d9effb;
+    padding: 16px 0 32px 0;
     border-radius: 0;
+    width: 100%;
+    border: none;
   }
   h3{
     padding: 0;
@@ -1538,4 +1682,53 @@ input[type=submit]{
       font-size: 1.3rem;
     }
   }
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* Additional styles for the sticky navbar */
+}
+
+.not-displayed{
+  display: none;
+  height: 0;
+  visibility: hidden;
+}
+
+.softSkills__container{
+  width: 90%;
+  margin: 0 auto}
+
+.softSkills__container .textZone{
+  background-color: white;
+  border: none
+}
+
+.technical__skills .textZone{
+  background-color: white;
+  min-width: 320px;
+}
+
+.projects__personal__info{
+  padding: 0;
+  background-color: #129494;
+}
+
+.projects__personal .section__header{
+  margin-top: 48px;
+}
+
+.projects__personal .textZone{
+  padding: 0;
+  text-align: center;
+  height: 80px;
+  background-color: #061925;
+  color: white;
+}
+
+.projects__personal p{
+  margin: 16px 0;
 }

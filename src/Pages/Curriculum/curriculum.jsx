@@ -1,7 +1,14 @@
-import studyIcon from "../../Assets/Images/studyIcon.png"
-import workIcon from "../../Assets/Images/workIcon.png"
+import studyIcon from "../../Assets/Images/studyIcon.png";
+import workIcon from "../../Assets/Images/workIcon.png";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Curriculum(){
+    const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
     return(
 <main className="form__container">
     <div className="fullwidth__container curriculum">

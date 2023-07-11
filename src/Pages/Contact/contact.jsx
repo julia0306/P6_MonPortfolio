@@ -1,7 +1,14 @@
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export const Contact = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault()

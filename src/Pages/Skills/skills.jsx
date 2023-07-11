@@ -2,9 +2,18 @@ import { Link } from "react-router-dom";
 import TurningCard from "../../Components/TurningCard/turningCard";
 import Image from "../../Assets/Images/Skillsmap.png";
 import Collapsible from "../../Components/Collapsible/collapsible";
+import ComicPanel from "../../Components/Comic-panels/comicPanels";
 import works from "../../Data/Projects.json";
+import skills from "../../Data/skills.json";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Skills() {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
     return (
             <main className="skills__main">
               {/* Voir si poss de supprimer la balise section et la remplacer par "main" */}
@@ -46,17 +55,17 @@ function Skills() {
                         />
                     </div>
                     <div className="textZone">
-                        <h3>Accès aux projets ayant validé les compétences</h3>
+                        <h3>Liens vers les projets ayant validé les compétences</h3>
                         <img src={Image} alt="roadmap de formation"/>
                     </div> 
                     <div className= "skills__buttons">
-                    <Link to="/" ><button className="skills__button skills__button__1"></button></Link>
-                    <Link to="/project/1" title="Voir le projet"><button className="skills__button skills__button__2"></button></Link>
-                    <Link to="/project/2" title="Voir le projet"><button className="skills__button skills__button__3"></button></Link>
-                    <Link to="/project/3" title="Voir le projet"><button className="skills__button skills__button__4"></button></Link>
-                    <Link to="/project/4" title="Voir le projet"><button className="skills__button skills__button__5"></button></Link>
-                    <Link to="/project/5" title="Voir le projet"><button className="skills__button skills__button__6"></button></Link>
-                    <Link to="/project/6" title="Voir le projet"><button className="skills__button skills__button__7"></button></Link>
+                    <Link to="/projects" ><button className="skills__button skills__button__1"></button></Link>
+                    <Link to="/project/1" title="Voir le projet"><button className="skills__button skills__button__2" alt='voir le projet "Booki"'></button></Link>
+                    <Link to="/project/2" title="Voir le projet"><button className="skills__button skills__button__3" alt='voir le projet "Sophie Bluel"'></button></Link>
+                    <Link to="/project/3" title="Voir le projet"><button className="skills__button skills__button__4" alt='voir le projet "Menu Maker"'></button></Link>
+                    <Link to="/project/4" title="Voir le projet"><button className="skills__button skills__button__5" alt='voir le projet "Nina Carducci"'></button></Link>
+                    <Link to="/project/5" title="Voir le projet"><button className="skills__button skills__button__6" alt='voir le projet Kasa"'></button></Link>
+                    <Link to="/project/6" title="Voir le projet"><button className="skills__button skills__button__7" alt='voir le projet "Mon Vieux Grimoire"'></button></Link>
                     </div>
                     <div className="collapsibles__zone">
                         <h3>Les compétences en détail</h3>
@@ -84,9 +93,16 @@ function Skills() {
                             alt="technical skills"
                         />
                     </div>
-                    <div className="fullwidth__container fc__skills">
-
-                    </div>
+                    <div className="softSkills__container">
+                {skills.map((skill) => (
+                    <ComicPanel key={skill.id}
+                        image={skill.image}
+                        alt={skill.title}
+                        title={skill.title}
+                        text={skill.text}
+                    />
+                ))}
+            </div>
                 </section>
             </main>
     )

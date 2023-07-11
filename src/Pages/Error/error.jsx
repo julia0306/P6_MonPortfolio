@@ -1,6 +1,12 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Error() {
+    const location = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
     return (
         <main className='error'>
             <div className="error__div">

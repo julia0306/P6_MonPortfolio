@@ -4,8 +4,17 @@ import { useParams } from 'react-router-dom';
 import Carousel from '../../Components/Carousel/carousel';
 import TextZone from '../../Components/Text-zone/text-zone';
 import Tag from '../../Components/Tag/tag';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 
 function Project() {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+
     const { id } = useParams();
     const selectedProject = allProjects.find(project => project.id === id);
     const {pictures} = selectedProject || {};
