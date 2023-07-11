@@ -195,8 +195,7 @@ header {
   z-index: 70;
   width: 100%;
   @media all and (max-width: 1024px){
-    height: 280px;
-    padding:16px 0;
+    height: 250px;
   }
   @media all and (max-width: 920px){
     height: 200px;
@@ -264,7 +263,7 @@ header {
       justify-self: right;
       letter-spacing: 3px;
       @media all and (max-width: 1024px) {
-        padding-top: 90px;
+        padding-top: 50px;
         font-size: 5rem;
       }
       @media all and (max-width: 920px) {
@@ -291,9 +290,8 @@ header {
         font-family: "Quicksand";
         text-shadow: none;
         @media all and (max-width: 1024px){
-          padding-top: 8px;
           padding-right: 0.6vw;
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         @media all and (max-width: 920px){
           padding-top: 20px;
