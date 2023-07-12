@@ -19,6 +19,12 @@
       width: 20px;
       gap: 0;
     }
+    @media all and (max-width: 376px){
+      margin-top: 0;
+      height: 16px;
+      width: 16px;
+      gap: 0;
+    }
   
     img{
       height: 100%;
@@ -30,6 +36,9 @@
     display: flex;
     justify-content: center;
     gap: 6vw;
+    @media all and (max-width: 600px){
+      gap:8px;
+    }
   }
 
   

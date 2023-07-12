@@ -61,19 +61,19 @@ function Skills() {
                                 <img src={Image} alt="roadmap de formation" />
                                 <div className="skills__buttons">
                                     <Link to="/project/1" title="Voir le projet">
-                                        <button className="skills__button skills__button__2" alt='voir le projet "Booki"'></button>
+                                        <button className="skills__button skills__button__2" aria-label='voir le projet "Booki"'></button>
                                     </Link>
                                     <Link to="/project/2" title="Voir le projet">
-                                        <button className="skills__button skills__button__3" alt='voir le projet "Sophie Bluel"'></button>
+                                        <button className="skills__button skills__button__3" aria-label='voir le projet "Sophie Bluel"'></button>
                                     </Link>
                                     <Link to="/project/3" title="Voir le projet">
-                                        <button className="skills__button skills__button__4" alt='voir le projet "Menu Maker"'></button>
+                                        <button className="skills__button skills__button__4" aria-label='voir le projet "Menu Maker"'></button>
                                     </Link>
                                     <Link to="/project/4" title="Voir le projet">
-                                        <button className="skills__button skills__button__5" alt='voir le projet "Nina Carducci"'></button>
+                                        <button className="skills__button skills__button__5" aria-label='voir le projet "Nina Carducci"'></button>
                                     </Link>
                                     <Link to="/project/5" title="Voir le projet">
-                                        <button className="skills__button skills__button__6" alt='voir le projet "Kasa"'></button>
+                                        <button className="skills__button skills__button__6" aria-label='voir le projet "Kasa"'></button>
                                     </Link>
                                     <Link to="/project/6" title="Voir le projet">
                                         <button className="skills__button skills__button__7" alt='voir le projet "Mon Vieux Grimoire"'></button>

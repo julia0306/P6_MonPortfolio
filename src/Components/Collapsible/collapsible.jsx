@@ -16,7 +16,7 @@ const Collapsible = ({className, title, content}) => {
       <div className="collapsibles__individual__container">
         <div className="collapsibles__individual__titleZone">
           <h4 className="collapsibles__individual__title">{title}</h4>
-          <button className="collapsibles__individual__icon" alt ="Voir plus" onClick={handleCollapsibleToggle}>
+          <button className="collapsibles__individual__icon" aria-label ="Voir plus de contenu" onClick={handleCollapsibleToggle}>
             <i className={`fa-sharp fa-solid fa-chevron-up ${!isRotated ? 'rotate-down' : 'rotate-up'}`} />
           </button>
         </div>
