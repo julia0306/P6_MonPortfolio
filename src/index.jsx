@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import { HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
+import '../src/Assets/style/main.scss';
 import Header from './Components/Header/header';
 import Footer from './Components/Footer/footer';
 import Home from './Pages/Home/home';
@@ -26,7 +26,7 @@ root.render(
       <Route path="/skills" element={<Skills/>} />
       <Route path="/curriculum" element={<Curriculum/>}/>
       <Route path="/contact" element={<Contact/>}/>
-      <Route path="*" element={<Error/>} />
+      <Route path="/*" element={<Error/>} />
     </Routes>
     <Footer/>
     </HashRouter>

@@ -1,0 +1,25 @@
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.error{
+    &__div{
+        @include flex-column-center();
+        font-size: 3rem;
+        color:#061925;
+        text-shadow: 2px 2px 2px white;
+    }
+    &__link{
+        text-decoration: none;
+        color: #129494ec;
+        
+    }
+    h2{
+        font-size: 20rem;
+        padding-top: 48px;
+        margin: 0;
+    }
+
+}

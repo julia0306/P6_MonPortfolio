@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from 'prop-types'
 
 function TurningCard({ image, alt, info, title }) {
   const [isTurnedOver, setIsTurnedOver] = useState(false);
@@ -47,5 +48,13 @@ function TurningCard({ image, alt, info, title }) {
     </div>
   );
 }
+
+TurningCard.propTypes ={
+  image: PropTypes.string,
+  alt: PropTypes.string,
+  info: PropTypes.string,
+  title: PropTypes.string
+}
+
 
 export default TurningCard;

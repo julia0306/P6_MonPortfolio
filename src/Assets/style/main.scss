@@ -1,0 +1,374 @@
+// MIXINS TO BE REUSED IN THE PROJECT
+@mixin mainAndHeaderwidths{
+    max-width: 90%;
+    @media all and (max-width: 920px) {
+      width: 100%;
+    }
+  } 
+  
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @mixin flex-row-center {
+    display: flex;
+    align-items: center;
+  }
+
+h2{
+    font-size: 1.8rem;
+    text-align: center;
+    @media all and (max-width: 600px) {
+        font-size: 1.3rem;
+        padding-left:25%;
+      }
+      @media all and (max-width: 600px) {
+        font-size: 1rem;
+        padding-left: 16px;
+      }
+      @media all and (max-width: 376px) {
+        font-size: 0.8rem;
+        padding-left: 16px;
+      }
+  }
+
+h3{
+    text-align: center;
+    font-family: "Dancing script";
+    padding: 16px 0;
+    margin: 0;
+    font-size: 2rem
+  }
+
+h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    @media all and (max-width: 920px) {
+        font-weight: 400;
+      }
+      @media all and (max-width: 600px) {
+        font-size: 1.1rem;
+      }
+      @media all and (max-width: 376px) {
+        font-size: 0.8rem;
+      }
+}
+main{
+    padding-bottom: 200px;
+    margin: 300px auto 0 auto;
+    @media all and (max-width: 600px){
+      padding-bottom: 0;
+    }
+    @media all and (max-width: 376px){
+      margin: 280px auto 0 auto;}
+  }
+
+  
+.section__header{
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 75px;
+    width: 80%;
+    margin: 60px auto 32px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: center;
+    padding: 0.5vh 1vw;
+    border-radius: 10px;
+    background-color: #fcf8e6;
+    border: 5px solid #2e5266 ;
+    color: black;
+    @media all and (max-width: 920px){
+        height: 60px;
+      }
+    @media all and (max-width: 600px){
+      height: 48px;
+    }
+    i{
+      font-size: 1.5rem;
+      padding: 8px;
+      color: black;
+      background-color: #ebeded ;
+      border: 6px solid #2e5266;
+      border-radius: 50%;
+      
+      @media all and (max-width: 920px){
+        font-size: 1.3rem;
+        padding: 5px;
+        border: 3px solid #2e5266;
+    }
+      @media all and (max-width: 600px){
+        font-size: 1rem;
+      }
+    }
+    @media all and (max-width: 400px){
+        font-size: 0.6rem
+      }
+    
+     i:hover{
+      cursor: pointer;
+      border-color: #061925;
+      background-color: white;
+    }
+    h2{
+        width: 90%;
+        text-align: center
+    }
+    img{
+      height: 60px;
+      @media all and (max-width: 920px){
+        height: 48px;
+      }
+      @media all and (max-width: 600px){
+        height: 28px;
+      }
+    }
+  
+  }
+
+  
+body {
+    background-image: url(../Images/Backgrounds/Image12.webp);
+    font-family: "Quicksand";
+    font-size: 16px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+  @include mainAndHeaderwidths();
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 70;
+  width: 100%;
+  @media all and (max-width: 1024px){
+    height: 250px;
+  }
+  @media all and (max-width: 920px){
+    height: 200px;
+    padding: 0;
+  }
+  @media all and (max-width: 600px){
+    height: 180px;
+    padding: 0 0 30px 0;
+  }
+  @media all and (max-width: 375px){
+    height: 170px;
+    padding: O;
+  }
+
+  .header{
+    background-color: #f8f7eff8;
+    height: 160px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items:center;
+    justify-content: space-between;
+    height: 180px;
+    @media all and (max-width: 600px) {
+      margin: 0 auto;
+      flex-direction: column;
+      gap: 0;
+    }
+    @media all and (max-width: 375px) {
+      gap: 0;
+    }
+
+    .header__logo {
+      margin: 0 13vw;
+      height: 180px;
+      @media all and (max-width: 920px) {
+        margin: 0 6vw
+      }
+      @media all and (max-width: 600px) {
+        height: 100px;
+        width: 100px;
+        padding: 0;
+        margin: 0 auto;
+        align-items: center;
+      }
+      @media all and (max-width: 376px) {
+        height: 90px;
+        width: 90px;
+        padding: 0;
+        margin: 0 auto;
+        align-items: center;
+      }
+
+    }
+    h1 {
+      width:70%;
+      margin: 0;
+      padding: 32px 0 0 0;
+      color: #2e5266;
+      text-shadow: 5px 5px 5px #e2d7fd;
+      font-family: "Tangerine";
+      font-size: 6.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-self: right;
+      letter-spacing: 3px;
+      @media all and (max-width: 1024px) {
+        padding-top: 50px;
+        font-size: 5rem;
+      }
+      @media all and (max-width: 920px) {
+        padding-top: 50px;
+      }
+      @media all and (max-width: 600px) {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 3rem;
+        text-align: center;
+      }
+      @media all and (max-width: 375px){
+        font-size: 2.5rem;
+      }
+
+      span{
+        margin: 0;
+        font-size: 2rem;
+        text-align: right;
+        padding-right:3vw;
+        padding-bottom: 2vh;
+        color: #2e526697;
+        font-family: "Quicksand";
+        text-shadow: none;
+        @media all and (max-width: 1024px){
+          padding-right: 0.6vw;
+          font-size: 1.8rem;
+        }
+        @media all and (max-width: 920px){
+          padding-top: 20px;
+          padding-right: 0.6vw;
+          font-size: 1.3rem;
+        }
+        @media all and (max-width: 600px){
+          padding: 0;
+          margin: 0;
+          font-size: 1rem;
+          text-align: center;
+        }
+        @media all and (max-width: 375px){
+          padding-top: 0.5vh;
+        }
+      }
+    }
+  }
+  .navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ede0d4;
+    height: fit-content;
+    border-top: 6px dotted black;
+    border-bottom: 6px dotted black;
+    .navbar__links {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 0;
+      font-family: "Quicksand";
+      font-size: 1.5rem;
+      font-weight: 600;
+      width: 20%;
+      justify-content: center;
+      @media all and (max-width: 1024px){
+        font-size: 1.3rem;
+      }
+      @media all and (max-width: 920px){
+        font-size: 1.1rem;
+      }
+      @media all and (max-width: 800px){
+        font-size: 0.9rem;
+      }
+      @media all and (max-width: 600px){
+        font-size: 0.7rem;
+      }
+      @media all and (max-width: 470px){
+        font-size: 0.7rem;
+        padding: 8px 0;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+      }
+      @media all and (max-width: 376px){
+        font-size: 0.6rem;
+      }
+      &--active{
+        text-decoration: none;
+        font-weight:700;
+        color: white;
+        background-color: #352745c6;
+      }
+    }
+
+  }  
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  .not-displayed{
+    visibility: hidden;
+  }
+
+// Footer
+
+.footer {
+    @include flex-column-center();
+    position: relative;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    min-width: 295px;
+    height: fit-content;
+    background-color: #061925;
+    color: white;
+    @media all and (max-width: 920px) {
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+  
+    &__logo {
+      margin-bottom: 2vh;
+      width: 122px;
+      height: auto;
+    }
+  
+    &__text {
+      font-size: 1.125rem;
+  
+      @media all and (max-width: 920px) {
+        width: 40%;
+        font-size: 1rem;
+        text-align: center;
+      }
+  
+      @media all and (max-width: 376px) {
+        font-size: 0.75rem;
+      }
+    }
+  }

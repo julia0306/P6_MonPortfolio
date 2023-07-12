@@ -10,9 +10,9 @@ function ComicPanel({image, title, text}) {
                         alt={title} 
                     />
                 </div>
-                <div className='comicPanel__text'>
-                    <h2>{title}</h2>
-                    {text}
+                <div >
+                    <h3>{title}</h3>
+                    <p className='comicPanel__text'>{text}</p>
                 </div>
             </div>
     )

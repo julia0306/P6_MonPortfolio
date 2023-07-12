@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState } from "react"
 
-// Je passe le prop {pictures} en paramètre afin de récupérer dynamiquement les images depuis la page "properties"
 function Carousel({pictures}){
     const slides = pictures || [];
     const [currentIndex, setCurrentIndex] = useState (0);

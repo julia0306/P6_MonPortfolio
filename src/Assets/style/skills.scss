@@ -1,0 +1,373 @@
+@mixin flex-row-center {
+    display: flex;
+    align-items: center;
+  }
+
+  // CSS ANIMATIONS AND TRANSITIONS
+
+  // Collapse and expand for all the collapsibles
+
+@keyframes fold-up {
+    0% {
+      max-height: 350px;
+    }
+    100% {
+      max-height: 0;
+    }
+  }
+  
+  @keyframes expand {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 350px;
+    }
+  }
+  
+    // Rotate buttons on collapsibles :
+  .rotate-down {
+    transform: rotate(-0.5turn);
+    transition: transform 0.3s ease-in-out;
+  }
+  .rotate-up {
+    transform: rotate(0turn);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  // Skills
+.skills{
+    &__languages{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        .turningCard{
+        width: 15vw;
+        height: 15vw;
+        background-color: white;
+        border: 5px solid #061925;
+        padding: 16px;
+        border-radius: 10px;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        @media all and (max-width: 920px){
+            padding: 8px;
+        }
+        @media all and (max-width: 600px){
+            font-size: 0.8rem;
+        }
+        @media all and (max-width: 376px){
+            background: none;
+            border: none;
+            margin: 0 auto;
+            width: 20vw;
+            height: 20vw;
+        }
+        img{
+            width: 15vw;
+            height: 15vw;
+            border-radius: 10px;
+            object-fit: cover;
+    
+            @media all and (max-width: 376px){
+                width: 20vw;
+                height: 20vw;
+                border: 5px solid #061925;
+            }
+        }
+        button{
+            display: none;
+        }
+        &__text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        &__title{
+            display: none;}
+
+    }
+    }
+    &__technical{
+        .textZone{
+          text-align: center;
+          min-width: 300px;
+          height: fit-content;
+          padding: 16px 0;
+          @media all and (min-width:1400px){
+            height: 600px;
+          }
+          @media all and (max-width:1400px){
+            height: 500px;
+          }
+          @media all and (max-width:1200px){
+            height: 440px;
+          }
+          @media all and (max-width:1000px){
+            height: 370px;
+          }
+          @media all and (max-width:800px){
+            height: 310px;
+          }
+          @media all and (max-width:600px){
+            height: 250px;
+          }
+          @media all and (max-width:376px){
+            height: 210px;
+          }
+        img{
+          max-width: 100%;
+        }
+        .image-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+      }
+      }
+    &__soft{
+        &__container{
+            width: 90%;
+            margin: 0 auto}
+          
+           .textZone{
+                background-color: white;
+                border: none
+            }
+           .comicPanel__image{
+                height: fit-content;
+                img{
+                    height: 200px;
+          }
+        }
+    }
+    }
+  
+.skills__buttons {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: -230px;
+    @media all and (min-width:1400px){
+        margin-top: -450px;
+      }
+    @media all and (max-width:1400px){
+      margin-top: -430px;
+    }
+    @media all and (max-width:1300px){
+      margin-top: -370px;
+    }
+    @media all and (max-width:1140px){
+      margin-top: -340px;
+    }
+    @media all and (max-width:1000px){
+        margin-top: -300px;
+    }
+    @media all and (max-width:920px){
+        margin-top: -280px;
+    }
+    @media all and (max-width:750px){
+        margin-top: -220px;
+    }
+    @media all and (max-width:600px){
+        margin-top: -180px;
+    }
+    @media all and (max-width:500px){
+        margin-top: -155px;
+    }  
+    @media all and (max-width:450px){
+        margin-top: -135px;
+    }  
+    @media all and (max-width:376px){
+        margin-top: -115px;
+    }
+    .skills__button {
+        width: 14vw;
+        height: 17vw;
+        background: none;
+        border: none;
+      }
+    .skills__button:hover{
+       cursor: pointer;
+    }  
+}
+  
+
+  
+// Collapsible
+
+.collapsibles {
+    display: flex;
+    justify-content: space-between;
+  
+    .collapsibles__individual {
+      margin: 16px auto;
+      width: 90%;
+  
+      &__container {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      &__titleZone {
+        @include flex-row-center();
+        background-color: #061925;
+        border: 5px solid black;
+        z-index: 20;
+        justify-content: space-between;
+        border-radius: 10px;
+        height: 60px;
+        padding: 0 3%;
+        margin-top: 45px;
+        @media all and (max-width: 376px){
+          height: 45px;
+          margin-top: 16px;
+        }
+      }
+  
+      &__icon {
+        margin: 0;
+        border: none;
+        padding: 0;
+        background: none;
+        font-size: 1.8rem;
+        color: inherit;
+        cursor: pointer;
+        @media all and (max-width: 600px) {
+          font-size: 1.3rem;
+        }
+      }
+  
+      &__content {
+          &--not-displayed{
+            display: none;
+          }
+          &--collapsed {
+            position: relative;
+            top: -10px;
+            max-height: 0;
+            overflow: hidden;
+            animation: fold-up 0.5s ease-out;
+          }
+          &--expanded{
+            max-height: 350px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin: 0;
+              font-family: "Quicksand";
+              font-size: 1rem;
+              position: relative;
+              overflow: hidden;
+              top: -10px;
+            transition: max-height 0.8s ease-out;
+            animation: expand 0.4s ease-out;
+          }
+      }
+  
+      &__sizer {
+        background-color: #129494;
+        border: 5px solid black;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        overflow: hidden;
+        justify-content: center;
+      }
+  
+    }
+  }
+  
+
+.collapsibles__zone{
+    padding: 16px 32px 48px 32px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.533);
+    margin: 5vh auto 2vh auto;
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    
+    text-align: center;
+    @media all and (max-width: 600px){
+        background-color: #f2fdfd;
+        padding: 16px 0 32px 0;
+        border-radius: 0;
+        width: 100%;
+        border: none;
+    }
+    h3{
+        padding: 0 0 8px 0;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px solid #129494;
+        width: fit-content;
+        font-size: 3rem;
+        @media all and (max-width: 600px){
+            font-size: 2rem;
+        }
+    }
+    .n1 .collapsibles__individual{
+        &__titleZone{
+            color: #b1f7f7;
+        }
+        &__sizer{
+            background-color: #cffafa;
+        }
+    }
+    .n2 .collapsibles__individual{
+        &__titleZone{
+            color:#f7e4ac
+        }
+        &__sizer{
+            background-color: #faf1d5;
+        }
+    }
+    .n3 .collapsibles__individual{
+        &__titleZone{
+            color: #f8bcc0;
+        }
+        &__sizer{
+            background-color: #fad2d5;
+        }
+    }
+    .n4 .collapsibles__individual{
+        &__titleZone{
+            color: #fae1bb;
+        }
+        &__sizer{
+            background-color: #f9e4c7;
+        }
+    }
+    .n5 .collapsibles__individual{
+        &__titleZone{
+            color: #f9ccde;
+        }
+        &__sizer{
+            background-color: #fbccdf;
+        }
+    }
+    .n6 .collapsibles__individual{
+        &__titleZone{
+            color: #b0f6d4;
+        }
+        &__sizer{
+            background-color: #d7f8e8;
+        }
+    }
+}
+  
+  
+.skills .section__header{
+    @media all and (min-width: 920px){
+    margin-top: 100px;
+    }
+}

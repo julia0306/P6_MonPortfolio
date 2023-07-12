@@ -6,6 +6,7 @@ import TextZone from '../../Components/Text-zone/text-zone';
 import Tag from '../../Components/Tag/tag';
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import "../../Assets/style/project.scss"
 
 
 function Project() {
@@ -30,38 +31,43 @@ function Project() {
       } else {
     return (
         <main>
-            <div className="section">
-                <div className='section__header projects'>
-                    <h1>{title}</h1>
-                    <a href={link}><i className="fa-solid fa-link"></i></a>
+            <div className="project__individual">
+                <div className='section__header'>
+                    <h2>
+                        {title}
+                    </h2>
+                    <a href={link}>
+                        <i className="fa-brands fa-github"></i>
+                    </a>
                 </div>
                 <Carousel 
                     pictures={pictures}
                 />
                 <div className="tags">
-                {technologies.map((technologies, index) => (
-                    <Tag 
-                    // Il n'y a pas d'id associée au tag. Pour la key, je fais donc une combinaison entre l'index et le nom du tag qui est une string
-                        key={`${technologies}-${index}`} 
-                        tagName={technologies} />
-                        ))}
+                    {technologies.map((technologies, index) => (
+                        <Tag 
+                            key={`${technologies}-${index}`} 
+                            tagName={technologies} 
+                        />
+                    ))}
                 </div>
                 <TextZone
                     title ="Introduction"
-                    text={introduction}/>
+                    text={introduction}
+                />
                 <TextZone
                     title = "Description"
-                    text={description}/>
-                <div className='Skills'>
-                <TextZone 
-                    title = "Compétences"
-                    textItems={skills.map((skill, index) => (
-                        // Il n'y a pas d'id associée . Pour la key, je fais donc une combinaison entre l'index et le nom du tag qui est une string
-                        <div className='skills' key={`${skill}-${index}`}>
-                            {skill}
-                        </div>
-                    ))}
+                    text={description}
                 />
+                <div className='Skills'>
+                    <TextZone 
+                        title = "Compétences"
+                        textItems={skills.map((skill, index) => (
+                            <div className='project__skills' key={`${skill}-${index}`}>
+                                {skill}
+                            </div>
+                        ))}
+                    />
                 </div>
 
             </div>

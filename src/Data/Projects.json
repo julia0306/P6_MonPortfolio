@@ -17,7 +17,7 @@
 		"technologies": [
 			"https://i.ibb.co/M8NnZJ9/html5.webp",
             "https://i.ibb.co/M2M9thT/css3.webp",
-            "https://i.ibb.co/qJsYf85/VScode.png",
+            "https://i.ibb.co/1by7Hq1/VScode-1.webp",
             "https://i.ibb.co/2c3FyCP/figma.webp",
             "https://i.ibb.co/tsJ8DmY/git.webp",
             "https://i.ibb.co/6ZGDyMg/github.webp"
@@ -85,8 +85,8 @@
 		"description": "Bien différent des deux premiers projets, celui-ci ne reposait pas à proprement parler sur du code. Il s'agissait plutôt d'analyser les besoins fonctionnels d'un projet, d'étudier l'étendue des possibilités afin de déterminer et de rédiger les spécifications techniques du projet. Pour cela, une veille technologique devait être mise en place. Une fois les recherches fructueuses, une fois le projet réeellement bien compris, il s'agissait alors de prendre en main un outil de gestion de projet afin de planifier, puis de suivre le déroulement du projet.",
 		"technologies": [
             "https://i.ibb.co/2c3FyCP/figma.webp",
-            "https://i.ibb.co/zbQLhyj/Notion-logo-svg.png",
-            "https://i.ibb.co/pRH7Knj/wakeletlogo2.jpg",
+            "https://i.ibb.co/ym9Ck0w/Notion.webp",
+            "https://i.ibb.co/NCpMTy5/wakelet.webp",
             "https://i.ibb.co/YQYmPVT/trello.webp"
         ],
 		
@@ -120,7 +120,7 @@
         "introduction":"Pour ce projet, l'objectif était d'aider un client à apparaître en tête des résultats de recherche Google. Pour y parvenir, l'idée était d'instaurer les bonnes pratiques de SEO et d'accessibilité. Certaines fonctionnalités nécessitaient également d'être débuggées.",
 		"description": "A partir d'audits initiaux réalisés avec Lightouse et Wave, j'ai procédé à différentes opérations en vue d'améliorer les performances du site de Nina Carducci, photographe professionnelle. A cette fin, j'ai par exemple diminué le temps de chargement de la page en réduisant la taille des images, en instaurant des formats next-gen, en réduisant le contenu de certains fichiers très lourds avant de les minifier. Afin d'optimiser le site, 'ai également ajouté des balises 'lang', des balises 'meta-description' ainsi que des balises 'Open-Graph' et 'Twitter-cards' à destination des réseaux sociaux. J'ai instauré les résultats enrichis prévus par Google et optimisé le design responsive du site, en plus de quoi j'ai réalisé un travail au niveau des mots clés et du référencement local afin d'optimiser le SEO du site. PAr ailleurs, et en vue de rendre le site plus accessible, j'ai également ajouté des attributs au niveau des éléments non-textuels, ajotué des aria-labels au niveaux du formulaire et modifié le contraste de certains éléments en prenant en compte les recommandations du RGAA / WCAG. Pour finir, j'ai rédigé le cahier de recette afin de rendre compte des opérations menées dans le but de débugger le site. En effet, deux fonctionnalités (la navigation au sein du carrousel et la couleur de fond du lien de navigation actif) nécessitaient d'être revues. ",
 		"technologies": [
-            "https://i.ibb.co/fYvHq5W/LH.png",
+            "https://i.ibb.co/sgq72rm/LH.webp",
             "https://i.ibb.co/kKVywPR/Wave.png",
             "https://i.ibb.co/M8NnZJ9/html5.webp",
             "https://i.ibb.co/M2M9thT/css3.webp",
@@ -195,7 +195,7 @@
 		"technologies": [
             "https://i.ibb.co/71CpQKv/npm.webp",
             "https://i.ibb.co/7zhQbBG/node.webp",
-            "https://i.ibb.co/N2JqJ3Y/Mongo.png"
+            "https://i.ibb.co/L6sdBwv/Mongo.webp"
         ],
         
 		"skillsTitle":"Node",
