@@ -29,6 +29,7 @@
             "Versionner son projet avec Git et Github",
             "Installer un environnement de développement front-end"
         ],
+        "problématiques": "Dans le cadre de ce premier projet, les éléments qui m’ont semblé les plus complexes à aborder étaient les suivants : Tout d'abord, l’analyse en amont des marges externes et internes. J’ai commencé le projet en gérant les marges au fur et à mesure. Afin d’assurer une réelle cohérence, il est plus intéressant d’analyser les marges avant de commencer et d’identifier les régularités. Ensuite, la maîtrise de Flexbox. Pour m’entraîner et gagner en automatismes, j’ai utilisé le jeu Flexbox Froggy. Enfin, la conservation d’un fichier CSS propre et ordonné. Dans l’objectif de maintenir mon code le plus propre et soigné possible, j’ai repris mon CSS en fin de projet afin de le réorganiser",
         "className":"collapsibles n1",
         "link":"https://github.com/julia0306/Projet-1---Booki"
 	},
@@ -64,6 +65,7 @@
             "Récupérer les données utilisateurs dans le Javascript via des formulaires"
 
         ],
+        "problématiques":"Pour ce second projet, la pratique du Javascript était une réelle nouveauté pour moi. Ce projet s’est donc avéré complexe. Portée des variables, import et export de fonctions, imbrication de fonctions étaient autant d’obstacles à une réalisation fluide et aisée du projet. J’ai donc investi du temps dans ce projet et j’ai documenté mon travail en lisant des ouvrages de référence en la matière. J’ai pris le temps de formuler, par écrit, la logique du code à implémenter… Ainsi, étape par étape, fonction par fonction, je suis parvenue à valider ce projet.",
         "className":"collapsibles n2",
         "link":"https://github.com/julia0306/Projet-2-Portfolio-Sophie-Bluel"
 	},
@@ -99,7 +101,7 @@
             "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels"
 
         ],
-        
+        "problématiques":"Si ce projet ne reposait pas sur une pratique du code, c’est tout de même le manque de  connaissances techniques qui m’a semblé constituer l’obstacle le plus important au cours de ce projet. Il était, en effet, nécessaire d’intégrer énormément de connaissances avant de pouvoir produire et structurer les solutions que l’on pense pouvoir proposer.. Il a été parfois frustrant, au cours de ce projet, d’avoir le sentiment d’être parvenu à une solution fonctionnelle… et de se rendre compte, après avoir passé des jours à en comprendre le fonctionnement, que cette solution ne peut finalement servir la finalité que l’on a en vue. La mise en place d’une veille et la recherche d’informations et de connaissances m’a permis progressivement de trouver des solutions permettant de répondre au besoin du client. Il a alors fallu configurer et renseigner l’outil de gestion Trello… et fournir de multiples Powerpoints pour présenter la travail réalisé. ",
         "className":"collapsibles n3",
         "link":"https://trello.com/b/nIsNU5Ec/menu-maker-qwenta"
 	},
@@ -134,7 +136,7 @@
             "Débugger un site web grâce aux Chrome DevTools",
             "Optimiser les performances d'un site web"
         ],
-        
+        "problématiques": "Cette fois, le plus compliqué était très certainement de gérer les fichier volumineux qui figuraient au sein du projet. Je pensais, en effet, recourir à une solution telle Purge CSS pour e conserver que le style dont j'avais besoin. Hélàs, cela n'a pas été fonctionnel. J'ai donc repris le travail à la main. L'optimisation des images, si elle n'était pas copliquée en tant que telle, était toutefois consommatrice de temps... Enfin, l'instauration d'images adaptatives m'a demandé un petit temps d'appropriation avant de savoir mettre cela en place en parfaite autonomie.",
         "className":"collapsibles n4",
         "link":"https://github.com/julia0306/P3-Nina-Carducci"
 	},
@@ -171,7 +173,7 @@
             "Développer des éléments de l'interface d'un site web grâce à des composants React",
             "Configurer la navigation entre les pages de l'application avec React Router"
         ],
-        
+        "problématiques":"Dans ce ciquième projet, le plus difficile pour moi a été l'instauration des animations CSS au niveau des collapsibles. La compréhension des props et des states ont également nécessité un petit temps d'appropriation et de pratique avant que ces notions ne soient bien assimilées.",
         "className":"collapsibles n5",
         "link":"https://github.com/julia0306/P4-Kasa"
 	},
@@ -204,7 +206,7 @@
             "Mettre en oeuvre des opérations CRUD de manière sécurisée",
             "Implémenter un modèle logique de données conformément à la réglementation"
         ],
-        
+        "problématiques":"Ce dernier projet n'a pas été excessivement complexe à réaliser car les cours fournis en parallèle étaient très explicites. En revanche, la difficulté résidait réellement dans la compréhension fine du travail mené. Pour cela, j'ai annoté mon code et j'ai retravaillé les cours relatifs au back-end et à la création d'API. J'ai également veillé, en préparant ma présentation de soutenance, à reprendre l'ensemble du cheminement que j'avais mis en place afin de mener à bien le projet.",
         "className":"collapsibles n6",
         "link":"https://github.com/julia0306/P5-Grimoire"
 	}

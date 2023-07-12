@@ -25,6 +25,7 @@ function Project() {
     const {skills} = selectedProject || {};
     const {title} = selectedProject || {}
     const {link} = selectedProject || {}
+    const {problématiques} = selectedProject || {}
 
     if (!selectedProject) {
         return <Navigate to="/error" />;
@@ -58,6 +59,10 @@ function Project() {
                 <TextZone
                     title = "Description"
                     text={description}
+                />
+                <TextZone
+                    title = "Problématiques rencontrées"
+                    text={problématiques}
                 />
                 <div className='Skills'>
                     <TextZone 
