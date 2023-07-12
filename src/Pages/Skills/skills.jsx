@@ -76,7 +76,7 @@ function Skills() {
                                         <button className="skills__button skills__button__6" aria-label='voir le projet "Kasa"'></button>
                                     </Link>
                                     <Link to="/project/6" title="Voir le projet">
-                                        <button className="skills__button skills__button__7" alt='voir le projet "Mon Vieux Grimoire"'></button>
+                                        <button className="skills__button skills__button__7" aria-label='voir le projet "Mon Vieux Grimoire"'></button>
                                     </Link>
                                 </div>
                             </div>

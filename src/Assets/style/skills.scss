@@ -45,7 +45,7 @@
         .turningCard{
         width: 15vw;
         height: 15vw;
-        background-color: white;
+        background-color: #0d3248;
         border: 5px solid #061925;
         padding: 16px;
         border-radius: 10px;
@@ -55,16 +55,17 @@
         text-align: center;
         @media all and (max-width: 920px){
             padding: 8px;
+            font-size: 1rem;
         }
         @media all and (max-width: 600px){
             font-size: 0.8rem;
         }
-        @media all and (max-width: 376px){
+        @media all and (max-width: 410px){
             background: none;
             border: none;
             margin: 0 auto;
-            width: 20vw;
-            height: 20vw;
+            width: 22vw;
+            height: 22vw;
         }
         img{
             width: 15vw;
@@ -72,9 +73,9 @@
             border-radius: 10px;
             object-fit: cover;
     
-            @media all and (max-width: 376px){
-                width: 20vw;
-                height: 20vw;
+            @media all and (max-width: 410px){
+                width: 22vw;
+                height: 22vw;
                 border: 5px solid #061925;
             }
         }
