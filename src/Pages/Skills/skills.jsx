@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import TurningCard from "../../Components/TurningCard/turningCard";
-import Image from "../../Assets/Images/SkillsMap_finished.webp";
+import Image from "../../Assets/Images/Skills.webp";
 import Collapsible from "../../Components/Collapsible/collapsible";
 import ComicPanel from "../../Components/Comic-panels/comicPanels";
 import works from "../../Data/Projects.json";
