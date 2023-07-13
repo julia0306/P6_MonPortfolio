@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import TurningCard from "../../Components/TurningCard/turningCard";
 
 
@@ -10,7 +11,7 @@ function Gallery({ works }) {
         <Link key={work.id} to={`/project/${work.id}`}>
           <TurningCard
             image={work.cover}
-            alt={work.title}
+            alt={work.alt}
             title={work.title}
             info={work.info}
           />
@@ -18,6 +19,13 @@ function Gallery({ works }) {
       ))}
     </div>
   );
+}
+
+Gallery.propTypes ={
+  image: PropTypes.string,
+  alt: PropTypes.string,
+  info: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  title: PropTypes.string
 }
 
 export default Gallery;

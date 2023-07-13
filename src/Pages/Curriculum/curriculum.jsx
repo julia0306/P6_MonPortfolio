@@ -3,6 +3,7 @@ import workIcon from "../../Assets/Images/workIcon.png";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import "../../Assets/style/curriculum.scss"
+import image from '../../Assets/Images/parcours.png'
 
 function Curriculum(){
 
@@ -13,7 +14,15 @@ function Curriculum(){
     }, [location]);
 
     return(
-        <main>
+        <main className="parcours__sup">
+            <div className="section__header">
+                <h2>Mon parcours post-bac</h2>
+                <img 
+                    src={image}
+                    alt="parcours dans l'enseignement supérieure"
+                    title="études supérieures"
+                />
+            </div>
             <div className="curriculum">
                 <ul className="vertical-timeline">
                     <li className="vertical-timeline-element">

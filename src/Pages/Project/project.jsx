@@ -4,9 +4,10 @@ import { useParams } from 'react-router-dom';
 import Carousel from '../../Components/Carousel/carousel';
 import TextZone from '../../Components/Text-zone/text-zone';
 import Tag from '../../Components/Tag/tag';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import "../../Assets/style/project.scss"
+import "../../Assets/style/project.scss";
+import { Link } from 'react-router-dom';
 
 
 function Project() {
@@ -45,16 +46,19 @@ function Project() {
                     pictures={pictures}
                 />
                 <div className="tags">
-                    {technologies.map((technologies, index) => (
+                    {technologies.map((technology, index) => (
                         <Tag 
-                            key={`${technologies}-${index}`} 
-                            tagName={technologies} 
+                            key={`${technology.title}-${index}`} 
+                            source={technology.image}
+                            title={technology.title} 
                         />
                     ))}
                 </div>
+                <Link to={link} aria-label="voir le projet sur Github"><button className="linkToProject__button">Cliquer ici pour voir le projet</button></Link>
                 <TextZone
                     title ="Introduction"
                     text={introduction}
+                    link={link}
                 />
                 <TextZone
                     title = "Description"

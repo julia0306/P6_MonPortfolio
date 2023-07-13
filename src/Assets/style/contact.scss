@@ -16,7 +16,9 @@
 }
 
 .form{
-  padding-bottom: 70px;
+  .no__margin{
+    margin-top:0;
+  }
   &__container{
     height:450px;
     width: 90%;
@@ -25,18 +27,25 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    font-size: 1.4em;
-    padding: 52px 24px;
+    font-size: 1.4rem;
+    padding: 24px;
     background-color: #152630;
     border: 5px solid #384f4f ;
     border-radius: 25px;
     font-weight: 600;
     color: white;
+    @media all and (max-width: 920px){
+      height: fit-content;
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
     @media all and (max-width: 600px){
       box-sizing: border-box;
       width: 95%;
       margin: 0 auto;
       height: fit-content;
+      font-size: 1.2rem;
+      font-weight: 400
     }
     @media all and (max-width: 376px){
       font-size: 1rem;
@@ -79,6 +88,55 @@
   
   input[type=submit]{
     @include buttonStyle();
+  } 
+}
+
+.socialNetworks{
+
+  &__links{
+    margin: 7vh auto 0 auto;
+    display: flex;
+    justify-content: center;
+    @media all and (min-width: 1024px){
+      margin-top: 10vh;
+      gap: 15vw;
+    }
+    @media all and (max-width: 1024px){
+      gap: 20vw;
+    }
+    @media all and (max-width: 1024px){
+      gap: 15vw;
+    }
+    @media all and (max-width: 920px){
+      margin-top: 5vh;
+      gap: 8vw;
+    }
+    @media all and (max-width: 600px){
+      gap: 4vw;
+    }
+    i{
+      font-size: 8rem;
+      color: #152630;
+      background-color: white;
+      padding: 16px 20px;
+      border: 5px solid #152630;
+      border-radius: 10px;
+      @media all and (max-width: 920px){
+        font-size: 6rem
+      }
+      @media all and (max-width: 600px){
+        font-size: 4rem
+      }
+      @media all and (max-width: 376px){
+        font-size: 4rem;
+        padding: 0 5px;
+        margin: 0 auto;
+      }
+    }
+    i:hover{
+      color: white;
+      background-color: #152630;
+    }
   }
-  
+
 }

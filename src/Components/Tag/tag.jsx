@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types'
 
-function Tag({tagName}) {
+function Tag({source, title}) {
     return (
         <div className="tag">
-            <img src={tagName} alt={tagName} title={tagName}/>
+            <img src={source} alt={title} title={title}/>
         </div>
     )
 }
 
 Tag.propTypes ={
-    text: PropTypes.string,
+    source: PropTypes.string,
+    title: PropTypes.string
+
 }
 
 export default Tag

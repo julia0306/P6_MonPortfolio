@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import PropTypes from 'prop-types'
 
 const Collapsible = ({className, title, content}) => {
   const [isRotated, setIsRotated] = useState(true);
@@ -29,5 +30,12 @@ const Collapsible = ({className, title, content}) => {
     </div>
     )
     }
+
+Collapsible.propTypes ={
+  className: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.array
+}
+    
 
 export default Collapsible

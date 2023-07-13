@@ -57,7 +57,7 @@
     border-radius: 25px;
     padding-top: 32px;;
     margin: 10vh auto;
-    background-color: #f5f3eae8;
+    background-color: #f5f3ea;
     border: 5px solid black;
     a{
       text-decoration: none;
@@ -84,29 +84,27 @@
 // Cards
 
 .gallery .turningCard{
-    height: 360px;
-  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: #061925;
-    border: 5px solid #061925;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 32px auto 78px;
-    padding: 16px;
-    text-align: center;
-    @media all and (min-width: 1600px){
-        height: 350px;
-        width: 380px
-    }
-    @media all and (max-width: 1600px){
-        height: 370px;
-        width: 350px
-    }
+  border: 5px solid #061925;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 32px auto 78px;
+  padding: 16px;
+  text-align: center;
+  @media all and (min-width: 1600px){
+      height: 430px;
+      width: 400px
+  }
+  @media all and (max-width: 1600px){
+      height: 370px;
+      width: 350px
+  }
   @media all and (max-width: 1400px){
     height: 350px;
     width: 320px;
@@ -116,10 +114,9 @@
     width: 260px;
   }
   @media all and (max-width: 1024px){
-    height: 310px;
+    height: 330px;
     width: 220px;
   }
-
   @media all and (max-width: 920px) {
     justify-self: center;
     margin: 0 auto;
@@ -136,19 +133,17 @@
     box-sizing: border-box;
     width: 100%;
     height: 320px;
-    min-width: 295px;
     padding: 8px 8px 35px 8px;
     margin-bottom: 32px;
   }
+  
   img {
-    height:300px;
-    width: 300px;
     text-align: center;
     object-fit: cover;
     border: 3px solid black;
     @media all and (min-width: 1600px){
-        height: 320px;
-        width: 380px
+        height: 400px;
+        width: 400px
     }
     @media all and (max-width: 1600px){
         height: 320px;
@@ -164,9 +159,9 @@
     }
     @media all and (max-width: 1024px){
       width: 240px;
+      height: 290px;
   
     }
-    
     @media all and (max-width: 920px) {
       width: 100%;
       height: 350px;
@@ -176,50 +171,51 @@
       width: 95%;
       height: 250px;
       margin: 0;
-      min-width: 295px;
     }
   }
-    &__title {
-      font-family: "Quicksand";
-      font-weight: 400;
-      text-decoration: none;
-      text-shadow: 2px 5px 3px black;
-      text-align: center;
+  &__title {
+    font-family: "Quicksand";
+    font-weight: 400;
+    text-decoration: none;
+    text-shadow: 2px 5px 3px black;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    @media all and (max-width: 376px){
       font-size: 1.3rem;
+      font-weight: 700;
+      padding-top: 10px;
+    }
+  }
+  &__text{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-family: "Dancing Script";
+      font-size: 1.3rem;
+      font-weight: 300;
       color: white;
-      @media all and (max-width: 376px){
-        font-size: 1.3rem;
-        font-weight: 700;
-        padding-top: 10px;
-      }
-    }
-    &__text{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: "Dancing Script";
-        font-size: 1.3rem;
-        font-weight: 300;
-        color: white;
-    }
-    &__button{
-        @include buttonStyle();
-        width: 150px;
-      }
+      
+  }
+  &__button{
+    @include buttonStyle();
+    width: 150px;
+  }
 }
 
 
   
 .not-displayed{
-    display: none;
-    height: 0;
-    visibility: hidden;
-  }
+  display: none;
+  height: 0;
+  visibility: hidden;
+}
 
-
+.projects__OC .section__header{
+  margin-top: 0
+}
 
   
 

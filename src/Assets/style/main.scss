@@ -2,7 +2,7 @@
 @mixin mainAndHeaderwidths{
     max-width: 90%;
     @media all and (max-width: 920px) {
-      width: 100%;
+      max-width: 100%;
     }
   } 
   
@@ -27,16 +27,10 @@ h2{
     text-align: center;
     @media all and (max-width: 600px) {
         font-size: 1.3rem;
-        padding-left:25%;
       }
-      @media all and (max-width: 600px) {
-        font-size: 1rem;
-        padding-left: 16px;
-      }
-      @media all and (max-width: 376px) {
-        font-size: 0.8rem;
-        padding-left: 16px;
-      }
+    @media all and (max-width: 400px) {
+      font-size: 0.9rem;
+    }
   }
 
 h3{
@@ -44,7 +38,16 @@ h3{
     font-family: "Dancing script";
     padding: 16px 0;
     margin: 0;
-    font-size: 2rem
+    font-size: 1.8rem;
+    @media all and (max-width: 920px){
+      font-size: 1.8rem;
+    }
+    @media all and (max-width: 600px){
+      font-size: 1.5rem;
+    }
+    @media all and (max-width: 376px){
+      font-size: 1.2rem;
+    }
   }
 
 h4{
@@ -61,13 +64,16 @@ h4{
       }
 }
 main{
-    padding-bottom: 200px;
-    margin: 300px auto 0 auto;
+    padding-bottom: 150px;
+    padding-top: 350px;
+    margin: 0 auto ;
     @media all and (max-width: 600px){
-      padding-bottom: 0;
+      padding-top: 310px;
+      padding-bottom: 100px;
     }
     @media all and (max-width: 376px){
-      margin: 280px auto 0 auto;}
+      padding-top: 280px;
+    }
   }
 
   
@@ -76,7 +82,7 @@ main{
     text-decoration: none;
     height: 75px;
     width: 80%;
-    margin: 60px auto 32px auto;
+    margin: 12vh auto 5vh auto;;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,6 +92,9 @@ main{
     background-color: #fcf8e6;
     border: 5px solid #2e5266 ;
     color: black;
+    @media all and (max-width: 1024px){
+      margin-top: 10vh
+    }
     @media all and (max-width: 920px){
         height: 60px;
       }
@@ -135,13 +144,18 @@ main{
   }
 
   
-body {
+  body {
     background-image: url(../Images/Backgrounds/Image12.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Quicksand";
     font-size: 16px;
     width: 100%;
     margin: 0 auto;
-}
+  }
+  
 
 header {
   @include mainAndHeaderwidths();
@@ -256,7 +270,7 @@ header {
         @media all and (max-width: 920px){
           padding-top: 20px;
           padding-right: 0.6vw;
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
         @media all and (max-width: 600px){
           padding: 0;
@@ -282,13 +296,14 @@ header {
       text-decoration: none;
       color: black;
       display: flex;
-      justify-content: space-between;
       padding: 16px 0;
       font-family: "Quicksand";
       font-size: 1.5rem;
       font-weight: 600;
       width: 20%;
       justify-content: center;
+      text-align: center;
+      align-items: center;
       @media all and (max-width: 1024px){
         font-size: 1.3rem;
       }
@@ -305,29 +320,29 @@ header {
         font-size: 0.7rem;
         padding: 8px 0;
         flex-wrap: wrap;
-        text-align: center;
-        align-items: center;
       }
       @media all and (max-width: 376px){
         font-size: 0.6rem;
       }
-      &--active{
-        text-decoration: none;
-        font-weight:700;
-        color: white;
-        background-color: #352745c6;
-      }
+
     }
 
   }  
 }
 
+.active{
+    text-decoration: none;
+    font-weight:700;
+    color: white !important;
+    background-color: #352745c6;
+  }
 .sticky {
     position: fixed;
     top: 0;
   }
 
   .not-displayed{
+    display: none;
     visibility: hidden;
   }
 
@@ -340,33 +355,34 @@ header {
     left: 0;
     justify-content: space-around;
     box-sizing: border-box;
-    padding-top: 16px;
+    padding-top: 8px;
     padding-bottom: 16px;
     width: 100%;
     min-width: 295px;
     height: fit-content;
     background-color: #061925;
     color: white;
+    border-top: 8px solid #2e5266;
     @media all and (max-width: 920px) {
       justify-content: center;
-      padding-bottom: 60px;
     }
   
     &__logo {
       margin-bottom: 2vh;
       width: 122px;
       height: auto;
+      @media all and (max-width: 920px){
+        margin-bottom: 0
+      }
     }
   
     &__text {
-      font-size: 1.125rem;
-  
+      font-size: 1.125rem;  
       @media all and (max-width: 920px) {
         width: 40%;
         font-size: 1rem;
         text-align: center;
-      }
-  
+      }  
       @media all and (max-width: 376px) {
         font-size: 0.75rem;
       }

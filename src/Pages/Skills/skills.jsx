@@ -17,9 +17,8 @@ function Skills() {
     }, [location]);
     return (
             <main className="skills">
-              {/* Voir si poss de supprimer la balise section et la remplacer par "main" */}
                 <div>
-                    <div className= "section__header">
+                    <div className= "section__header no-top-margin">
                         <h2>Compétences linguistiques</h2>
                             <img 
                                 src="https://i.ibb.co/GxQ0zPy/languages.png"
@@ -29,20 +28,36 @@ function Skills() {
                     <div className="skills__languages">
                         <TurningCard
                             image="https://i.ibb.co/4f6n3M0/English.png" 
-                            alt="English"
+                            alt="anglais"
                             info= "Langue maternelle"
                         
                         />
                         <TurningCard
                             image="https://i.ibb.co/gdcXwxb/German.png" 
-                            alt="German"
-                            info= "Compétence professionnelle. Niveau C1"
+                            alt="allemand"
+                            info={
+                                <div>
+                                  Compétence professionnelle
+                                  <br />
+                                  <br/>
+                                  Niveau C1
+                                  <br/>
+                                  8 ans de pratique 
+                                </div>
+                              }
                         
                         />
                         <TurningCard
                             image="https://i.ibb.co/xLfz9LX/Japanese.png" 
-                            alt="Japanese"
-                            info= "Notions"
+                            alt="japonais"
+                            info={
+                                <div>
+                                  Notions
+                                  <br/>
+                                  <br/>
+                                  2 ans de pratique
+                                </div>
+                              }
                         />
                     </div>
                 </div>
@@ -51,7 +66,7 @@ function Skills() {
                         <h2 id="test">Compétences techniques</h2>
                         <img 
                             src="https://i.ibb.co/JcH0Yrx/Computer-desk-school-education-workplace-icon.png" 
-                            alt="technical skills"
+                            alt="compétences techniques"
                         />
                     </div>
                     <div className="skills__map">
@@ -60,22 +75,22 @@ function Skills() {
                             <div className="image-container">
                                 <img src={Image} alt="roadmap de formation" />
                                 <div className="skills__buttons">
-                                    <Link to="/project/1" title="Voir le projet">
+                                    <Link to="/project/1" title="Voir le projet Booki">
                                         <button className="skills__button skills__button__2" aria-label='voir le projet "Booki"'></button>
                                     </Link>
-                                    <Link to="/project/2" title="Voir le projet">
+                                    <Link to="/project/2" title="Voir le projet Sophie Bluel">
                                         <button className="skills__button skills__button__3" aria-label='voir le projet "Sophie Bluel"'></button>
                                     </Link>
-                                    <Link to="/project/3" title="Voir le projet">
+                                    <Link to="/project/3" title="Voir le projet Menu Maker">
                                         <button className="skills__button skills__button__4" aria-label='voir le projet "Menu Maker"'></button>
                                     </Link>
-                                    <Link to="/project/4" title="Voir le projet">
+                                    <Link to="/project/4" title="Voir le projet Nina Carducci">
                                         <button className="skills__button skills__button__5" aria-label='voir le projet "Nina Carducci"'></button>
                                     </Link>
-                                    <Link to="/project/5" title="Voir le projet">
+                                    <Link to="/project/5" title="Voir le projet Kasa">
                                         <button className="skills__button skills__button__6" aria-label='voir le projet "Kasa"'></button>
                                     </Link>
-                                    <Link to="/project/6" title="Voir le projet">
+                                    <Link to="/project/6" title="Voir le projet Mon vieux Grimoire">
                                         <button className="skills__button skills__button__7" aria-label='voir le projet "Mon Vieux Grimoire"'></button>
                                     </Link>
                                 </div>
@@ -90,8 +105,8 @@ function Skills() {
                                     <div className="collapsibles__individual">
                                             <Collapsible
                                             title={work.skillsTitle}
-                                            content={work.skills.map((skill) => (
-                                                <p key={skill}>{skill}</p>
+                                            content={work.skills.map((skill, index) => (
+                                                <p key={`${skill}-${index}`}>{skill}</p>
                                             ))}
                                             />
                                     
@@ -105,19 +120,19 @@ function Skills() {
                         <h2>Soft skills</h2>
                         <img 
                             src="https://i.ibb.co/JcH0Yrx/Computer-desk-school-education-workplace-icon.png" 
-                            alt="technical skills"
+                            alt="compétences transversales"
                         />
                     </div>
                     <div className="skills__soft__container">
-                {skills.map((skill) => (
-                    <ComicPanel key={skill.id}
-                        image={skill.image}
-                        alt={skill.title}
-                        title={skill.title}
-                        text={skill.text}
-                    />
-                ))}
-            </div>
+                        {skills.map((skill, index) => (
+                            <ComicPanel key={`${skill}-${index}`}
+                                image={skill.image}
+                                alt={skill.alt}
+                                title={skill.title}
+                                text={skill.text}
+                            />
+                        ))}
+                    </div>
                 </div>
             </main>
     )

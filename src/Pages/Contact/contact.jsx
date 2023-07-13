@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import '../../Assets/style/contact.scss';
+import { Link } from 'react-router-dom';
+import contactImage from '../../Assets/Images/contact.png'
+import contactImage2 from '../../Assets/Images/contact2.png'
 
 export const Contact = () => {
   const location = useLocation();
@@ -35,6 +38,13 @@ export const Contact = () => {
 
   return (
     <main className="form">
+      <div className='section__header no__margin'>
+        <h2>Me contacter par message</h2>
+        <img 
+          src={contactImage}
+          alt="Entrer en contact par message"
+        />
+      </div>
       <form ref={form} className="form__container" onSubmit={sendEmail}>
         <div className="form__container__input">
           <label htmlFor="name">Nom</label>
@@ -50,6 +60,17 @@ export const Contact = () => {
         </div>
         <input type="submit" value="Envoyer" />
       </form>
+        <div className="section__header">
+          <h2>Me contacter sur les réseaux </h2>
+          <img 
+            src={contactImage2}
+            alt="Entrer en relation via les réseaux professionnels"
+          />
+        </div>
+        <div className="socialNetworks__links">
+          <Link to="https://www.linkedin.com/in/julia-tlr/" aria-label="visiter le profil Linkedin"><i className="fa-brands fa-linkedin"></i></Link>
+          <Link to="https://github.com/julia0306" aria-label="visiter le profil Github"><i className="fa-brands fa-square-github"></i></Link>
+        </div>
     </main>
   );
 };

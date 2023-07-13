@@ -7,9 +7,25 @@
 .error{
     &__div{
         @include flex-column-center();
+        background-color: rgba(255, 255, 255, 0.651); 
+        border: 5px solid #061925; 
+        border-radius: 10px;
         font-size: 3rem;
         color:#061925;
         text-shadow: 2px 2px 2px white;
+        text-align: center;
+        font-weight: 400;
+        padding: 48px 16px;
+        @media all and (max-width: 920px){
+            font-size: 1.9rem;
+        }
+        @media all and (max-width: 600px){
+            font-size: 1.5rem;
+            border-radius: 0;
+        }
+        @media all and (max-width: 376px){
+            font-size: 1rem
+        }
     }
     &__link{
         text-decoration: none;
@@ -18,8 +34,13 @@
     }
     h2{
         font-size: 20rem;
-        padding-top: 48px;
         margin: 0;
+        @media all and (max-width: 600px){
+            font-size: 10rem;
+        }
+        @media all and (max-width: 376px){
+            font-size: 7rem;
+        }
     }
 
 }

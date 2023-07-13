@@ -1,5 +1,6 @@
-import logo from "../../Assets/Images/logo.webp"
-import { Link } from "react-router-dom"
+import image from "../../Assets/Images/travail.png";
+import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
 
 function Footer() {
     return (
@@ -7,7 +8,7 @@ function Footer() {
             {/* J'instaure un lien pour rediriger l'utilisateur vers la page d'accueil s'il clique sur le logo de Kasa */}
             <Link to="/">
                 <img 
-                    src={logo} 
+                    src={image} 
                     alt='Kasa'
                     height="180px"
                     width="180px" 
@@ -18,5 +19,9 @@ function Footer() {
         </div>
     )
 }
+
+Footer.propTypes ={
+    image: PropTypes.string
+  }
 
 export default Footer

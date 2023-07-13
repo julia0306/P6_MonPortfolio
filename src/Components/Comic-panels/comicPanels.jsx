@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types'
 
 // je passe mes props en paramètres afin de les récupérer de manière dynamique
-function ComicPanel({image, title, text}) {
+function ComicPanel({image, title, alt, imageTitle, text}) {
     return (
             <div className="comicPanel">
                 <div className='comicPanel__image'>
                     <img 
                         src={image} 
-                        alt={title} 
+                        alt={alt}
+                        title={imageTitle} 
                     />
                 </div>
                 <div >
@@ -20,6 +21,8 @@ function ComicPanel({image, title, text}) {
 
 ComicPanel.propTypes ={
     image: PropTypes.string,
+    alt: PropTypes.string,
+    imageTitle: PropTypes.string,
     title: PropTypes.string,
     text: PropTypes.string
 }

@@ -16,7 +16,7 @@ function Projects() {
       <div className="projects__OC">
         <div className= "section__header">
             <h2>Projets OpenClassrooms</h2>
-            <a href="https://github.com/julia0306">
+            <a href="https://github.com/julia0306" aria-label="lien vers Github">
               <i className="fa-brands fa-github"></i>
             </a>
         </div>

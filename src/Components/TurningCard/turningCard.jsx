@@ -52,7 +52,7 @@ function TurningCard({ image, alt, info, title }) {
 TurningCard.propTypes ={
   image: PropTypes.string,
   alt: PropTypes.string,
-  info: PropTypes.string,
+  info: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string
 }
 
