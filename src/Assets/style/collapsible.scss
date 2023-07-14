@@ -1,0 +1,219 @@
+$darkBlue: #061925;
+$darkGreen: #2e5266;
+$lightGreen: #129494;
+$beige: #fcf8e6;
+
+@mixin flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+
+// CSS ANIMATIONS AND TRANSITIONS
+
+// Collapse and expand for all the collapsibles
+
+@keyframes fold-up {
+    0% {
+        max-height: 350px;
+    }
+    100% {
+        max-height: 0;
+    }
+}
+
+@keyframes expand {
+    0% {
+        max-height: 0;
+    }
+    100% {
+        max-height: 350px;
+    }
+}
+
+// Rotate buttons on collapsibles :
+.rotate-down {
+    transform: rotate(-0.5turn);
+    transition: transform 0.3s ease-in-out;
+}
+.rotate-up {
+    transform: rotate(0turn);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.collapsibles {
+    display: flex;
+    justify-content: space-between;
+  
+    .collapsibles__individual {
+      margin: 16px auto;
+      width: 90%;
+  
+      &__container {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      &__titleZone {
+        @include flex-row-center();
+        background-color: $darkBlue;
+        border: 5px solid black;
+        z-index: 20;
+        justify-content: space-between;
+        border-radius: 10px;
+        height: 60px;
+        padding: 0 3%;
+        margin-top: 45px;
+        @media all and (max-width: 376px){
+          height: 45px;
+          margin-top: 16px;
+        }
+      }
+  
+      &__icon {
+        margin: 0;
+        border: none;
+        padding: 0;
+        background: none;
+        font-size: 1.8rem;
+        color: inherit;
+        cursor: pointer;
+        @media all and (max-width: 600px) {
+          font-size: 1.3rem;
+        }
+      }
+  
+      &__content {
+          &--not-displayed{
+            display: none;
+          }
+          &--collapsed {
+            position: relative;
+            top: -10px;
+            max-height: 0;
+            overflow: hidden;
+            animation: fold-up 0.5s ease-out;
+          }
+          &--expanded{
+              max-height: 350px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin: 0;
+              font-family: "Quicksand";
+              position: relative;
+              overflow: hidden;
+              top: -10px;
+              transition: max-height 0.8s ease-out;
+              animation: expand 0.4s ease-out;
+          }
+      }
+  
+      &__sizer {
+        background-color: $lightGreen;
+        border: 5px solid black;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: fit-content;
+        padding: 20px;
+        overflow: hidden;
+        font-size: 1rem;
+        @media all and (max-width: 920px){
+          font-size: 0.9rem;
+        }
+        @media all and (max-width: 376px){
+          font-size: 0.7rem
+        }
+      }
+  
+    }
+  }
+  
+
+.collapsibles__zone{
+    padding: 16px 32px 48px 32px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 3px solid $darkBlue;
+    margin: 10vh auto 2vh auto;
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    @media all and (max-width: 600px){
+        padding: 16px 0 32px 0;
+        border-radius: 10px;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border: 15px solid $darkBlue;
+    }
+    h3{
+        padding: 0 0 8px 0;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px solid $lightGreen;
+        width: fit-content;
+        color: #0d3248;
+        @media all and (max-width: 920px){
+          font-size: 1.8rem;
+        }
+        @media all and (max-width: 600px){
+          font-size: 1.5rem;
+        }
+        @media all and (max-width: 376px){
+          font-size: 1.2rem;
+        }
+    }
+    .n1 .collapsibles__individual{
+        &__titleZone{
+            color: #b1f7f7;
+        }
+        &__sizer{
+            background-color: #cffafa;
+        }
+    }
+    .n2 .collapsibles__individual{
+        &__titleZone{
+            color:#f7e4ac
+        }
+        &__sizer{
+            background-color: #faf1d5;
+        }
+    }
+    .n3 .collapsibles__individual{
+        &__titleZone{
+            color: #f8bcc0;
+        }
+        &__sizer{
+            background-color: #fad2d5;
+        }
+    }
+    .n4 .collapsibles__individual{
+        &__titleZone{
+            color: #fae1bb;
+        }
+        &__sizer{
+            background-color: #f9e4c7;
+        }
+    }
+    .n5 .collapsibles__individual{
+        &__titleZone{
+            color: #f9ccde;
+        }
+        &__sizer{
+            background-color: #fbccdf;
+        }
+    }
+    .n6 .collapsibles__individual{
+        &__titleZone{
+            color: #b0f6d4;
+        }
+        &__sizer{
+            background-color: #d7f8e8;
+        }
+    }
+}
+  

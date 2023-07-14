@@ -14,10 +14,15 @@ function Footer() {
                     height="122px"
                     width="122px" 
                     className='footer__logo'
-                    loading="lazy"/>
+                    loading="lazy"
+                />
             </Link>
-            <span className="footer__text">© 2023 | Julia Taylor</span>
-            <span className="footer__text">Tous droits réservés</span>
+            <span className="footer__text">
+                © 2023 | Julia Taylor
+            </span>
+            <span className="footer__text">
+                Tous droits réservés
+            </span>
         </div>
     )
 }

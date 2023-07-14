@@ -10,24 +10,20 @@ $beige: #fcf8e6;
       max-width: 100%;
     }
   } 
-  
 @mixin flex-column {
   display: flex;
   flex-direction: column;
 }
-
 @mixin flex-column-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 @mixin flex-column-SB {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 @mixin flex-row-center {
   display: flex;
   align-items: center;
@@ -43,141 +39,139 @@ $beige: #fcf8e6;
 }
 
 h2{
-    font-size: 1.8rem;
-    text-align: center;
-    @media all and (max-width: 600px) {
-        font-size: 1.3rem;
-      }
-    @media all and (max-width: 400px) {
-      font-size: 0.9rem;
+  font-size: 1.8rem;
+  text-align: center;
+  @media all and (max-width: 600px) {
+      font-size: 1.3rem;
     }
+  @media all and (max-width: 400px) {
+    font-size: 0.9rem;
   }
+}
 
 h3{
-    text-align: center;
-    font-family: "Dancing script";
-    padding: 16px 0;
-    margin: 0;
+  text-align: center;
+  font-family: "Dancing script";
+  padding: 16px 0;
+  margin: 0;
+  font-size: 1.8rem;
+  @media all and (max-width: 920px){
     font-size: 1.8rem;
-    @media all and (max-width: 920px){
-      font-size: 1.8rem;
-    }
-    @media all and (max-width: 600px){
-      font-size: 1.5rem;
-    }
-    @media all and (max-width: 376px){
-      font-size: 1.2rem;
-    }
   }
+  @media all and (max-width: 600px){
+    font-size: 1.5rem;
+  }
+  @media all and (max-width: 376px){
+    font-size: 1.2rem;
+  }
+}
 
 h4{
-    font-size: 1.3rem;
-    font-weight: 600;
-    @media all and (max-width: 920px) {
-        font-weight: 400;
-      }
-      @media all and (max-width: 600px) {
-        font-size: 1.1rem;
-      }
-      @media all and (max-width: 376px) {
-        font-size: 0.8rem;
-      }
+  font-size: 1.3rem;
+  font-weight: 600;
+  @media all and (max-width: 920px) {
+    font-weight: 400;
+  }
+  @media all and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
+  @media all and (max-width: 376px) {
+    font-size: 0.8rem;
+  }
 }
 main{
-    padding-bottom: 150px;
-    padding-top: 350px;
-    margin: 0 auto ;
-    @media all and (max-width: 600px){
-      padding-top: 310px;
-      padding-bottom: 100px;
-    }
-    @media all and (max-width: 376px){
-      padding-top: 280px;
-    }
+  padding-bottom: 150px;
+  padding-top: 350px;
+  margin: 0 auto ;
+  @media all and (max-width: 600px){
+    padding-top: 310px;
+    padding-bottom: 100px;
   }
+  @media all and (max-width: 376px){
+    padding-top: 280px;
+  }
+}
 
   
 .section__header{
-    box-sizing: border-box;
-    text-decoration: none;
-    height: 75px;
-    width: 80%;
-    margin: 12vh auto 5vh auto;;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: center;
-    padding: 0.5vh 1vw;
-    border-radius: 10px;
-    background-color: $beige;
-    border: 5px solid$darkGreen;
-    color: black;
-    @media all and (max-width: 1024px){
-      margin-top: 10vh
-    }
-    @media all and (max-width: 920px){
-        height: 60px;
-      }
-    @media all and (max-width: 600px){
-      height: 48px;
-    }
-    i{
-      font-size: 1.5rem;
-      padding: 8px;
-      color: black;
-      background-color: #ebeded ;
-      border: 6px solid $darkGreen;
-      border-radius: 50%;
-      
-      @media all and (max-width: 920px){
-        font-size: 1.3rem;
-        padding: 5px;
-        border: 3px solid $darkGreen;
-    }
-      @media all and (max-width: 600px){
-        font-size: 1rem;
-      }
-    }
-    @media all and (max-width: 400px){
-        font-size: 0.6rem
-      }
-    
-     i:hover{
-      cursor: pointer;
-      border-color: $darkBlue;
-      background-color: white;
-    }
-    h2{
-        width: 90%;
-        text-align: center
-    }
-    img{
-      height: 60px;
-      width: 60px;
-      @media all and (max-width: 920px){
-        height: 48px;
-        width: 48px;
-      }
-      @media all and (max-width: 600px){
-        height: 28px;
-        width: 28px;
-      }
-    }
-  
+  box-sizing: border-box;
+  text-decoration: none;
+  height: 75px;
+  width: 80%;
+  margin: 12vh auto 5vh auto;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  padding: 0.5vh 1vw;
+  border-radius: 10px;
+  background-color: $beige;
+  border: 5px solid$darkGreen;
+  color: black;
+  @media all and (max-width: 1024px){
+    margin-top: 10vh
   }
+  @media all and (max-width: 920px){
+    height: 60px;
+  }
+  @media all and (max-width: 600px){
+    height: 48px;
+  }
+  i{
+    font-size: 1.5rem;
+    padding: 8px;
+    color: black;
+    background-color: #ebeded ;
+    border: 6px solid $darkGreen;
+    border-radius: 50%;
+    @media all and (max-width: 920px){
+      font-size: 1.3rem;
+      padding: 5px;
+      border: 3px solid $darkGreen;
+    }
+    @media all and (max-width: 600px){
+      font-size: 1rem;
+    }
+  }
+  @media all and (max-width: 400px){
+    font-size: 0.6rem
+  }
+  
+  i:hover{
+  cursor: pointer;
+  border-color: $darkBlue;
+  background-color: white;
+  }
+  h2{
+    width: 90%;
+    text-align: center
+  }
+  img{
+    height: 60px;
+    width: 60px;
+    @media all and (max-width: 920px){
+      height: 48px;
+      width: 48px;
+    }
+    @media all and (max-width: 600px){
+      height: 28px;
+      width: 28px;
+    }
+  }
+}
 
   
-  body {
-    @include Quicksand();
-    background-image: url(../Images/Backgrounds/Image12.webp);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 16px;
-    width: 100%;
-    margin: 0 auto;
-  }
+body {
+  @include Quicksand();
+  background-image: url(../Images/Backgrounds/Image12.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
   
 
 header {
@@ -246,7 +240,6 @@ header {
         margin: 0 auto;
         align-items: center;
       }
-
     }
     h1 {
       width:70%;
@@ -279,13 +272,13 @@ header {
       }
 
       span{
+        @include Quicksand();
         margin: 0;
         font-size: 2rem;
         text-align: right;
         padding-right:3vw;
         padding-bottom: 2vh;
         color: $darkBlue;
-        font-family: "Quicksand", Arial, Helvetica, sans-serif;
         text-shadow: none;
         @media all and (max-width: 1024px){
           padding-right: 0.6vw;
@@ -348,27 +341,22 @@ header {
       @media all and (max-width: 376px){
         font-size: 0.6rem;
       }
-
     }
-
   }  
 }
 
-// Footer
+.active{
+  text-decoration: none;
+  font-weight:700;
+  color: white !important;
+  background-color: $darkBlue;
+}
+.sticky {
+  position: fixed;
+    top: 0;
+}
 
-
-  .active{
-    text-decoration: none;
-    font-weight:700;
-    color: white !important;
-    background-color: $darkBlue;
-  }
-  .sticky {
-    position: fixed;
-     top: 0;
-  }
-  
-  .not-displayed{
-    display: none;
-     visibility: hidden;
-  }
+.not-displayed{
+  display: none;
+    visibility: hidden;
+}

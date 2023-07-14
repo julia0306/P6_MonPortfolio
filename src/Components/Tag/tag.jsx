@@ -1,9 +1,14 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import "../../Assets/style/tag.scss"
 
 function Tag({source, title}) {
     return (
         <div className="tag">
-            <img src={source} alt={title} title={title}/>
+            <img 
+                src={source} 
+                alt={title} 
+                title={title}
+            />
         </div>
     )
 }

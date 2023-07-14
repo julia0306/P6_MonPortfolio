@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import "../../Assets/style/comicPanels.scss"
 
 // je passe mes props en paramètres afin de les récupérer de manière dynamique
-function ComicPanel({src, title, alt, imageTitle, text}) {
+function ComicPanel({src, alt, title, imageTitle, text}) {
     return (
             <div className="comicPanel">
                 <div className='comicPanel__image'>
@@ -13,8 +13,12 @@ function ComicPanel({src, title, alt, imageTitle, text}) {
                     />
                 </div>
                 <div >
-                    <h3>{title}</h3>
-                    <p className='comicPanel__text'>{text}</p>
+                    <h3>
+                        {title}
+                    </h3>
+                    <p className='comicPanel__text'>
+                        {text}
+                    </p>
                 </div>
             </div>
     )
@@ -23,8 +27,8 @@ function ComicPanel({src, title, alt, imageTitle, text}) {
 ComicPanel.propTypes ={
     src: PropTypes.string,
     alt: PropTypes.string,
-    imageTitle: PropTypes.string,
     title: PropTypes.string,
+    imageTitle: PropTypes.string,
     text: PropTypes.string
 }
 

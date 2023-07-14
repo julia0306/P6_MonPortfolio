@@ -1,0 +1,47 @@
+.tag {
+    background-color: #129494;
+    border: 3px solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    padding: 10px;
+    @media all and (max-width: 920px){
+      margin-top: 0;
+      height: 30px;
+      width: 30px;
+      gap: 0;
+    }
+    @media all and (max-width: 600px){
+      margin-top: 0;
+      height: 20px;
+      width: 20px;
+      gap: 0;
+    }
+    @media all and (max-width: 376px){
+      margin-top: 0;
+      height: 16px;
+      width: 16px;
+      gap: 0;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+    }
+}
+    
+.tags{
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin: 5vh auto;
+    @media all and (max-width: 1024px){
+        gap:16px;
+    }
+    @media all and (max-width: 600px){
+        gap:8px;
+    }
+}

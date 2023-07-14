@@ -17,6 +17,6 @@ TextZone.propTypes ={
     text2: PropTypes.string,
     text3: PropTypes.string,
     textItems: PropTypes.array
-
 }
+
 export default TextZone

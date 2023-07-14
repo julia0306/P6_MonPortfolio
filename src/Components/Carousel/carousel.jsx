@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types'
-import { useState } from "react"
+import PropTypes from 'prop-types';
+import { useState } from "react";
+import "../../Assets/style/carousel.scss"
 
 function Carousel({pictures, alt}){
     const slides = pictures || [];
