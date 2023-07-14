@@ -23,9 +23,13 @@ $beige: #fcf8e6;
     padding: 8px 12px;
   }
 }  
+@mixin Quicksand{
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
 
 .project__skills{
-  font-family: "Quicksand";
+  @include Quicksand();
+  text-align: center;
   font-size: 1.4rem;
   width: 80%;
   margin: 0 auto;
@@ -35,7 +39,6 @@ $beige: #fcf8e6;
   padding: 8px;
   border-radius: 25px;
   margin-bottom: 16px;
-  text-align: center;
   @media all and (max-width: 920px){
     font-size: 1.2rem;
     width: 90%;
@@ -58,10 +61,10 @@ $beige: #fcf8e6;
     margin-top: 0
   }
   .github__link{
-    text-decoration: none;
     display: flex;
     width: min-content;
     justify-content: center;
+    text-decoration: none;
     margin: 0 auto;
     margin-bottom: 5vh;
   }

@@ -137,8 +137,7 @@ $beige: #fcf8e6;
   }
 }
   
-
-// modif de style pour "liens vers les projets..."
+// modificaion de style pour "liens vers les projets..."
 .skills__map h3{
   @media all and (max-width: 600px){
    font-weight: normal;
@@ -146,7 +145,6 @@ $beige: #fcf8e6;
 }
 
 // Mise en place de boutons pour rendre interactive la carte de compétences
-  
 .skills__buttons {
   box-sizing: border-box;
   display: flex;

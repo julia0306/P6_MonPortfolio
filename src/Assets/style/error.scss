@@ -7,18 +7,18 @@ $beige: #fcf8e6;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
   
 .error{
     &__div{
         @include flex-column-center();
+        text-align: center;
         background-color: rgba(255, 255, 255, 0.651); 
         border: 5px solid $darkBlue; 
         border-radius: 10px;
         font-size: 3rem;
         color:#061925;
         text-shadow: 2px 2px 2px white;
-        text-align: center;
         font-weight: 400;
         padding: 48px 16px;
         @media all and (max-width: 920px){

@@ -1,3 +1,7 @@
+@mixin Quicksand{
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
 .textZone{
     padding: 16px 32px;
     box-sizing: border-box;
@@ -41,7 +45,7 @@
   
   }
   .textItems .skills{
-    font-family: "Quicksand";
+    @include Quicksand();
   }
   
   
