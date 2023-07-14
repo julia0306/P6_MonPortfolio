@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import '../src/Assets/style/main.scss';
 import Header from './Components/Header/header';
@@ -17,7 +16,7 @@ import Contact from './Pages/Contact/contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter  basename='/'>
+    <BrowserRouter  basename='/'>
   <Header/>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -29,6 +28,6 @@ root.render(
       <Route path="/*" element={<Error/>} />
     </Routes>
     <Footer/>
-    </HashRouter>
+    </BrowserRouter>
 </React.StrictMode>
 );
