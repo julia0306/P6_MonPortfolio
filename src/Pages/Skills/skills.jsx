@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import TurningCard from "../../Components/TurningCard/turningCard";
-import Image from "../../Assets/Images/Skills.webp";
+import SkillMap1300 from "../../Assets/Images/Skills.webp";
+import SkillMap1000 from "../../Assets/Images/Skills1000.webp";
+import SkillMap600 from "../../Assets/Images/Skills600.webp";
+import SkillMap400 from "../../Assets/Images/Skills400.webp"
 import Collapsible from "../../Components/Collapsible/collapsible";
 import ComicPanel from "../../Components/Comic-panels/comicPanels";
 import projects from "../../Data/Projects.json";
@@ -74,7 +77,14 @@ function Skills() {
                         <div className="textZone">
                             <h3>Liens vers les projets ayant validé les compétences</h3>
                             <div className="image-container">
-                                <img src={Image} fetchpriority="high"alt="roadmap de formation" />
+                            <img
+  src={SkillMap1300}
+  alt="roadmap de formation"
+  srcSet={`${SkillMap1300} 1300w, ${SkillMap1000} 1000w, ${SkillMap600} 600w, ${SkillMap400} 400w`}
+  sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 1024px) 1000px, (min-width: 1025px) 100vw"
+  max-width="1300px"
+  max-height="480px"
+/>
                                 <div className="skills__buttons">
                                     <Link to="/project/1" title="Voir le projet Booki">
                                         <button className="skills__button skills__button__2" aria-label='voir le projet "Booki"'></button>

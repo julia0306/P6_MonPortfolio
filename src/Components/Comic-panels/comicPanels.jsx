@@ -10,6 +10,8 @@ function ComicPanel({src, srcSet, sizes, title, alt, imageTitle, text}) {
                         srcSet={srcSet}
                         sizes={sizes} 
                         alt={alt}
+                        height="1743px"
+                        width="300px"
                         title={imageTitle} 
                         loading="lazy"
                     />

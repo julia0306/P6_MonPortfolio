@@ -21,6 +21,8 @@ function Curriculum(){
                     src={image}
                     alt="parcours dans l'enseignement supérieure"
                     title="études supérieures"
+                    height="60px"
+                    width="60px"
                 />
             </div>
             <div className="curriculum">
@@ -37,7 +39,11 @@ function Curriculum(){
                         </p>
                     </div>
                     <div className="vertical-timeline-element-icon">
-                        <img src={studyIcon} alt="studies"/>
+                        <img 
+                            src={studyIcon} 
+                            alt="studies"
+                            height="35px"
+                            width="35px"/>
                     </div>
                     </li>
                     <li className="vertical-timeline-element">
@@ -52,7 +58,11 @@ function Curriculum(){
                         </p>
                     </div>
                     <div className="vertical-timeline-element-icon">
-                        <img src={workIcon} alt="work"/>
+                        <img 
+                            src={workIcon} 
+                            alt="work"
+                            height="35px"
+                            width="35px"/>
                     </div>
                     </li>
                     <li className="vertical-timeline-element">
@@ -70,7 +80,12 @@ function Curriculum(){
                         </p>
                     </div>
                     <div className="vertical-timeline-element-icon">
-                        <img src={studyIcon} alt="studies"/>
+                        <img 
+                            src={studyIcon}
+                            alt="studies"
+                            height="35px"
+                            width="35px"
+                        />
                     </div>
                     </li>
                     <li className="vertical-timeline-element">
@@ -82,7 +97,12 @@ function Curriculum(){
                         </p>
                     </div>
                     <div className="vertical-timeline-element-icon">
-                        <img src={studyIcon} alt="studies"/>
+                        <img 
+                            src={studyIcon} 
+                            alt="studies"
+                            height="35px"
+                            width="35px"
+                        />
                     </div>
                     </li>
                     <li className="vertical-timeline-element">
@@ -94,7 +114,12 @@ function Curriculum(){
                         </p>
                     </div>
                     <div className="vertical-timeline-element-icon">
-                        <img src={studyIcon} alt="studies"/>
+                        <img 
+                            src={studyIcon} 
+                            alt="studies"
+                            height="35px"
+                            width="35px"
+                        />
                     </div>
                     </li>
                 </ul>

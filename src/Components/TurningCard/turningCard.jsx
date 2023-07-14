@@ -29,6 +29,8 @@ function TurningCard({ image, alt, info, title }) {
             <img 
             src={image}
             alt={alt}
+            height="216px"
+            width="216px"
             style={{
                 transition: "opacity 0s ease",
                 display: !isTurnedOver ? "flex" : "none",
