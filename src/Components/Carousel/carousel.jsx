@@ -20,8 +20,7 @@ function Carousel({pictures, alt}){
                 className="carousel__image" 
                 src = {slides[currentIndex]} 
                 alt={alt}
-                height="500px"
-                width="1713px"/>
+                />
             <div className="carousel__arrows">
                 <button aria-label="voir la photo précédente" alt="précédent" onClick={goToPrevious} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
                     <i className="fa-solid fa-chevron-left" />
