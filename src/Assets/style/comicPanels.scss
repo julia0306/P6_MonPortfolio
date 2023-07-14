@@ -1,0 +1,76 @@
+//Comic PAnels
+
+.comicPanel{
+    background-color: white;
+    border: 4px solid #152630;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    &__text{
+      font-family: "Dancing script";
+      font-size: 1.3rem;
+      padding: 8px;
+      height:fit-content;
+      margin: 0;
+    }
+  }
+  
+  .comicPanel__image{
+    background-color:#152630;
+    border-radius: 10px 10px 0 0;
+  
+    img{
+      display: flex;
+      object-fit: contain;
+      margin: 0 auto;
+      @media all and (min-width: 1024px){
+        width: 400px; 
+        height: 400px;
+      }
+      @media all and (max-width: 1024px){
+        width: 300px; 
+        height: 300px;
+      }
+      @media all and (max-width: 376px){
+        width: 300px; 
+        height: 300px;
+      }
+    }
+  }
+  
+  .fullwidth__container{
+    box-sizing: border-box;
+    margin: 5vh auto 0 auto;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+    padding: 4% 4% 0 4%;
+    border-radius: 10px;
+    @media all and (max-width:376px){
+      border-radius: 0;
+    }
+  }
+
+  .skills__soft__container .comicPanel__image{
+    img{
+    @media all and (min-width: 1024px){
+        width: 250px; 
+        height: 250px;
+      }
+      @media all and (max-width: 1024px){
+        width: 300px; 
+        height: 300px;
+      }
+      @media all and (max-width: 600px){
+        width: 250px; 
+        height:250px;
+      }
+      @media all and (max-width: 376px){
+        width: 200px; 
+        height:200px;
+      }
+    }
+  }

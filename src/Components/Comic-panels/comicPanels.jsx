@@ -1,4 +1,5 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import "../../Assets/style/comicPanels.scss"
 
 // je passe mes props en paramètres afin de les récupérer de manière dynamique
 function ComicPanel({src, title, alt, imageTitle, text}) {

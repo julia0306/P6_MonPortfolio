@@ -78,13 +78,13 @@ function Skills() {
                             <h3>Liens vers les projets ayant validé les compétences</h3>
                             <div className="image-container">
                             <img
-  src={SkillMap1300}
-  alt="roadmap de formation"
-  srcSet={`${SkillMap1300} 1300w, ${SkillMap1000} 1000w, ${SkillMap600} 600w, ${SkillMap400} 400w`}
-  sizes="(max-width: 400px) 400px, (max-width: 600px) 600px, (max-width: 1024px) 1000px, (min-width: 1025px) 100vw"
-  max-width="1300px"
-  max-height="480px"
-/>
+                                src={SkillMap1300}
+                                alt="roadmap de formation"
+                                srcSet={`${SkillMap1300} 1300w, ${SkillMap1000} 1000w, ${SkillMap600} 600w, ${SkillMap400} 400w`}
+                                sizes="(max-width: 00px) 400px, (max-width: 780px) 600px, (max-width: 1200px) 1000px, (min-width: 1025px) 100vw"
+                                max-width="1300px"
+                                max-height="480px"
+                            />
                                 <div className="skills__buttons">
                                     <Link to="/project/1" title="Voir le projet Booki">
                                         <button className="skills__button skills__button__2" aria-label='voir le projet "Booki"'></button>
@@ -137,9 +137,7 @@ function Skills() {
                         {skills.map((skill, index) => (
                             <ComicPanel
                                 key={`${skill.title}-${index}`}
-                                src={Array.isArray(skill.image) ? skill.image[0].src : skill.image}
-                                srcSet={Array.isArray(skill.image) ? skill.image[0].srcSet : ''}
-                                sizes={Array.isArray(skill.image) ? skill.image[0].sizes : ''}
+                                src={skill.image}
                                 alt={skill.alt}
                                 imageTitle={skill.title}
                                 title={skill.title}
