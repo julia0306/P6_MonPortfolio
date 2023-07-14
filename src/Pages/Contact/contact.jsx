@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import '../../Assets/style/contact.scss';
 import { Link } from 'react-router-dom';
-import contactImage from '../../Assets/Images/contact.png'
-import contactImage2 from '../../Assets/Images/contact2.png'
+import contactImage from '../../Assets/Images/contact.webp'
+import contactImage2 from '../../Assets/Images/contact2.webp'
 
 export const Contact = () => {
   const location = useLocation();

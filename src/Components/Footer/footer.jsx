@@ -1,4 +1,4 @@
-import image from "../../Assets/Images/travail.png";
+import image from "../../Assets/Images/travail.webp";
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 
@@ -6,12 +6,12 @@ function Footer() {
     return (
         <div className="footer">
             {/* J'instaure un lien pour rediriger l'utilisateur vers la page d'accueil s'il clique sur le logo de Kasa */}
-            <Link to="/">
+            <Link to="/" aria-label="retourner à la page d'accueil">
                 <img 
                     src={image} 
                     alt='Kasa'
-                    height="180px"
-                    width="180px" 
+                    height="122px"
+                    width="122px" 
                     className='footer__logo'/>
             </Link>
             <span className="footer__text">© 2023 | Julia Taylor</span>

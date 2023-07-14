@@ -1,9 +1,9 @@
-import studyIcon from "../../Assets/Images/studyIcon.png";
-import workIcon from "../../Assets/Images/workIcon.png";
+import studyIcon from "../../Assets/Images/studyIcon.webp";
+import workIcon from "../../Assets/Images/workIcon.webp";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import "../../Assets/style/curriculum.scss"
-import image from '../../Assets/Images/parcours.png'
+import image from '../../Assets/Images/parcours.webp'
 
 function Curriculum(){
 
