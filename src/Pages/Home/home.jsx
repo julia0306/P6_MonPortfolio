@@ -25,9 +25,7 @@ function Home() {
         {contents.map((content) => (
           <ComicPanel
             key={content.id}
-            src={content.image[0].src}
-            srcSet={content.image[0].srcSet}
-            sizes={content.image[0].sizes}
+            src={content.src}
             alt={content.alt}
             imageTitle={content.imageTitle}
             title={content.title}
