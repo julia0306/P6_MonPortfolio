@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { useState } from "react"
 
-function Carousel({pictures}){
+function Carousel({pictures, alt}){
     const slides = pictures || [];
     const [currentIndex, setCurrentIndex] = useState (0);
     const goToPrevious =() =>{
@@ -16,12 +16,16 @@ function Carousel({pictures}){
     }
     return (
         <div className="carousel">
-            <img className="carousel__image" src = {slides[currentIndex]} alt="carousel"/>
+            <img 
+                className="carousel__image" 
+                src = {slides[currentIndex]} 
+                alt={alt}
+                loading="lazy"/>
             <div className="carousel__arrows">
-                <button alt="précédent" onClick={goToPrevious} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
+                <button aria-label="voir la photo précédente" alt="précédent" onClick={goToPrevious} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
                     <i className="fa-solid fa-chevron-left" />
                 </button>
-                <button alt="suivant" onClick={goToNext} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
+                <button aria-label="voir la photo suivante" alt="suivant" onClick={goToNext} className={` ${slides.length === 1 ? 'not-displayed' : ''}`}>
                     <i className="fa-solid fa-chevron-right" />
                 </button>
             </div>
@@ -34,6 +38,7 @@ function Carousel({pictures}){
 
 Carousel.propTypes ={
     pictures: PropTypes.array,
+    alt: PropTypes.string
 }
 
 export default Carousel

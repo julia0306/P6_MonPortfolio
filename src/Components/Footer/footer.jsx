@@ -12,7 +12,8 @@ function Footer() {
                     alt='Kasa'
                     height="122px"
                     width="122px" 
-                    className='footer__logo'/>
+                    className='footer__logo'
+                    loading="lazy"/>
             </Link>
             <span className="footer__text">© 2023 | Julia Taylor</span>
             <span className="footer__text">Tous droits réservés</span>

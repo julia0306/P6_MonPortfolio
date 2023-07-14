@@ -24,9 +24,10 @@ function Project() {
     const {introduction} = selectedProject || {};
     const {technologies} = selectedProject || {};
     const {skills} = selectedProject || {};
-    const {title} = selectedProject || {}
-    const {link} = selectedProject || {}
-    const {problématiques} = selectedProject || {}
+    const {title} = selectedProject || {};
+    const {link} = selectedProject || {};
+    const {problématiques} = selectedProject || {};
+    const {alt} = selectedProject || {}
 
     if (!selectedProject) {
         return <Navigate to="/error" />;
@@ -38,12 +39,13 @@ function Project() {
                     <h2>
                         {title}
                     </h2>
-                    <a href={link}>
+                    <Link to={link} aria-label="Accéder à Github">
                         <i className="fa-brands fa-github"></i>
-                    </a>
+                    </Link>
                 </div>
                 <Carousel 
                     pictures={pictures}
+                    alt={alt}
                 />
                 <div className="tags">
                     {technologies.map((technology, index) => (

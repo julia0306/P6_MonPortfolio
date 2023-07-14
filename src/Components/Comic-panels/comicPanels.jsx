@@ -9,6 +9,7 @@ function ComicPanel({image, title, alt, imageTitle, text}) {
                         src={image} 
                         alt={alt}
                         title={imageTitle} 
+                        loading="lazy"
                     />
                 </div>
                 <div >
