@@ -108,7 +108,7 @@
           text-align: center;
           min-width: 300px;
           height: fit-content;
-          padding: 16px 0;
+          padding: 16px 0 32px 0;
           background-color:#061925;
           color: white;
           border: 5px solid #2e5266;
@@ -122,7 +122,7 @@
             height: 440px;
           }
           @media all and (max-width:1000px){
-            height: 370px;
+            height: 380px;
           }
           @media all and (max-width:800px){
             height: 310px;
@@ -132,6 +132,9 @@
           }
           @media all and (max-width:376px){
             height: 210px;
+          }
+          @media all and (max-width: 320px){
+            height: 190px
           }
         img{
           max-width: 100%;
@@ -175,9 +178,17 @@
     justify-content: space-around;
     width: 100%;
     margin-top: -230px;
-
-    @media all and (min-width:1500px){
-      margin-top: -450px;
+    @media all and (min-width: 1800px){
+      margin-top: -670px
+    }
+    @media all and (max-width: 1800px){
+      margin-top: -640px
+    }
+    @media all and (max-width: 1700px){
+      margin-top: -600px;
+    }
+    @media all and (max-width:1600px){
+      margin-top: -550px;
       margin-left: auto;
       margin-right: auto;
       justify-content: center;
@@ -234,24 +245,10 @@
       margin-top: -105px;
   }
     .skills__button {
-        width: 14vw;
+        width: 15vw;
         height: 19vw;
-        background: none;
-        @media all and (min-width: 1600px){
-          width: 13vw
-        }
-        @media all and (min-width: 1800px){
-          width: 12vw
-        }
-        @media all and (min-width: 1900px){
-          width: 11vw
-        }
-        @media all and (min-width: 2100px){
-          width: 10vw
-        }
-        @media all and (min-width: 2400px){
-          width: 9vw
-        }
+        background: none; 
+        border: none;       
       }
     .skills__button:hover{
        cursor: pointer;

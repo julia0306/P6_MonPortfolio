@@ -17,7 +17,7 @@
     width: 100px;
     align-self: center;
     border-radius: 10px;
-    font-family: "Quicksand";
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     padding: 5px;
@@ -174,7 +174,7 @@
     }
   }
   &__title {
-    font-family: "Quicksand";
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-decoration: none;
     text-shadow: 2px 5px 3px black;
@@ -193,7 +193,7 @@
       display: flex;
       align-items: center;
       text-align: center;
-      font-family: "Dancing Script";
+      font-family: "Dancing Script", Arial, Helvetica, sans-serif;
       font-size: 1.3rem;
       font-weight: 300;
       color: white;
