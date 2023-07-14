@@ -1,4 +1,27 @@
-  
+$darkBlue: #061925;
+$darkGreen: #2e5266;
+$lightGreen: #129494;
+$beige: #fcf8e6;
+
+
+@mixin buttonStyle{
+  width: 100px;
+  align-self: center;
+  border-radius: 10px;
+  font-family: "Quicksand";
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px;
+  background-color: white;
+  border: 5px solid $darkGreen;
+  color: $lightGreen;
+  &:hover{
+    background-color: $lightGreen;
+    color: white;
+    cursor: pointer;
+};
+}
+
 @mixin flex-row-center {
     display: flex;
     align-items: center;
@@ -13,38 +36,7 @@
     flex-direction: column;
 }
 
-@mixin buttonStyle{
-    width: 100px;
-    align-self: center;
-    border-radius: 10px;
-    font-family: "Quicksand", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 5px;
-    background-color: #129494;
-    border: 5px solid #384f4f;
-    color: white;
-    &:hover{
-        background-color: #352745c6;
-        cursor: pointer;
-    };
-}
 .projects{
-    padding-bottom: 150px;
-    width: 90%;
-}
-.projects__personal .textZone{
-    padding: 0;
-    text-align: center;
-    height: fit-content;
-    background-color: #fbfaf6;
-    p{
-        margin: 0;
-        font-size: 1.5rem;
-    }
-}
-
-.projects h2{
     width: 90%;
 }
 
@@ -88,10 +80,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #061925;
-  border: 5px solid #061925;
+  background-color:$darkBlue;
+  border: 5px solid $darkBlue;
   border-radius: 10px;
-  color: #fff;
+  color: white;
   font-size: 1.5rem;
   font-weight: 600;
   margin: 32px auto 78px;

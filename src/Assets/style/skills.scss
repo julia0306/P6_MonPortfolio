@@ -1,3 +1,8 @@
+$darkBlue: #061925;
+$darkGreen: #2e5266;
+$lightGreen: #129494;
+$beige: #fcf8e6;
+
 @mixin flex-row-center {
     display: flex;
     align-items: center;
@@ -45,8 +50,8 @@
         .turningCard{
         width: 15vw;
         height: 15vw;
-        background-color: #0d3248;
-        border: 5px solid #061925;
+        background-color: $darkBlue;
+        border: 5px solid $darkBlue;
         padding: 16px;
         border-radius: 10px;
         color: white;
@@ -109,10 +114,16 @@
           min-width: 300px;
           height: fit-content;
           padding: 16px 0 32px 0;
-          background-color:#061925;
+          background-color: $darkBlue;
           color: white;
-          border: 5px solid #2e5266;
-          @media all and (min-width:1400px){
+          border: 5px solid $darkGreen;
+          @media all and (min-width:1800px){
+            height: 800px;
+          }
+          @media all and (max-width:1800px){
+            height: 700px;
+          }
+          @media all and (max-width:1600px){
             height: 600px;
           }
           @media all and (max-width:1400px){
@@ -269,7 +280,7 @@
   
       &__titleZone {
         @include flex-row-center();
-        background-color: #061925;
+        background-color: $darkBlue;
         border: 5px solid black;
         z-index: 20;
         justify-content: space-between;
@@ -323,7 +334,7 @@
       }
   
       &__sizer {
-        background-color: #129494;
+        background-color: $lightGreen;
         border: 5px solid black;
         color: black;
         display: flex;
@@ -349,7 +360,7 @@
     padding: 16px 32px 48px 32px;
     box-sizing: border-box;
     background-color: white;
-    border: 3px solid #0d3248;
+    border: 3px solid $darkBlue;
     margin: 10vh auto 2vh auto;
     width: 90%;
     height: fit-content;
@@ -360,13 +371,13 @@
         width: 100%;
         border-left: none;
         border-right: none;
-        border: 15px solid #0d3248;
+        border: 15px solid $darkBlue;
     }
     h3{
         padding: 0 0 8px 0;
         margin: 0 auto;
         text-align: center;
-        border-bottom: 2px solid #129494;
+        border-bottom: 2px solid $lightGreen;
         width: fit-content;
         color: #0d3248;
         @media all and (max-width: 920px){
@@ -429,7 +440,6 @@
     }
 }
   
-
 .no-top-margin{
     margin-top: 0;
 }

@@ -1,3 +1,8 @@
+$darkBlue: #061925;
+$darkGreen: #2e5266;
+$lightGreen: #129494;
+$beige: #fcf8e6;
+
 @mixin flex-column-center {
     display: flex;
     flex-direction: column;
@@ -8,7 +13,7 @@
     &__div{
         @include flex-column-center();
         background-color: rgba(255, 255, 255, 0.651); 
-        border: 5px solid #061925; 
+        border: 5px solid $darkBlue; 
         border-radius: 10px;
         font-size: 3rem;
         color:#061925;
@@ -29,7 +34,7 @@
     }
     &__link{
         text-decoration: none;
-        color: #129494ec;
+        color: $lightGreen;
         
     }
     h2{

@@ -1,0 +1,52 @@
+$darkBlue: #061925;
+$darkGreen: #2e5266;
+$lightGreen: #129494;
+$beige: #fcf8e6;
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    @include flex-column-center();
+    position: relative;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    width: 100%;
+    min-width: 295px;
+    height: fit-content;
+    background-color: $darkBlue;
+    color: white;
+    border-top: 8px solid $darkGreen;
+    @media all and (max-width: 920px) {
+      justify-content: center;
+    }
+  
+    &__logo {
+      margin-bottom: 2vh;
+      height: 122px;
+      width: 122px;
+      height: auto;
+      @media all and (max-width: 920px){
+        margin-bottom: 0
+      }
+    }
+
+    &__text {
+      font-size: 1.125rem;  
+      @media all and (max-width: 920px) {
+        width: 40%;
+        font-size: 1rem;
+        text-align: center;
+      }  
+      @media all and (max-width: 376px) {
+        font-size: 0.75rem;
+      }
+    }
+}

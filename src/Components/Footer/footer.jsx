@@ -1,6 +1,7 @@
 import image from "../../Assets/Images/travail.webp";
 import { Link } from "react-router-dom";
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import "../../Assets/style/footer.scss"
 
 function Footer() {
     return (

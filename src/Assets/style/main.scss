@@ -1,3 +1,8 @@
+$darkBlue: #061925;
+$darkGreen: #2e5266;
+$lightGreen: #129494;
+$beige: #fcf8e6;
+
 // MIXINS TO BE REUSED IN THE PROJECT
 @mixin mainAndHeaderwidths{
     max-width: 90%;
@@ -6,21 +11,36 @@
     }
   } 
   
-  @mixin flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  @mixin flex-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  @mixin flex-row-center {
-    display: flex;
-    align-items: center;
-  }
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-column-SB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  align-items: center;
+}
+@mixin Quicksand{
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+@mixin Tangerine{
+  font-family: "Tangerine", Arial, Helvetica, sans-serif;
+}
+@mixin DancingScript{
+  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
+}
 
 h2{
     font-size: 1.8rem;
@@ -89,8 +109,8 @@ main{
     justify-self: center;
     padding: 0.5vh 1vw;
     border-radius: 10px;
-    background-color: #fcf8e6;
-    border: 5px solid #2e5266 ;
+    background-color: $beige;
+    border: 5px solid$darkGreen;
     color: black;
     @media all and (max-width: 1024px){
       margin-top: 10vh
@@ -106,13 +126,13 @@ main{
       padding: 8px;
       color: black;
       background-color: #ebeded ;
-      border: 6px solid #2e5266;
+      border: 6px solid $darkGreen;
       border-radius: 50%;
       
       @media all and (max-width: 920px){
         font-size: 1.3rem;
         padding: 5px;
-        border: 3px solid #2e5266;
+        border: 3px solid $darkGreen;
     }
       @media all and (max-width: 600px){
         font-size: 1rem;
@@ -124,7 +144,7 @@ main{
     
      i:hover{
       cursor: pointer;
-      border-color: #061925;
+      border-color: $darkBlue;
       background-color: white;
     }
     h2{
@@ -148,12 +168,12 @@ main{
 
   
   body {
+    @include Quicksand();
     background-image: url(../Images/Backgrounds/Image12.webp);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-size: 16px;
     width: 100%;
     margin: 0 auto;
@@ -188,7 +208,7 @@ header {
   }
 
   .header{
-    background-color: #f8f7eff8;
+    background-color: $beige;
     height: 160px;
     display: flex;
     width: 100%;
@@ -264,7 +284,7 @@ header {
         text-align: right;
         padding-right:3vw;
         padding-bottom: 2vh;
-        color: #2e526697;
+        color: $darkBlue;
         font-family: "Quicksand", Arial, Helvetica, sans-serif;
         text-shadow: none;
         @media all and (max-width: 1024px){
@@ -334,62 +354,21 @@ header {
   }  
 }
 
-.active{
+// Footer
+
+
+  .active{
     text-decoration: none;
     font-weight:700;
     color: white !important;
-    background-color: #352745c6;
+    background-color: $darkBlue;
   }
-.sticky {
+  .sticky {
     position: fixed;
-    top: 0;
+     top: 0;
   }
-
+  
   .not-displayed{
     display: none;
-    visibility: hidden;
-  }
-
-// Footer
-
-.footer {
-    @include flex-column-center();
-    position: relative;
-    bottom: 0;
-    left: 0;
-    justify-content: space-around;
-    box-sizing: border-box;
-    padding-top: 8px;
-    padding-bottom: 16px;
-    width: 100%;
-    min-width: 295px;
-    height: fit-content;
-    background-color: #061925;
-    color: white;
-    border-top: 8px solid #2e5266;
-    @media all and (max-width: 920px) {
-      justify-content: center;
-    }
-  
-    &__logo {
-      margin-bottom: 2vh;
-      height: 122px;
-      width: 122px;
-      height: auto;
-      @media all and (max-width: 920px){
-        margin-bottom: 0
-      }
-    }
-  
-    &__text {
-      font-size: 1.125rem;  
-      @media all and (max-width: 920px) {
-        width: 40%;
-        font-size: 1rem;
-        text-align: center;
-      }  
-      @media all and (max-width: 376px) {
-        font-size: 0.75rem;
-      }
-    }
+     visibility: hidden;
   }
