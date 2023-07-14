@@ -22,16 +22,19 @@ function Home() {
                 />
             </div>
             <div className="fullwidth__container">
-                {contents.map((content) => (
-                    <ComicPanel key={content.id}
-                        image={content.image}
-                        alt={content.alt}
-                        imageTitle={content.imageTitle}
-                        title={content.title}
-                        text={content.text}
-                    />
-                ))}
-            </div>
+        {contents.map((content) => (
+          <ComicPanel
+            key={content.id}
+            src={content.image[0].src}
+            srcSet={content.image[0].srcSet}
+            sizes={content.image[0].sizes}
+            alt={content.alt}
+            imageTitle={content.imageTitle}
+            title={content.title}
+            text={content.text}
+          />
+        ))}
+      </div>
         </main>
     );
 }

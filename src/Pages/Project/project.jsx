@@ -19,7 +19,7 @@ function Project() {
 
     const { id } = useParams();
     const selectedProject = allProjects.find(project => project.id === id);
-    const {pictures} = selectedProject || {};
+    const {pictures} = selectedProject || [];
     const {description} = selectedProject || {} ;
     const {introduction} = selectedProject || {};
     const {technologies} = selectedProject || {};
@@ -28,6 +28,7 @@ function Project() {
     const {link} = selectedProject || {};
     const {problématiques} = selectedProject || {};
     const {alt} = selectedProject || {}
+
 
     if (!selectedProject) {
         return <Navigate to="/error" />;

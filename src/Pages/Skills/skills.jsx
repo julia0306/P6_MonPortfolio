@@ -3,15 +3,17 @@ import TurningCard from "../../Components/TurningCard/turningCard";
 import Image from "../../Assets/Images/Skills.webp";
 import Collapsible from "../../Components/Collapsible/collapsible";
 import ComicPanel from "../../Components/Comic-panels/comicPanels";
-import works from "../../Data/Projects.json";
+import projects from "../../Data/Projects.json";
 import skills from "../../Data/skills.json";
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import "../../Assets/style/skills.scss"
 
+
+
 function Skills() {
     const location = useLocation();
-
+    
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [location]);
@@ -27,13 +29,12 @@ function Skills() {
                     </div>
                     <div className="skills__languages">
                         <TurningCard
-                            image="https://i.ibb.co/4f6n3M0/English.png" 
+                            image="https://i.ibb.co/2F9wBmR/english.webp" 
                             alt="anglais"
                             info= "Langue maternelle"
-                        
                         />
                         <TurningCard
-                            image="https://i.ibb.co/gdcXwxb/German.png" 
+                            image="https://i.ibb.co/QK59KVq/german.webp" 
                             alt="allemand"
                             info={
                                 <div>
@@ -48,7 +49,7 @@ function Skills() {
                         
                         />
                         <TurningCard
-                            image="https://i.ibb.co/xLfz9LX/Japanese.png" 
+                            image="https://i.ibb.co/YfhZVZ6/japanese.webp" 
                             alt="japonais"
                             info={
                                 <div>
@@ -73,7 +74,7 @@ function Skills() {
                         <div className="textZone">
                             <h3>Liens vers les projets ayant validé les compétences</h3>
                             <div className="image-container">
-                                <img src={Image} alt="roadmap de formation" />
+                                <img src={Image} fetchpriority="high"alt="roadmap de formation" />
                                 <div className="skills__buttons">
                                     <Link to="/project/1" title="Voir le projet Booki">
                                         <button className="skills__button skills__button__2" aria-label='voir le projet "Booki"'></button>
@@ -99,17 +100,16 @@ function Skills() {
                     </div>
                     <div className="collapsibles__zone">
                         <h3>Les compétences en détail</h3>
-                            {works.map((work) => (
-                                <div className={work.className} 
-                                key={work.id}>
+                            {projects.map((project) => (
+                                <div className={project.className} 
+                                key={project.id}>
                                     <div className="collapsibles__individual">
                                             <Collapsible
-                                            title={work.skillsTitle}
-                                            content={work.skills.map((skill, index) => (
+                                            title={project.skillsTitle}
+                                            content={project.skills.map((skill, index) => (
                                                 <p key={`${skill}-${index}`}>{skill}</p>
                                             ))}
                                             />
-                                    
                                     </div>
                                 </div>
                             ))}
@@ -125,13 +125,17 @@ function Skills() {
                     </div>
                     <div className="skills__soft__container">
                         {skills.map((skill, index) => (
-                            <ComicPanel key={`${skill}-${index}`}
-                                image={skill.image}
+                            <ComicPanel
+                                key={`${skill.title}-${index}`}
+                                src={Array.isArray(skill.image) ? skill.image[0].src : skill.image}
+                                srcSet={Array.isArray(skill.image) ? skill.image[0].srcSet : ''}
+                                sizes={Array.isArray(skill.image) ? skill.image[0].sizes : ''}
                                 alt={skill.alt}
+                                imageTitle={skill.title}
                                 title={skill.title}
                                 text={skill.text}
                             />
-                        ))}
+                            ))}
                     </div>
                 </div>
             </main>
