@@ -3,7 +3,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Gallery from "../../Components/Gallery/gallery";
-import allProjects from "../../Data/Projects.json";
+import OCProjects from "../../Data/Projects.json";
+import PersonalProjects from "../../Data/Projects2.json";
 import "../../Assets/style/projects.scss"
 
 function Projects() {
@@ -26,7 +27,20 @@ function Projects() {
             </a>
         </div>
         <Gallery 
-          works={allProjects}
+          works={OCProjects}
+        />
+      </div>
+      <div className="projects__OC">
+        <div className= "section__header">
+            <h2>
+              Projets personnels
+            </h2>
+            <a href="https://github.com/julia0306" aria-label="lien vers Github">
+              <i className="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <Gallery 
+          works={PersonalProjects}
         />
       </div>
     </main>

@@ -1,0 +1,25 @@
+[
+	{
+		"id": "10",
+		"title": "A venir",
+		"cover": "https://i.ibb.co/Wz2mSh4/coming.png" ,
+		"pictures": [
+            "https://i.ibb.co/Wz2mSh4/coming.png"
+		],
+        "info":"A venir",
+        "description": " ",
+		"technologies": [
+            {"title":" ",
+            "image": " "
+            }        
+        ],
+		"skillsTitle":" ... ",
+		"skills":[
+            "A venir"
+        ],
+        "problématiques": " ",
+        "className":"collapsibles n1",
+        "link":"#",
+        "alt": " "
+    }
+]
