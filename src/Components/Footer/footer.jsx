@@ -18,7 +18,7 @@ function Footer() {
                 />
             </Link>
             <span className="footer__text">
-                © 2023 | Julia Taylor
+                © 2024 | Julia Taylor
             </span>
             <span className="footer__text">
                 Tous droits réservés

@@ -7,6 +7,7 @@ import Carousel from '../../Components/Carousel/carousel';
 import TextZone from '../../Components/Text-zone/text-zone';
 import Tag from '../../Components/Tag/tag';
 import allProjects from '../../Data/Projects.json';
+import personalProjects from '../../Data/Projects2.json';
 import "../../Assets/style/project.scss";
 
 
@@ -20,18 +21,19 @@ function Project() {
 
     const { id } = useParams();
     const selectedProject = allProjects.find(project => project.id === id);
-    const {pictures} = selectedProject || [];
-    const {introduction} = selectedProject || {};
-    const {description} = selectedProject || {} ;
-    const {problématiques} = selectedProject || {};
-    const {technologies} = selectedProject || {};
-    const {skills} = selectedProject || {};
-    const {title} = selectedProject || {};
-    const {link} = selectedProject || {};
-    const {alt} = selectedProject || {}
+    const personalProject = personalProjects.find(project => project.id === id);
+    const {pictures} = selectedProject || personalProject || [];
+    const {introduction} = selectedProject || personalProject || {};
+    const {description} = selectedProject || personalProject || {};
+    const {problématiques} = selectedProject || personalProject || {};
+    const {technologies} = selectedProject || personalProject || {};
+    const {skills} = selectedProject || personalProject || {};
+    const {title} = selectedProject || personalProject || {};
+    const {link} = selectedProject || personalProject || {};
+    const {alt} = selectedProject || personalProject || {};
 
     // Dans le cas où il n'y aurait pas de projet correspondant au id récupéré par la méthode useParams, on redirige vers la page d'erreur
-    if (!selectedProject) {
+    if (!selectedProject && !personalProject) {
         return <Navigate to="/error" />;
       } else {
     return (

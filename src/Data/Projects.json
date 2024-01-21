@@ -84,7 +84,6 @@
             "Gérer les événements utilisateurs avec Javascript",
             "Manipuler les éléments du DOM avec Javascript",
             "Récupérer les données utilisateurs dans le Javascript via des formulaires"
-
         ],
         "problématiques":"Pour ce second projet, la pratique du Javascript était une réelle nouveauté pour moi. Ce projet s’est donc avéré complexe. Portée des variables, import et export de fonctions, imbrication de fonctions étaient autant d’obstacles à une réalisation fluide et aisée du projet. J’ai donc investi du temps dans ce projet et j’ai documenté mon travail en lisant des ouvrages de référence en la matière. J’ai pris le temps de formuler, par écrit, la logique du code à implémenter… Ainsi, étape par étape, fonction par fonction, je suis parvenue à valider le projet.",
         "className":"collapsibles n2",

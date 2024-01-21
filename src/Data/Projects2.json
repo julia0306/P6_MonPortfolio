@@ -1,25 +1,122 @@
 [
 	{
-		"id": "10",
-		"title": "A venir",
-		"cover": "https://i.ibb.co/Wz2mSh4/coming.png" ,
+		"id": "a",
+		"title": "Tic, Tac, Toe",
+		"cover": "https://i.ibb.co/V3hZz2T/Tic-Tac-Toe.png" ,
 		"pictures": [
-            "https://i.ibb.co/Wz2mSh4/coming.png"
+            "https://i.ibb.co/V3hZz2T/Tic-Tac-Toe.png"
 		],
-        "info":"A venir",
-        "description": " ",
+        "info":"Jeu de morpion créé en Javascript",
+        "introduction":"Après avoir commencé à créer un jeu d'arcade plus ambitieux, j'ai décide de ponctuer la réalisation de ce projet long par de plus petites réalisations. J'ai donc repris de petits projets pour continuer à gagner en automatismes, en vitesse et en compréhension. Ce jeu de morpion est le premier petit projet que j'ai réalisé à titre personnel. ",
+        "description": "Un jeu classique de morpion. Dans ce jeu, deux adversaires placent à tour de rôle un signe distinctif (croix ou cercle) dans l'une des neuf cases du plateau. Objectif: obtenir le plus rapidement une file continue de trois signes dans n'importe quelle direction.",
 		"technologies": [
-            {"title":" ",
-            "image": " "
+            {"title":"HTML5",
+            "image": "https://i.ibb.co/C1jYzdM/html.webp"
+            },
+            {"title":"CSS3",
+            "image":"https://i.ibb.co/6YdTbpT/css.webp"},
+            {"title":"Javascript",
+            "image": "https://i.ibb.co/bzJ7bTr/javascript.webp"},
+            {"title": "Node.JS",
+            "image":"https://i.ibb.co/N9tt3M7/node.webp"
+            },
+            {"title": "npm",
+            "image":"https://i.ibb.co/Gp3s6Hs/npm.webp"
+            },
+            {"title": "Github",
+            "image":"https://i.ibb.co/C0yW2wF/github.webp"
+            }
+        ],
+		"skillsTitle":"Javascript",
+		"skills":[
+            "Gérer les événements utilisateurs avec Javascript",
+            "Manipuler les éléments du DOM avec Javascript"
+        ],
+        "problématiques": "Ce projet a été l'occasion de revoir les bases du Javascript. Il n'a pas donné lieu à des problématiques spécifiques, mais a été l'occasion de retravailler les notions acquises en Javascript.",
+        "className":"collapsibles n1",
+        "link":"https://github.com/julia0306/TicTacToe",
+        "alt": "Création d'un jeu simple de type Morpion"
+    },
+    {
+		"id": "b",
+		"title": "Daily forecast",
+		"cover": "https://i.ibb.co/wMwFvFV/daily-Forecast.png" ,
+		"pictures": [
+            "https://i.ibb.co/LYzS08W/daily-Forecast.png"
+		],
+        "info":"Site web de prévisions météorologiques",
+        "introduction":"Ce site web permet d'accéder aux données météorologiques, en temps réel, pour six villes françaises.",
+        "description": "Grâce à l'API AirVisual, ce site récupère en temps réel les données météorologiques poursix villes choisies. Pour cela, un appel à l'API est réalisé en adaptant l'URL en fonction des coordonnées GPS des différentes localisations choisies. ",
+		"technologies": [
+            {"title":"HTML5",
+            "image": "https://i.ibb.co/C1jYzdM/html.webp"
+            },
+            {"title":"CSS3",
+            "image":"https://i.ibb.co/6YdTbpT/css.webp"},
+            {"title":"Javascript",
+            "image": "https://i.ibb.co/bzJ7bTr/javascript.webp"},
+            {"title": "Node.JS",
+            "image":"https://i.ibb.co/N9tt3M7/node.webp"
+            },
+            {"title": "npm",
+            "image":"https://i.ibb.co/Gp3s6Hs/npm.webp"
+            },
+            {"title": "Github",
+            "image":"https://i.ibb.co/C0yW2wF/github.webp"
+            },
+            {"title":"API",
+            "image": "https://i.ibb.co/my6NTGX/api-icone.webp"
             }        
         ],
-		"skillsTitle":" ... ",
+		"skillsTitle":"Utiliser une API pour afficher les prévisions météorlogiques en temps réel",
 		"skills":[
-            "A venir"
+            "Gérer les événements utilisateurs avec Javascript",
+            "Manipuler les éléments du DOM avec Javascript",
+            "Récupérer des données grâce à une API publique"
         ],
-        "problématiques": " ",
+        "problématiques": " Ce projet a été l'occasion pour moi de retravailler sur l'exploitation d'une API publique. J'ai eu recours à la documentation de l'API pour la comprendre et m'en approprier le fonctionnement.",
+        "link":"https://github.com/julia0306/WeatherForecast",
+        "alt": "Création d'un site de prévisions météorologiques en temps réel"
+    },
+    {
+		"id": "c",
+		"title": "Mahjong",
+		"cover": "https://i.ibb.co/MhcYw5t/mahjong.webp" ,
+		"pictures": [
+            "https://i.ibb.co/MhcYw5t/mahjong.webp"
+		],
+        "info":"Mahjong",
+        "introduction":"Ce projet consiste en la création d'un premier niveau de Mahjong. Le joueur doit retrouver les paires de tuiles comportant un symbole identique.",
+        "description": "Dans ce jeu, 16 tuiles aléatoires sont présentes en deux exemplaires. L'utilisateur doit les identifier et les supprimer progressivement. Le joueur gagne la partie lorsqu'il ne reste plus aucune tuile sur le plateau.",
+		"technologies": [
+            {"title":"HTML5",
+            "image": "https://i.ibb.co/C1jYzdM/html.webp"
+            },
+            {"title":"CSS3",
+            "image":"https://i.ibb.co/6YdTbpT/css.webp"},
+            {"title":"Javascript",
+            "image": "https://i.ibb.co/bzJ7bTr/javascript.webp"},
+            {"title": "Node.JS",
+            "image":"https://i.ibb.co/N9tt3M7/node.webp"
+            },
+            {"title": "npm",
+            "image":"https://i.ibb.co/Gp3s6Hs/npm.webp"
+            },
+            {"title": "Figma",
+            "image":"https://i.ibb.co/PQY9HSt/figma.webp"
+            },
+            {"title": "Github",
+            "image":"https://i.ibb.co/C0yW2wF/github.webp"
+            }
+        ],
+		"skillsTitle":" Javascript",
+		"skills":[
+            "Gérer les événements utilisateurs avec Javascript",
+            "Manipuler les éléments du DOM avec Javascript"
+        ],
+        "problématiques": "La création de plusieurs couches de tuiles reste à mettre en place. Afin de rendre la création de ce jeu accessible, afin de l'adapter à mon niveau et aussi afin de réaliser ce projet en remps limité, je l'ai décomposé en plusieurs niveaux. La réalisation d'un Mahjong en plusieurs couches fera l'objet d'un futur projet.",
         "className":"collapsibles n1",
-        "link":"#",
-        "alt": " "
+        "link":"https://github.com/julia0306/Mahjong",
+        "alt": "Création d'un jeu de type Mahjong à l'aide de Javascript"
     }
 ]
