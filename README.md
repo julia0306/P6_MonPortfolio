@@ -2,6 +2,8 @@
 
 Personal portfolio website built with React to present my profile, skills, projects and resume.
 
+<img width="1886" height="858" alt="image" src="https://github.com/user-attachments/assets/de382e21-bd98-40b5-94ef-5846a31f3e85" />
+
 This project is a portfolio designed to showcase my background, my technical work, and my professional journey in a modern and engaging format. It includes multiple sections for introduction, skills, project presentation, curriculum, and contact.
 
 ## Overview
