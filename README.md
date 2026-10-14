@@ -1,4 +1,4 @@
-# Julia Portfolio
+# My Portfolio
 
 Personal portfolio website built with React to present my profile, skills, projects and resume.
 
